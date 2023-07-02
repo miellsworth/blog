@@ -2,6 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2023-07-02-placeholder--tidy-tuesday/index.html",
+      "/posts/2023-07-02-placeholder--learnings/index.html",
+      "/posts/2023-07-02-placeholder--projects/index.html",
       "/posts/2023-07-02-long-overdue/index.html"
     ]
   }

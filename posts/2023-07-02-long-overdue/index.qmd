@@ -4,4 +4,5 @@ description: |
   The first of hopefully many...
 author: Michael Ellsworth
 date: 2023-07-02
+categories: [Misc]
 ---

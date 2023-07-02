@@ -1,0 +1,8 @@
+---
+title: "Placeholder - Tidy Tuesday"
+description: |
+  A placeholder post for Tidy Tuesday posts
+author: Michael Ellsworth
+date: 2023-07-02
+categories: [Tidy Tuesday]
+---

@@ -1,6 +1,6 @@
 source("new_post.R")
 
 new_post(
-  "Long overdue", 
-  description = "The first of hopefully many..."
+  title = "Placeholder - Tidy Tuesday",  # Title of the blog post
+  description = "A placeholder post for Tidy Tuesday posts"  # Description of the blog post
   )

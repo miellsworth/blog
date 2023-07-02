@@ -1,0 +1,8 @@
+---
+title: "Placeholder - Learnings"
+description: |
+  A placeholder post for my learning and development
+author: Michael Ellsworth
+date: 2023-07-02
+categories: [Learning]
+---
