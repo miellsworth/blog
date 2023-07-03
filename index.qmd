@@ -1,12 +1,13 @@
 ---
-title: "Michael's Blog"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "About"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/miellsworth
 ---
+
+This is a personal blog by Michael. A place to share various data related projects and
+general thoughts about data.
