@@ -1,6 +1,6 @@
 source("new_post.R")
 
 new_post(
-  title = "Placeholder - Tidy Tuesday",  # Title of the blog post
-  description = "A placeholder post for Tidy Tuesday posts"  # Description of the blog post
+  title = "Weekend Project - Quarto 1.4",  # Title of the blog post
+  description = "A test of Quarto 1.4 and its new dashboarding capabilities"  # Description of the blog post
   )
