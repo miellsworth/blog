@@ -1,0 +1,11 @@
+---
+title: "Weekend Project - Quarto 1.4"
+description: |
+  A test of Quarto 1.4 and its new dashboarding capabilities
+author: Michael Ellsworth
+date: 2023-10-27
+quarto-required: >=1.4
+---
+
+Inspired by [Drop #362 (2023-10-27): Weekend Project Edition.](https://dailyfinds.hrbrmstr.dev/p/drop-362-2023-10-27-weekend-project)
+
