@@ -3,9 +3,14 @@ project:
 
 website:
   title: "Michael's Blog"
+  # site-url: https://placeholder.com
+  description: "A blog, by Michael"
   navbar:
     right:
-      - about.qmd
+      - text: Blog
+        href: blog.qmd
+      - text: Archive
+        href: archive.qmd
       - icon: github
         href: https://github.com/miellsworth
 format:

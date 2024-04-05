@@ -1,6 +1,6 @@
 source("new_post.R")
 
 new_post(
-  title = "Placeholder - Tidy Tuesday",  # Title of the blog post
-  description = "A placeholder post for Tidy Tuesday posts"  # Description of the blog post
+  title = "Re-creating a Shiny App for TidyTuesday plots",  # Title of the blog post
+  description = "Can I re-create Nicola Rennie's Shiny App?"  # Description of the blog post
   )

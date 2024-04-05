@@ -7,6 +7,8 @@ listing:
   categories: true
   sort-ui: false
   filter-ui: false
+  fields: [date, title, description, categories]
+  # feed: true  # Placeholder for future RSS feed, need site-url first
 page-layout: full
-title-block-banner: true
+title-block-banner: false
 ---
