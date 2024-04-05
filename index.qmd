@@ -9,5 +9,4 @@ about:
       href: https://github.com/miellsworth
 ---
 
-This is a personal blog by Michael. A place to share various data related projects and
-general thoughts about data.
+This is a personal blog by Michael. A place to share various data related projects and general thoughts about data.

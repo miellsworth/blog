@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Michael Ellsworth">
-<meta name="dcterms.date" content="2023-07-02">
-<meta name="description" content="A placeholder post for my learning and development">
+<meta name="dcterms.date" content="2024-04-04">
+<meta name="description" content="Can I re-create Nicola Rennie’s Shiny App?">
 
-<title>Michael’s Blog - Placeholder - Learnings</title>
+<title>Michael’s Blog - Re-creating a Shiny App for TidyTuesday plots</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -123,15 +123,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Placeholder - Learnings</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Learning</div>
-  </div>
-  </div>
+<h1 class="title">Re-creating a Shiny App for TidyTuesday plots</h1>
+</div>
 
 <div>
   <div class="description">
-    <p>A placeholder post for my learning and development</p>
+    <p>Can I re-create Nicola Rennie’s Shiny App?</p>
   </div>
 </div>
 
@@ -148,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 2, 2023</p>
+      <p class="date">April 4, 2024</p>
     </div>
   </div>
   
@@ -160,6 +157,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>I started getting into TidyTuesday again recently. This, timed with Nicola Rennie’s <a href="https://nrennie.rbind.io/blog/webr-shiny-tidytuesday/">post</a> about her webR powered Shiny App, inspired me to try and build a Shiny App to display my TidyTuesday plots! And by build, I mean re-create (rip-off?) her Shiny App, but with my plots.</p>
+<p>Right off the hop, she talks about a pretty consistent structure to her TidyTuesday repository. Looking at mine, it’s not completely disorganized but could use some tidying. I guess a TidyTuesday repository should be <em>tidy</em> so let’s go ahead and do that.</p>
+<p>First, a separate directory to organize each week’s TidyTuesday plots and code: <code>/yyyy/yyyy-mm-dd/</code>. My code files and plot image files were already named fairly well. <code>yyyy-mm-dd.R</code> was the format for the code files, and <code>yyyy-mm-dd_plot_title.png</code> was the format for the plot image files. This seems to line up well enough with Nicola’s standard, so I’ll leave them as is.</p>
 
 
 

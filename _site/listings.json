@@ -2,6 +2,19 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/2024-04-04-recreating-a-shiny-app-for-tidytuesday-plots/index.html",
+      "/posts/2023-10-27-weekend-project--quarto-14/index.html",
+      "/posts/2023-07-03-long-overdue/index.html",
+      "/posts/placeholder--learnings/index.html",
+      "/posts/placeholder--projects/index.html",
+      "/posts/placeholder--tidy-tuesday/index.html"
+    ]
+  },
+  {
+    "listing": "/archive.html",
+    "items": [
+      "/posts/2024-04-04-recreating-a-shiny-app-for-tidytuesday-plots/index.html",
+      "/posts/2023-10-27-weekend-project--quarto-14/index.html",
       "/posts/2023-07-03-long-overdue/index.html",
       "/posts/placeholder--learnings/index.html",
       "/posts/placeholder--projects/index.html",
