@@ -1,0 +1,13 @@
+---
+title: "Re-creating a Shiny App for TidyTuesday plots"
+description: |
+  Can I re-create Nicola Rennie's Shiny App?
+author: Michael Ellsworth
+date: 2024-04-04
+---
+
+I started getting into TidyTuesday again recently. This, timed with Nicola Rennie's [post](https://nrennie.rbind.io/blog/webr-shiny-tidytuesday/) about her webR powered Shiny App, inspired me to try and build a Shiny App to display my TidyTuesday plots! And by build, I mean re-create (rip-off?) her Shiny App, but with my plots.
+
+Right off the hop, she talks about a pretty consistent structure to her TidyTuesday repository. Looking at mine, it's not completely disorganized but could use some tidying. I guess a TidyTuesday repository should be *tidy* so let's go ahead and do that.
+
+First, a separate directory to organize each week's TidyTuesday plots and code: `/yyyy/yyyy-mm-dd/`. My code files and plot image files were already named fairly well. `yyyy-mm-dd.R` was the format for the code files, and `yyyy-mm-dd_plot_title.png` was the format for the plot image files. This seems to line up well enough with Nicola's standard, so I'll leave them as is.
