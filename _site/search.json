@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "objectID": "posts/2023-07-03-long-overdue/index.html",
     "href": "posts/2023-07-03-long-overdue/index.html",
     "title": "Long overdue",
@@ -19,5 +20,26 @@
     "title": "Michael’s Blog",
     "section": "",
     "text": "Long overdue\n\n\n\n\n\n\n\nMisc\n\n\n\n\nThe first of hopefully many…\n\n\n\n\n\n\nJul 3, 2023\n\n\n\n\n\n\n\n\nPlaceholder - Learnings\n\n\n\n\n\n\n\nLearning\n\n\n\n\nA placeholder post for my learning and development\n\n\n\n\n\n\nJul 2, 2023\n\n\n\n\n\n\n\n\nPlaceholder - Projects\n\n\n\n\n\n\n\nProjects\n\n\n\n\nA placeholder post for larger project posts\n\n\n\n\n\n\nJul 2, 2023\n\n\n\n\n\n\n\n\nPlaceholder - Tidy Tuesday\n\n\n\n\n\n\n\nTidy Tuesday\n\n\n\n\nA placeholder post for Tidy Tuesday posts\n\n\n\n\n\n\nJul 2, 2023\n\n\n\n\n\n\nNo matching items"
+=======
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "This is a personal blog by Michael. A place to share various data related projects and general thoughts about data."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Michael’s Blog",
+    "section": "",
+    "text": "Long overdue\n\n\n\n\n\n\nMisc\n\n\n\nThe first of hopefully many… \n\n\n\n\n\nJul 3, 2023\n\n\nMichael Ellsworth\n\n\n\n\n\n\n\n\n\n\n\n\nPlaceholder - Learnings\n\n\n\n\n\n\nLearning\n\n\n\nA placeholder post for my learning and development \n\n\n\n\n\nJul 2, 2023\n\n\nMichael Ellsworth\n\n\n\n\n\n\n\n\n\n\n\n\nPlaceholder - Projects\n\n\n\n\n\n\nProjects\n\n\n\nA placeholder post for larger project posts \n\n\n\n\n\nJul 2, 2023\n\n\nMichael Ellsworth\n\n\n\n\n\n\n\n\n\n\n\n\nPlaceholder - Tidy Tuesday\n\n\n\n\n\n\nTidy Tuesday\n\n\n\nA placeholder post for Tidy Tuesday posts \n\n\n\n\n\nJul 2, 2023\n\n\nMichael Ellsworth\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2023-07-03-long-overdue/index.html",
+    "href": "posts/2023-07-03-long-overdue/index.html",
+    "title": "Long overdue",
+    "section": "",
+    "text": "A blog?\nI’ve decided to start a blog. I’m not particularly great at writing nor am I keen on making my writing public for the World to see. So what am I doing here?\nWell, a blog seems like a great way for Data People to gather and share their work in a centralized place. I’m a Data Person. I don’t currently have a place to share my work but I’ve been meaning to create one for a long time. I guess I’ll go with a blog.\nI also became familiar with Quarto and Quarto blogs after virtually attending rstudio::conf(2022). Quarto seemed like an interesting tool to present personal data work and Quarto blogs seemed like a dead simple way to compile that work. Why not start a blog to get the hang of this tool?\n\n\nPlans\nFor the most part, this blog will consist of things for my own personal consumption and reference. Like I said, I’m not eager to share my work or my thoughts broadly but I’d still like to have a place where I can direct people if I need to ~ show off ~ for any reason. This will be that place.\nI plan to write about personal projects I’m working on, an analysis that I completed, maybe some thoughts and learnings from a book or a blog I’m reading, or perhaps just write for the sake of writing. A blog seems like a good place to compile these things, kind of like a journal, especially if I’ll be the primary consumer. I’d like to have this as a place where I can log things that I’m excited about.\n\n\nAcknowledgments\nThis is my first attempt at a blog and it wasn’t overly complicated to set-up thanks to a couple of really helpful references.\nAlbert Rapp created The ultimate guide to starting a Quarto blog which has been a phenomenal resource for me. Perhaps the best advice in this behemoth of a blog plost is to write regularly. I’ll give it a try, Albert!\nIsabella Velásquez also walked through building a blog with Quarto in this Youtube video. Thanks for this!"
+>>>>>>> d4dd8ec9238ee1fe404425531d52fcab899f4dcd
   }
 ]
