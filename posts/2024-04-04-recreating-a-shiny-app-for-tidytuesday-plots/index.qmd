@@ -11,3 +11,11 @@ I started getting into TidyTuesday again recently. This, timed with Nicola Renni
 Right off the hop, she talks about a pretty consistent structure to her TidyTuesday repository. Looking at mine, it's not completely disorganized but could use some tidying. I guess a TidyTuesday repository should be *tidy* so let's go ahead and do that.
 
 First, a separate directory to organize each week's TidyTuesday plots and code: `/yyyy/yyyy-mm-dd/`. My code files and plot image files were already named fairly well. `yyyy-mm-dd.R` was the format for the code files, and `yyyy-mm-dd_plot_title.png` was the format for the plot image files. This seems to line up well enough with Nicola's standard, so I'll leave them as is.
+
+She also leverages the READMEs she has for each Tidy Tuesday to extract information about the plot title for that specific week. There are occasions where I save multiple plots for a single Tidy Tuesday so I might have to approach this a bit differently. For now, I'll copy this approach as my initial idea to extract the plot titles from file names seemed messy. Time to make some READMEs!
+
+Next up - create a tibble with information on all the Tidy Tuesday files. Feel free to check out the post that outlines the code in more detail but a couple of neat lessons that I took away from this part:
+
+- `list.dirs()`: a fun little function to produce a character vector with file names and directory names in a specified directory! Kind of surprised I haven't needed anything like this in the past
+- `tidyr::separate_wider_delim()`: a handy tool to split up a string column into multiple string columns based on a delimeter. This function is handy because it handles when there are too few or too many splits. In this case, if there are too many cases, we just drop the remainder.
+- `mutate(new_col = NA_character_)`: instead of blindly assigning `NA` values to a new column, this ensures it is a character column! Looks like you can do this with integers and real numbers as well. I'm sure there are others but a quick google search didn't bring up a full list.
