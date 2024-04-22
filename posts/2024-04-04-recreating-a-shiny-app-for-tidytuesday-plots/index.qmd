@@ -23,3 +23,7 @@ Next up - create a tibble with information on all the Tidy Tuesday files in my T
 - `tidyr::separate_wider_delim()`: a handy tool to split up a string column into multiple string columns based on a delimeter. This function is handy because it handles when there are too few or too many splits. In this case, if there are too many cases, we just drop the remainder.
 - `mutate(new_col = NA_character_)`: instead of blindly assigning `NA` values to a new column, this ensures it is a character column! Looks like you can do this with integers and real numbers as well. I'm sure there are others but a quick google search didn't bring up a full list.
 - `stop()`: this wasn't referenced in the blog post but I wasn't sure how to handle errors in R. I think this seems to be a suitable replacement for the try/except statements that I'm used to in python
+- `attachment`: this library was leveraged to find the packages used for each Tidy Tuesday script. Had not seen this before. Pretty cool.
+
+
+
