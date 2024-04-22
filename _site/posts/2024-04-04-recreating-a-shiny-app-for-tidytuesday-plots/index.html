@@ -116,7 +116,15 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduciton" id="toc-introduciton" class="nav-link active" data-scroll-target="#introduciton">Introduciton</a></li>
+  <li><a href="#tidy-directory" id="toc-tidy-directory" class="nav-link" data-scroll-target="#tidy-directory">Tidy directory</a></li>
+  <li><a href="#extract-directory-info" id="toc-extract-directory-info" class="nav-link" data-scroll-target="#extract-directory-info">Extract directory info</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -157,11 +165,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="introduciton" class="level1">
+<h1>Introduciton</h1>
 <p>I started getting into TidyTuesday again recently. This, timed with Nicola Rennie’s <a href="https://nrennie.rbind.io/blog/webr-shiny-tidytuesday/">post</a> about her webR powered Shiny App, inspired me to try and build a Shiny App to display my TidyTuesday plots! And by build, I mean re-create (rip-off?) her Shiny App, but with my plots.</p>
+</section>
+<section id="tidy-directory" class="level1">
+<h1>Tidy directory</h1>
 <p>Right off the hop, she talks about a pretty consistent structure to her TidyTuesday repository. Looking at mine, it’s not completely disorganized but could use some tidying. I guess a TidyTuesday repository should be <em>tidy</em> so let’s go ahead and do that.</p>
 <p>First, a separate directory to organize each week’s TidyTuesday plots and code: <code>/yyyy/yyyy-mm-dd/</code>. My code files and plot image files were already named fairly well. <code>yyyy-mm-dd.R</code> was the format for the code files, and <code>yyyy-mm-dd_plot_title.png</code> was the format for the plot image files. This seems to line up well enough with Nicola’s standard, so I’ll leave them as is.</p>
+<p>She also leverages the READMEs she has for each Tidy Tuesday to extract information about the plot title for that specific week. There are occasions where I save multiple plots for a single Tidy Tuesday so I might have to approach this a bit differently. For now, I’ll copy this approach as my initial idea to extract the plot titles from file names seemed messy. Maybe I can just reference my favourite plot from the week. Time to make some READMEs!</p>
+</section>
+<section id="extract-directory-info" class="level1">
+<h1>Extract directory info</h1>
+<p>Next up - create a tibble with information on all the Tidy Tuesday files. Feel free to check out the post that outlines the code in more detail but a couple of neat lessons that I took away from this part:</p>
+<ul>
+<li><code>list.dirs()</code>: a fun little function to produce a character vector with file names and directory names in a specified directory! Kind of surprised I haven’t needed anything like this in the past</li>
+<li><code>tidyr::separate_wider_delim()</code>: a handy tool to split up a string column into multiple string columns based on a delimeter. This function is handy because it handles when there are too few or too many splits. In this case, if there are too many cases, we just drop the remainder.</li>
+<li><code>mutate(new_col = NA_character_)</code>: instead of blindly assigning <code>NA</code> values to a new column, this ensures it is a character column! Looks like you can do this with integers and real numbers as well. I’m sure there are others but a quick google search didn’t bring up a full list.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
