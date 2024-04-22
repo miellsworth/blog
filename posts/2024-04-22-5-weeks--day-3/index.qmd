@@ -1,0 +1,19 @@
+---
+title: "5 Weeks - Day 3"
+description: |
+  Mondays!
+author: Michael Ellsworth
+date: 2024-04-22
+---
+
+The biggest question I had for myself when starting this 5 week challenge was whether I would continue to bother with this after a day or two. The other was would I be able to find the time. There is plenty of time on the weekend to chip away at this portfolio, but what about weekdays?
+
+Well, here I am on a Monday (sunglasses emoji and/or looking smug emoji). I've managed to find a bit of time. This might not happen every weekday but I think I can set-up a routine to at least make small progress on weekdays.
+
+Today (Monday), I set my alarm a bit earlier than normal so that I could spend a bit of time on something prior to work. This should work on most weekdays but I might have to find a different strategy for Tuesdays. I moonlight as a radio DJ from 5:30 to 7:00 AM on Tuesday mornings and there ain't no way I'm waking up any earlier than I normally do. I also play a little friz on Tuesday evenings so it might be tight! That's a problem for tomorrow...
+
+A couple of things accomplished today:
+- Combined two plots into one for one of my Tidy Tuesday submissions. To showcase Tidy Tuesday plots on a webR app, it seems easier to have one plot per week. I should be good on this front now.
+- Tested nested lists and nested vectors in R for storing a package list for each Tidy Tuesday script. Developing primarily in python over the last few years has made this process a bit foreign to me in R. I would have used a dictionary but R does not have a built-in dictionary data structure.
+
+Decent progress.
