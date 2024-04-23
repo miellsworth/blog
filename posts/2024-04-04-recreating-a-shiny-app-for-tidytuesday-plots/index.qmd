@@ -7,9 +7,11 @@ date: 2024-04-04
 ---
 
 # Introduciton
+
 I started getting into TidyTuesday again recently. This, timed with Nicola Rennie's [post](https://nrennie.rbind.io/blog/webr-shiny-tidytuesday/) about her webR powered Shiny App, inspired me to try and build a Shiny App to display my TidyTuesday plots! And by build, I mean re-create (rip-off?) her Shiny App, but with my plots.
 
 # Tidy directory
+
 Right off the hop, she talks about a pretty consistent structure to her TidyTuesday repository. Looking at mine, it's not completely disorganized but could use some tidying. I guess a TidyTuesday repository should be *tidy* so let's go ahead and do that.
 
 First, a separate directory to organize each week's TidyTuesday plots and code: `/yyyy/yyyy-mm-dd/`. My code files and plot image files were already named fairly well. `yyyy-mm-dd.R` was the format for the code files, and `yyyy-mm-dd_plot_title.png` was the format for the plot image files. This seems to line up well enough with Nicola's standard, so I'll leave them as is.
@@ -17,13 +19,15 @@ First, a separate directory to organize each week's TidyTuesday plots and code: 
 She also leverages the READMEs she has for each Tidy Tuesday to extract information about the plot title for that specific week. There are occasions where I save multiple plots for a single Tidy Tuesday so I might have to approach this a bit differently. For now, I'll copy this approach as my initial idea to extract the plot titles from file names seemed messy. Maybe I can just reference my favourite plot from the week. Or perhaps the READMEs can have both plots. Regardless, I'm going to add some READMEs!
 
 # Extract directory info
+
 Next up - create a tibble with information on all the Tidy Tuesday files in my Tidy Tuesday repository. Feel free to check out the post that outlines the code in more detail but a couple of neat lessons that I took away from this part:
 
-- `list.dirs()`: a fun little function to produce a character vector with file names and directory names in a specified directory! Kind of surprised I haven't needed anything like this in the past
-- `tidyr::separate_wider_delim()`: a handy tool to split up a string column into multiple string columns based on a delimeter. This function is handy because it handles when there are too few or too many splits. In this case, if there are too many cases, we just drop the remainder.
-- `mutate(new_col = NA_character_)`: instead of blindly assigning `NA` values to a new column, this ensures it is a character column! Looks like you can do this with integers and real numbers as well. I'm sure there are others but a quick google search didn't bring up a full list.
-- `stop()`: this wasn't referenced in the blog post but I wasn't sure how to handle errors in R. I think this seems to be a suitable replacement for the try/except statements that I'm used to in python
-- `attachment`: this library was leveraged to find the packages used for each Tidy Tuesday script. Had not seen this before. Pretty cool.
-
+-   `list.dirs()`: a fun little function to produce a character vector with file names and directory names in a specified directory! Kind of surprised I haven't needed anything like this in the past
+-   `tidyr::separate_wider_delim()`: a handy tool to split up a string column into multiple string columns based on a delimeter. This function is handy because it handles when there are too few or too many splits. In this case, if there are too many cases, we just drop the remainder.
+- `tidyr::separate_longer_delim()`:
+-   `mutate(new_col = NA_character_)`: instead of blindly assigning `NA` values to a new column, this ensures it is a character column! Looks like you can do this with integers and real numbers as well. I'm sure there are others but a quick google search didn't bring up a full list.
+-   `stop()`: this wasn't referenced in the blog post but I wasn't sure how to handle errors in R. I think this seems to be a suitable replacement for the try/except statements that I'm used to in python
+-   `attachment`: this library was leveraged to find the packages used for each Tidy Tuesday script. Had not seen this before. Pretty cool.
+- `tidyr::complete()`:
 
 

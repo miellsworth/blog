@@ -12,6 +12,12 @@ Well, here I am on a Monday (sunglasses emoji and/or looking smug emoji). I've m
 
 Today (Monday), I set my alarm a bit earlier than normal so that I could spend a bit of time on something prior to work. This should work on most weekdays but I might have to find a different strategy for Tuesdays. I moonlight as a radio DJ from 5:30 to 7:00 AM on Tuesday mornings and there ain't no way I'm waking up any earlier than I normally do. I also play a little friz on Tuesday evenings so it might be tight! That's a problem for tomorrow...
 
-A couple of things accomplished today: - Combined two plots into one for one of my Tidy Tuesday submissions. To showcase Tidy Tuesday plots on a webR app, it seems easier to have one plot per week. I should be good on this front now. - Tested nested lists and nested vectors in R for storing a package list for each Tidy Tuesday script. Developing primarily in python over the last few years has made this process a bit foreign to me in R. I would have used a dictionary but R does not have a built-in dictionary data structure.
+A couple of things accomplished today: 
+
+- Combined two plots into one for one of my Tidy Tuesday submissions. To showcase Tidy Tuesday plots on a webR app, it seems easier to have one plot per week. I should be good on this front now. 
+
+- Tested nested lists and nested vectors in R for storing a package list for each Tidy Tuesday script. Developing primarily in python over the last few years has made this process a bit foreign to me in R. I would have used a dictionary but R does not have a built-in dictionary data structure.
+
+- Created a bunch of awful for loops to create logical columns to indicate whether a Tidy Tuesday week uses a specific package. Turns out there were a few `tidyr` and `dplyr` functions that thankfully replaced this whole awful mess.
 
 Decent progress. One thing I've learned now that I'm 3 days into this is that progress will be fairly incremental. Spending 1-2 hours a day on this portfolio won't be enough to create something extraordinary each day. It will be small lessons, minor improvements, and hopefully over time, something worth showing off.
