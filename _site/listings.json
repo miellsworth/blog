@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/2024-04-22-5-weeks--day-3/index.html",
       "/posts/2024-04-21-5-weeks--day-2/index.html",
       "/posts/2024-04-20-5-weeks--day-1/index.html",
       "/posts/2024-04-04-recreating-a-shiny-app-for-tidytuesday-plots/index.html",
@@ -15,6 +16,7 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/2024-04-22-5-weeks--day-3/index.html",
       "/posts/2024-04-21-5-weeks--day-2/index.html",
       "/posts/2024-04-20-5-weeks--day-1/index.html",
       "/posts/2024-04-04-recreating-a-shiny-app-for-tidytuesday-plots/index.html",

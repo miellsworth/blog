@@ -173,15 +173,19 @@ ul.task-list li input[type="checkbox"] {
 <h1>Tidy directory</h1>
 <p>Right off the hop, she talks about a pretty consistent structure to her TidyTuesday repository. Looking at mine, it’s not completely disorganized but could use some tidying. I guess a TidyTuesday repository should be <em>tidy</em> so let’s go ahead and do that.</p>
 <p>First, a separate directory to organize each week’s TidyTuesday plots and code: <code>/yyyy/yyyy-mm-dd/</code>. My code files and plot image files were already named fairly well. <code>yyyy-mm-dd.R</code> was the format for the code files, and <code>yyyy-mm-dd_plot_title.png</code> was the format for the plot image files. This seems to line up well enough with Nicola’s standard, so I’ll leave them as is.</p>
-<p>She also leverages the READMEs she has for each Tidy Tuesday to extract information about the plot title for that specific week. There are occasions where I save multiple plots for a single Tidy Tuesday so I might have to approach this a bit differently. For now, I’ll copy this approach as my initial idea to extract the plot titles from file names seemed messy. Maybe I can just reference my favourite plot from the week. Time to make some READMEs!</p>
+<p>She also leverages the READMEs she has for each Tidy Tuesday to extract information about the plot title for that specific week. There are occasions where I save multiple plots for a single Tidy Tuesday so I might have to approach this a bit differently. For now, I’ll copy this approach as my initial idea to extract the plot titles from file names seemed messy. Maybe I can just reference my favourite plot from the week. Or perhaps the READMEs can have both plots. Regardless, I’m going to add some READMEs!</p>
 </section>
 <section id="extract-directory-info" class="level1">
 <h1>Extract directory info</h1>
-<p>Next up - create a tibble with information on all the Tidy Tuesday files. Feel free to check out the post that outlines the code in more detail but a couple of neat lessons that I took away from this part:</p>
+<p>Next up - create a tibble with information on all the Tidy Tuesday files in my Tidy Tuesday repository. Feel free to check out the post that outlines the code in more detail but a couple of neat lessons that I took away from this part:</p>
 <ul>
 <li><code>list.dirs()</code>: a fun little function to produce a character vector with file names and directory names in a specified directory! Kind of surprised I haven’t needed anything like this in the past</li>
 <li><code>tidyr::separate_wider_delim()</code>: a handy tool to split up a string column into multiple string columns based on a delimeter. This function is handy because it handles when there are too few or too many splits. In this case, if there are too many cases, we just drop the remainder.</li>
+<li><code>tidyr::separate_longer_delim()</code>:</li>
 <li><code>mutate(new_col = NA_character_)</code>: instead of blindly assigning <code>NA</code> values to a new column, this ensures it is a character column! Looks like you can do this with integers and real numbers as well. I’m sure there are others but a quick google search didn’t bring up a full list.</li>
+<li><code>stop()</code>: this wasn’t referenced in the blog post but I wasn’t sure how to handle errors in R. I think this seems to be a suitable replacement for the try/except statements that I’m used to in python</li>
+<li><code>attachment</code>: this library was leveraged to find the packages used for each Tidy Tuesday script. Had not seen this before. Pretty cool.</li>
+<li><code>tidyr::complete()</code>:</li>
 </ul>
 
 
