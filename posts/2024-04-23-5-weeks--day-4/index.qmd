@@ -8,7 +8,7 @@ date: 2024-04-23
 
 April 23rd, 2024. Can we start the countdown to Gemini szn?
 
-It's 6 AM here at the CJSW radio studio. We're broadcasting some Tom Skinner this morning. A brand new 20 minute live track from his forthcoming record, Voices of Bishara Live at “Mu”.
+It's 6 AM here at the CJSW radio studio. We're broadcasting some Tom Skinner this morning. A brand new 20 minute live track from his forthcoming record, Voices of Bishara Live at "Mu".
 
 I've wanted to do a little data/radio crossover for a bit so that's what I've focused on today. I have my full 4 year historical tracklist saved in a Google Sheet so why not see if I can read that into Quarto and play around with the data.
 
@@ -33,6 +33,3 @@ tracklist <- read_sheet(
   skip = 1
 )
 ```
-
-
-
