@@ -30,4 +30,13 @@ Next up - create a tibble with information on all the Tidy Tuesday files in my T
 -   `attachment`: this library was leveraged to find the packages used for each Tidy Tuesday script. Had not seen this before. Pretty cool.
 - `tidyr::complete()`:
 
+I assume this little tibble is going to be the key source data for this app. 
+
+# Github actions
+
+Nicola updates this tibble after every Tidy Tuesday contribution via a GitHub action. I'm a little hesitant to take this approach because this requires me to be a little more thoughtful about what I push to my main branch. Perhaps I should get in the habit of making feature branches for each Tidy Tuesday week and only pushing to main once a final product is ready. Regardless, I might as well set this up as a learning exercise.
+
+The action itself is pretty straightforward but one thing I hadn't seen was the "Commit files" step at the end. This allows the action to commit all of the created files from the action script. Since we're updating the app data with this action, we'll want that file committed during this action run. Pretty handy!
+
+Another thing I haven't leveraged in the past is GitHub Secrets. I'll need to set-up a token to run the action and then save that token to this repository's Secrets.
 
