@@ -1,0 +1,29 @@
+---
+title: "5 Weeks - Day 6"
+description: |
+  Tidy Thursday
+author: Michael Ellsworth
+date: 2024-04-25
+---
+
+Before I can properly set-up my Tidy Tuesday Shiny webR app, I'll need to ensure I have at least one plot for each Tidy Tuesday week I have a directory for. An easier solution would be to delete these directories and fuhgeddaboudit, but why not finish what I started.
+
+Looking back, I have four weeks of unfinished Tidy Tuesdays:
+
+- 2023-03-28
+- 2024-03-05
+- 2024-04-09
+- 2024-04-16
+
+This might take a few days...
+
+Looking back at the 2023-03-28 Tidy Tuesday README, there is a link to Twitter's guidelines for how to add alt text to your images. To my surprise, the link isn't broken! Looks like the folks who maintain the Tidy Tuesday repository gave up on mentioning Twitter on 2023-07-25 though.
+
+2023-03-28 is all about timezones. The plot ideas aren't coming to me quickly here but I did manage to uncover some interesting tidbits about my timezone (Canada/Mountain).
+
+- The official record of the Canada/Mountain timezone began in 1906-09-01
+- Initially, the timezone did not include daylight savings time until 1918
+- DST was then abandoned between 1923 and 1942 before changing to permanent DST between 1942 and 1945
+- After some brief back and forth between DST and standard time, permanent standard time lasted from 1947 to 1972. The glory years.
+- From 1972 on, the twice a year switch between DST to ST persists. Boo!
+
