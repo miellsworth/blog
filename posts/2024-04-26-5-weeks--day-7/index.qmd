@@ -1,0 +1,33 @@
+---
+title: "5 Weeks - Day 7"
+description: |
+  It's been... one week
+author: Michael Ellsworth
+date: 2024-04-26
+---
+
+One week into this 5 week challenge. A challenge to contribute a lil' something to my portfolio every day. An hour or two each day playing around with data, code, git, all that fun stuff.
+
+Here's what I've accomplished so far:
+
+- Brainstormed portfolio ideas and different things I can try and work on over these 5 weeks
+- Finished a R script that will compile all of my Tidy Tuesday repository information for future reference by a Shiny app
+- Explored my radio program's historical tracklist from the start (2020-01-21) to today
+- Dived into an old unfinished Tidy Tuesday submission on timezone data
+- Messed around with `chattr`, the Shiny app powered by a LLM
+- Blogged about my progress each day
+
+One thing that I was worried about while starting this challenge was what I would have to sacrifice to make time for this work. Overall, it doesn't seem like much. Here's how what I've been able to do outside of this challenge:
+
+- Continue to work a full time job (wow, good for you!!)
+- Visit family and friends
+- Go to the movies (Art and Life: The Story of Jim Phillips - super sick!)
+- Go to the mall and run other random errands (chinook on a Saturdy - bad idea!!)
+- Play Ultimate (poorly)
+- Eat and sleep pretty well
+
+Perhaps the only thing that's dropped off a bit is my daily step count, going form roughly 10,000 to 7,000 steps a day. I'm not overly worried about my activity levels yet considering I bike into work every day. I think that's a decent sacrifice.
+
+Anyway, what's the purpose of writing all this down? To convince myself that this shit isn't that hard and that I shouldn't have much problem carrying this on after the 5 weeks is over. One step at a time though.
+
+Today, I'm not sure what I'm going to work on yet. FINISH THIS PARAGRAPH ONCE YOU'VE DONE SOMETHING.
