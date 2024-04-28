@@ -1,0 +1,11 @@
+---
+title: "5 Weeks - Day 8"
+description: |
+  Saturdays are for the blogs
+author: Michael Ellsworth
+date: 2024-04-27
+---
+
+Today was perhaps the first day of this 5 week challenge where it took some will power to get on my computer and write a lil' code. It was a pretty nice day outside and when I was inside, I was either putting together a tracklist for my [radio show](https://cjsw.com/program/beat-salad/), going down a musical rabbit hole via the [Micro-Chop](https://microchop.substack.com/p/30-jazz-and-jazz-adjacent-albums), roasting a sick [spicy salmon](https://cooking.nytimes.com/recipes/1019789-spicy-slow-roasted-salmon-with-cucumbers-and-feta), doing some laundry, or taking a horizontal break (aka NAP). A proper quality Saturday.
+
+Thankfully, I managed to will myself to my computer later in the evening to bang out the code to my Tidy Tuesday Shiny app. Outside of a few tweaks, it was a bit of a copy paste exercise but I managed to get a local version up and running pretty quickly. A success!
