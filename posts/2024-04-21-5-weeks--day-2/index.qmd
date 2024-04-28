@@ -15,16 +15,16 @@ This reminds me that I should probably brainstorm some things I may want to acco
 -   Clean up and finish half baked Tidy Tuesday submissions
     -   Some you've barely started to code, some you've got a pretty garbage looking plot. Clean these bad boys up, Mike!
     -   While I'm here, might as well keep up the weekly habit of contributing to Tidy Tuesday! Flex those ggplot muscles, brother!
-    - More Tidy Tuesday thoughts... What am I learning about each week? Maybe write more about that.
+    -   More Tidy Tuesday thoughts... What am I learning about each week? Maybe write more about that.
 -   Create a shareable webR app to display Tidy Tuesday submissions
     -   I'm hoping this webR app doesn't dominate this "blog" over the next 5 weeks but it's been a slow go so far. But for a good reason. It's been a great learning exercise. Why rush through it?
 -   Develop a Shiny application for viewing basic Ultimate statistics
     -   This will be a relatively easy exercise (famous last words you doof!) but it's been a while since I've created anything in Shiny. Time to get on this band wagon again.
 -   Figure out how I can intersect my interest in data and my interest in radio/music
     -   I host a weekly radio program where I select records for 90 minutes. I have over 4,000 songs that I've played over the last 4 years. Why not tell some sort of data story here?
-- Explore Survival Analysis in Tidy Models
-    - I've been thinking about a lot of different work related use cases for Survival Analysis recently. Why not check out how it's done in Tidy Models? I'm sure they make it fairly straight forward to do!
-- Plot GitHub contributions at the end of the 5 weeks
-    - There was a ggplot version of this plot that I came across. Try and re-create this.
+-   Explore Survival Analysis in Tidy Models
+    -   I've been thinking about a lot of different work related use cases for Survival Analysis recently. Why not check out how it's done in Tidy Models? I'm sure they make it fairly straight forward to do!
+-   Plot GitHub contributions at the end of the 5 weeks
+    -   There was a ggplot version of this plot that I came across. Try and re-create this.
 
 Perhaps I can do some more brainstorming later but I think that's a good start. Lots to think about over the next 5 weeks!
