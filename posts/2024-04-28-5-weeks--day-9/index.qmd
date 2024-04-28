@@ -6,6 +6,8 @@ author: Michael Ellsworth
 date: 2024-04-28
 ---
 
-Sundays are for cleaning the house. I don't make the rules, that's just what Sundays are for. In keeping with this spirit, I'm going to do a little spring cleaning here at *the blog*.
+Sundays are for cleaning the house. I don't make the rules, that's just what Sundays are for. In keeping with this tradition, I'm going to do a little spring cleaning here at *the blog*.
 
 Outside of the four weeks of Tidy Tuesday submissions I need to finish, I want to spend today making sure this blog looks clean. I haven't really rendered this thing since I've started and I'm not sure what the navigation looks like. Let's spend today doing that.
+
+JUST KIDDING. I spent the whole day playing around with my plot for Tidy Tuesday week 2023-03-28, the timezone transitions week. In addition to struggling to figure out what to plot with this data, I spent probably an hour trying to figure out how to include a hyperlink in a ggplot2 image. A lot more difficult than I expected! I never did find a simple enough solution for my liking so I have now moved on. This [stack overflow](https://stackoverflow.com/questions/42259826/hyperlinking-text-in-a-ggplot2-visualization) post appeared to have the most promise but the juice just wasn't worth the squeeze for my use case. I feel like coming back to this issue but perhaps at a later date. And perhaps next Sunday I'll get around to cleaning this blog.
