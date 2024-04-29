@@ -17,19 +17,19 @@ I've wanted to do a little data/radio crossover for a bit so that's what I've fo
 Since my radio tracklist is saved in a private Google Sheet, authentication will be required. Looks like `googledrive` is needed to sort that out.
 
 ```{r}
-library(googledrive)
-library(googlesheets4)
-
-drive_auth()
-gs4_auth(token = drive_token())
+# library(googledrive)
+# library(googlesheets4)
+# 
+# drive_auth()
+# gs4_auth(token = drive_token())
 ```
 
 Okay authentication was a lot easier than I thought it would be. Two functions: `drive_auth()` and `gs4_auth()` is all it took, along with some browser clicks that lets the API access my Google Drive. We should be in business now.
 
 ```{r}
-tracklist <- read_sheet(
-  "https://docs.google.com/spreadsheets/d/1L_aDq6GCrTqJQqjgYCsWrv5l3QYM2z09rrs-11KnhvM/edit#gid=0",
-  "Tracklist",
-  skip = 1
-)
+# tracklist <- read_sheet(
+#   "https://docs.google.com/spreadsheets/d/1L_aDq6GCrTqJQqjgYCsWrv5l3QYM2z09rrs-11KnhvM/edit#gid=0",
+#   "Tracklist",
+#   skip = 1
+# )
 ```
