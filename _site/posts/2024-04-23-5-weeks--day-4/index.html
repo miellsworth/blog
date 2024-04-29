@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Michael Ellsworth">
-<meta name="dcterms.date" content="2024-04-21">
-<meta name="description" content="We doing this">
+<meta name="dcterms.date" content="2024-04-23">
+<meta name="description" content="Radio and Quarto">
 
-<title>Michael’s Blog - 5 Weeks - Day 2</title>
+<title>Michael’s Blog - 5 Weeks - Day 4</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -122,12 +156,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">5 Weeks - Day 2</h1>
+<h1 class="title">5 Weeks - Day 4</h1>
 </div>
 
 <div>
   <div class="description">
-    <p>We doing this</p>
+    <p>Radio and Quarto</p>
   </div>
 </div>
 
@@ -144,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 21, 2024</p>
+      <p class="date">April 23, 2024</p>
     </div>
   </div>
   
@@ -156,38 +190,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>To be honest, I didn’t think I’d get to day 2. This is a pretty big accomplishment. I can now draw a trend line. Two days in a row, baby!</p>
-<p>Today I completed the tedious task of creating READMEs for each of my contributions to Tidy Tuesday. This was a good exercise in making my weekly submissions more visible, as well as setting my repository up for extracting plot titles for the webR app I’m working on. It also helped me realize that I have quite a few unfinished Tidy Tuesday plots.</p>
-<p>This reminds me that I should probably brainstorm some things I may want to accomplish over these 5 weeks. Considering I made it to day 2 (hell yeah!), there is a much more likely chance that I may actually accomplish a few things here. Here’s what I have so far:</p>
-<ul>
-<li>Clean up and finish half baked Tidy Tuesday submissions
-<ul>
-<li>Some you’ve barely started to code, some you’ve got a pretty garbage looking plot. Clean these bad boys up, Mike!</li>
-<li>While I’m here, might as well keep up the weekly habit of contributing to Tidy Tuesday! Flex those ggplot muscles, brother!</li>
-<li>More Tidy Tuesday thoughts… What am I learning about each week? Maybe write more about that.</li>
-</ul></li>
-<li>Create a shareable webR app to display Tidy Tuesday submissions
-<ul>
-<li>I’m hoping this webR app doesn’t dominate this “blog” over the next 5 weeks but it’s been a slow go so far. But for a good reason. It’s been a great learning exercise. Why rush through it?</li>
-</ul></li>
-<li>Develop a Shiny application for viewing basic Ultimate statistics
-<ul>
-<li>This will be a relatively easy exercise (famous last words you doof!) but it’s been a while since I’ve created anything in Shiny. Time to get on this band wagon again.</li>
-</ul></li>
-<li>Figure out how I can intersect my interest in data and my interest in radio/music
-<ul>
-<li>I host a weekly radio program where I select records for 90 minutes. I have over 4,000 songs that I’ve played over the last 4 years. Why not tell some sort of data story here?</li>
-</ul></li>
-<li>Explore Survival Analysis in Tidy Models
-<ul>
-<li>I’ve been thinking about a lot of different work related use cases for Survival Analysis recently. Why not check out how it’s done in Tidy Models? I’m sure they make it fairly straight forward to do!</li>
-</ul></li>
-<li>Plot GitHub contributions at the end of the 5 weeks
-<ul>
-<li>There was a ggplot version of this plot that I came across. Try and re-create this.</li>
-</ul></li>
-</ul>
-<p>Perhaps I can do some more brainstorming later but I think that’s a good start. Lots to think about over the next 5 weeks!</p>
+<p>April 23rd, 2024. Can we start the countdown to Gemini szn?</p>
+<p>It’s 6 AM here at the CJSW radio studio. We’re broadcasting some Tom Skinner this morning. A brand new 20 minute live track from his forthcoming record, Voices of Bishara Live at “Mu”.</p>
+<p>I’ve wanted to do a little data/radio crossover for a bit so that’s what I’ve focused on today. I have my full 4 year historical tracklist saved in a Google Sheet so why not see if I can read that into Quarto and play around with the data.</p>
+<p><code>googlesheets4</code> appears to be the Posit built R interface to Google Sheets so I’m going to give that a try. Fun fact - the 4 in <code>googlesheets4</code> references the version of the Sheets API. It’s not because Jennifer Bryan (the developer of <code>googlesheets4</code>) liked the number 4. In my opinion, that would have been a good enough reason :)</p>
+<p>Since my radio tracklist is saved in a private Google Sheet, authentication will be required. Looks like <code>googledrive</code> is needed to sort that out.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># library(googledrive)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># library(googlesheets4)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># drive_auth()</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># gs4_auth(token = drive_token())</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Okay authentication was a lot easier than I thought it would be. Two functions: <code>drive_auth()</code> and <code>gs4_auth()</code> is all it took, along with some browser clicks that lets the API access my Google Drive. We should be in business now.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># tracklist &lt;- read_sheet(</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#   "https://docs.google.com/spreadsheets/d/1L_aDq6GCrTqJQqjgYCsWrv5l3QYM2z09rrs-11KnhvM/edit#gid=0",</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#   "Tracklist",</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#   skip = 1</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># )</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
 

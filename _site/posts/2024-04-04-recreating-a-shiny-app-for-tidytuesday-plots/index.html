@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.538">
+<meta name="generator" content="quarto-1.4.451">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -63,7 +63,6 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -123,6 +122,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#introduciton" id="toc-introduciton" class="nav-link active" data-scroll-target="#introduciton">Introduciton</a></li>
   <li><a href="#tidy-directory" id="toc-tidy-directory" class="nav-link" data-scroll-target="#tidy-directory">Tidy directory</a></li>
   <li><a href="#extract-directory-info" id="toc-extract-directory-info" class="nav-link" data-scroll-target="#extract-directory-info">Extract directory info</a></li>
+  <li><a href="#github-actions" id="toc-github-actions" class="nav-link" data-scroll-target="#github-actions">Github actions</a></li>
+  <li><a href="#shiny" id="toc-shiny" class="nav-link" data-scroll-target="#shiny">Shiny</a></li>
   </ul>
 </nav>
     </div>
@@ -187,6 +188,19 @@ ul.task-list li input[type="checkbox"] {
 <li><code>attachment</code>: this library was leveraged to find the packages used for each Tidy Tuesday script. Had not seen this before. Pretty cool.</li>
 <li><code>tidyr::complete()</code>:</li>
 </ul>
+<p>I assume this little tibble is going to be the key source data for this app.</p>
+</section>
+<section id="github-actions" class="level1">
+<h1>Github actions</h1>
+<p>Nicola updates this tibble after every Tidy Tuesday contribution via a GitHub action. I’m a little hesitant to take this approach because this requires me to be a little more thoughtful about what I push to my main branch. Perhaps I should get in the habit of making feature branches for each Tidy Tuesday week and only pushing to main once a final product is ready. Regardless, I might as well set this up as a learning exercise.</p>
+<p>The action itself is pretty straightforward but one thing I hadn’t seen was the “Commit files” step at the end. This allows the action to commit all of the created files from the action script. Since we’re updating the app data with this action, we’ll want that file committed during this action run. Pretty handy!</p>
+<p>Another thing I haven’t leveraged in the past is GitHub Secrets. I’ll need to set-up a token to run the action and then save that token to this repository’s Secrets. For now, I’ll save the example .yml from Nicola’s post, with a few minor changes, and move on.</p>
+</section>
+<section id="shiny" class="level1">
+<h1>Shiny</h1>
+<p>It’s been a hot minute since I’ve played around with Shiny so this step was pretty foreign to me. I recall all the basic elements of setting up an app (the ui and the server), but it took some time to get used to the different layouts, panels, outputs and the reactive elements.</p>
+<p>I decided to differ slightly from Nicola’s app by ignoring the radio buttons and just sticking to a drop down list of all the plot titles. This makes the app code more simple and the actual interface a bit cleaner in my opinion. I like the idea of filtering plots based on packages used but I think it’s more of a nice to have at this point.</p>
+<p>Other than this one difference, the app code is basically the same and I was up and running with a local version pretty quickly.</p>
 
 
 </section>
@@ -320,28 +334,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
+    const typesetMath = (el) => {
+      if (window.MathJax) {
+        // MathJax Typeset
+        window.MathJax.typeset([el]);
+      } else if (window.katex) {
+        // KaTeX Render
+        var mathElements = el.getElementsByClassName("math");
+        var macros = [];
+        for (var i = 0; i < mathElements.length; i++) {
+          var texText = mathElements[i].firstChild;
+          if (mathElements[i].tagName == "SPAN") {
+            window.katex.render(texText.data, mathElements[i], {
+              displayMode: mathElements[i].classList.contains('display'),
+              throwOnError: false,
+              macros: macros,
+              fleqn: false
+            });
+          }
+        }
+      }
+    }
     if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
       if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
+        typesetMath(container);
         return container.innerHTML
       } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
+        typesetMath(note);
         return note.innerHTML;
       }
     } else {
@@ -350,9 +374,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
+      typesetMath(note);
       return note.innerHTML;
     }
   }
