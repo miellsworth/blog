@@ -1,0 +1,58 @@
+---
+title: "5 Weeks - Day 12"
+description: |
+  Tune up day
+author: Michael Ellsworth
+date: 2024-05-01
+---
+
+May 1st, 2024. Today is tune up day. The day EVERYONE (me) has been waiting for. Easily one of the best perks about working at Suncor is FREE bicycle parking and FREE annual tune ups. It's supposed to snow again today but that will not dissuade me from getting my bike all fixed up for the summer season.
+
+In honour of tune up day, why not explore some City of Calgary bicycle data. The City has a plethora of [public data](https://data.calgary.ca/) available for perusal and bicycle data is no different. A quick search for "bicycle" returns a number of different datasets but the one I'm going to play around with is [Bike Traffic Count](https://data.calgary.ca/Transportation-Transit/Bike-Traffic-Count/pubj-un4t).
+
+```{r}
+#| warnings: false
+#| error: false
+library(readr)
+library(dplyr)
+library(janitor)
+library(lubridate)
+library(tidyr)
+
+df <- read_csv("https://data.calgary.ca/api/views/pede-tz7g/rows.csv?date=20240501&accessType=DOWNLOAD") %>% janitor::clean_names()
+```
+
+Looks we've got roughly four years of data to work with. A pretty hefty size as well.
+
+```{r}
+paste0("# rows: ", dim(df)[1], ", # columns: ", dim(df)[2])
+paste0("Date range: ", min(df$date), " - ", max(df$date))
+pryr::object_size(df)
+```
+
+Apparently we also have some pedestrian data hiding in here as well. Let's take that out for now.
+
+```{r}
+df %>% count(user_type)
+df_bikes <- df %>%
+  filter(user_type == "Bikes")
+```
+
+The dataframe is structured in a semi-wide format with a number of columns representing the time when the count was made. I'd rather have a single datetime column so we're going to try and `pivot_longer()` this bad boy.
+
+```{r}
+df_bikes_long <- df_bikes %>%
+  pivot_longer(
+    cols = c(x0000:x2345), 
+    names_to = "time", 
+    values_to = "count"
+    ) %>%
+  mutate(date_time = ymd_hm(paste0(date, time)))
+```
+
+This balloons the size of the dataset but it's tidy. And tidy is best.
+
+```{r}
+paste0("# rows: ", dim(df_bikes_long)[1], ", # columns: ", dim(df_bikes_long)[2])
+pryr::object_size(df_bikes_long)
+```
