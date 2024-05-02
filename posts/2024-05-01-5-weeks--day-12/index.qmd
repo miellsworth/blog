@@ -56,3 +56,46 @@ This balloons the size of the dataset but it's tidy. And tidy is best.
 paste0("# rows: ", dim(df_bikes_long)[1], ", # columns: ", dim(df_bikes_long)[2])
 pryr::object_size(df_bikes_long)
 ```
+
+Since I have no use for the fifteen minute intervals in this dataset, I'm going to summarise the bike counts into daily counts by each monitoring location. This takes the dataset down to a much more reasonable size.
+
+```{r}
+df_daily_count <- df_bikes_long %>%
+  mutate(count = replace_na(count, 0)) %>%
+  group_by(date, monitoring_location) %>%
+  summarise(daily_total = sum(count)) %>%
+  ungroup()
+
+paste0("# rows: ", dim(df_daily_count)[1], ", # columns: ", dim(df_daily_count)[2])
+pryr::object_size(df_daily_count)
+```
+
+Alright, let's take a look at a few interesting monitoring locations.
+
+```{r}
+library(ggplot2)
+interesting_locations <- c(
+  "Bow River Pathway", 
+  "10 Street North of 5 Ave NW",
+  "Memorial Drive at Prince's Island",
+  "Memorial Drive at 19 St NW"
+  )
+
+df_daily_count %>%
+  filter(monitoring_location %in% interesting_locations) %>%
+  ggplot(aes(x = date, y = daily_total, col = monitoring_location)) +
+  geom_point() +
+  theme_classic() +
+  labs(
+    colour = NULL,
+    x = "",
+    y = "Daily Bike Count"
+  ) +
+  theme(
+    legend.position = "bottom"
+  )
+```
+
+Pretty clear seasonality in this data! Must be the harsh winters or something. Also interesting to see a noticeable drop off in cycling after 2020, likely because folks aren't commuting as much. It might be interesting to look into the weekend data only to see if the same drop-off is observed. That would help confirm that theory, but I think that's it for me today.
+
+PS - tune up day was NOT a success. Tune up guy was no longer accepting bikes by the time I got there. He basically laughed in my face! Apparently tune up day is popular.
