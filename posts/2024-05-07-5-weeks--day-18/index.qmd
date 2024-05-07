@@ -1,0 +1,11 @@
+---
+title: "5 Weeks - Day 18"
+description: |
+  More Tidy Tuesday!
+author: Michael Ellsworth
+date: 2024-05-07
+---
+
+I came across a [really well done Tidy Tuesday submission](https://github.com/poncest/tidytuesday/tree/main/2024/Week_19) yesterday courtesy of Steven Ponce. One thing I love to do when I come across great viz is dive into the source code and check out all the clever ways they managed to make it happen. This example is no different.
+
+For today's submission, I'm going to create my own Tidy Tuesday submission while incorporating a couple of learnings from Steven's submission.
