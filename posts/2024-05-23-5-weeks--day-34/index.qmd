@@ -1,7 +1,29 @@
 ---
 title: "5 Weeks - Day 34"
 description: |
-  TBD
+  marquee
 author: Michael Ellsworth
 date: 2024-05-23
 ---
+
+Today's post explores an R package `marquee`, developed to parse markdown for R graphics. My first crack at the demo in the [following blog post](marquee 0.1.0 (tidyverse.org) was futile due to the inherent limitations in the default graphics device in Windows (explained in the post under the [limitations section](marquee 0.1.0 (tidyverse.org)), so I turned to my MacBook to run through a few of the examples provided.
+
+```{r}
+library(marquee)
+library(ggplot2)
+md_text <- "# Intro"
+
+ggplot(mtcars) + 
+  geom_point(aes(x = mpg, y = disp)) + 
+  ggtitle(md_text) + 
+  theme(plot.title = element_marquee(size = 8, width = unit(16, "cm")))
+```
+
+```{r}
+library(ggplot2)
+# Add styling around the first word
+red_bold_names <- sub("(\\w+)", "{.red **\\1**}", rownames(mtcars))
+
+ggplot(mtcars) + 
+  geom_marquee(aes(x = mpg, y = disp, label = red_bold_names))
+```
