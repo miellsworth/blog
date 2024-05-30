@@ -20,6 +20,7 @@ ui <- bslib::page_sidebar(
       'Select location', # Input label
       choices = locations
     ),
+    actionButton('button', 'Reload Plot')
   ),
   card(
     # Bike Count Plot
@@ -30,21 +31,24 @@ ui <- bslib::page_sidebar(
 
 server <- function(input, output, session) {
   output$bike_count_plot <- renderPlot({
+    req(input$button >= 1)
     df %>%
       filter(monitoring_location == input$location_dropdown) %>%
       ggplot(aes(x = date, y = daily_total)) +
       geom_point() +
+      scale_y_continuous(expand = c(0,0)) +
       theme_classic() +
       labs(
         colour = NULL,
         x = "",
-        y = "Daily Bike Count"
+        y = "Daily Bike Count",
+        title = input$location_dropdown
       ) +
       theme(
         legend.position = "bottom",
         text = element_text(size = 20)
       )
-  })
+  }) |> bindEvent(input$button)
 }
 
 shinyApp(ui, server)

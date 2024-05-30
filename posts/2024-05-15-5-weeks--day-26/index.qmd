@@ -1,7 +1,91 @@
 ---
 title: "5 Weeks - Day 26"
 description: |
-  TBD
+  3 minute Wednesdays
 author: Michael Ellsworth
 date: 2024-05-15
 ---
+
+Albert Rapp publishes a weekly post called 3 Minute Wednesdays (3MW) that I've been following for quite some time but haven't really dived into the material in too much detail. The posts are quick learning opportunities that I think I should take more advantage of so today, I'll be walking through the example from his post on [event listeners for Shiny](https://3mw.albert-rapp.de/).
+
+For this exercise, I'll use the Shiny app I developed to visualize daily bike counts in Calgary. At the moment, the application renders a new plot every time a new location is selected from a dropdown menu. The lesson from this post is that we can control when the plot renders or in other words, we can control "reactivity".
+
+The post presents a number of ways to control reactivity but what I landed on was using `bindEvent()` in the server along with an `actionButton()` in the UI.
+
+The gist of the original app looked like this:
+
+```         
+ui <- bslib::page_sidebar(
+  sidebar = sidebar(
+    # Dropdown menu
+    selectInput(
+      'location_dropdown',
+      'Select location',
+      choices = locations
+    )
+  ),
+  card(
+    plotOutput('bike_count_plot')
+  )
+)
+
+server <- function(input, output, session) {
+  output$bike_count_plot <- renderPlot({
+    df %>%
+      filter(monitoring_location == input$location_dropdown) %>%
+      ggplot(aes(x = date, y = daily_total)) +
+      geom_point()
+}
+
+shinyApp(ui, server)
+```
+
+In order to control reactivity with an `actionButton()` and `bindEvent()`, I added what boils down to three lines of code:
+
+-   Add `actionButton()` in the sidebar in the ui object
+
+```         
+actionButton('button', 'Reload Plot')  # New action button
+```
+
+-   Add `req()` in `renderPlot()` to require a click on the button to initiate reactivity
+
+```         
+req(input$button >= 1)
+```
+
+-   Pass `renderPlot()` into `bindEvent()` with `input$button`
+
+```         
+renderPlot({}) |> bindEvent(input$button)
+```
+
+Here's what the app looks like now:
+
+```         
+ui <- bslib::page_sidebar(
+  sidebar = sidebar(
+    # Dropdown menu
+    selectInput(
+      'location_dropdown',
+      'Select location',
+      choices = locations
+    ),
+    actionButton('button', 'Reload Plot')  # New action button
+  ),
+  card(
+    plotOutput('bike_count_plot')
+  )
+)
+
+server <- function(input, output, session) {
+  output$bike_count_plot <- renderPlot({
+  req(input$button >= 1)  # New function to specify reactivity conditions
+    df %>%
+      filter(monitoring_location == input$location_dropdown) %>%
+      ggplot(aes(x = date, y = daily_total)) +
+      geom_point()
+  }) |> bindEvent(input$button)  # Isolate inputs with bindEvent()
+}
+shinyApp(ui, server)
+```
