@@ -1,0 +1,17 @@
+{
+  "hash": "17ad290543b0bd957008c4f367048013",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"5 Weeks - Day 10\"\ndescription: |\n  Double Digits!\nauthor: Michael Ellsworth\ndate: 2024-04-29\n---\n\n\nDay 10 today. One more Tidy Tuesday down. Mr. Trash Wheel collects a lot of trash!\n\nImagine hand counting cigarette butts.\n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

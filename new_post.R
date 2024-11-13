@@ -7,6 +7,7 @@ library(yesno)   # easy binary decision prompts
 new_post <- function(
     title, 
     file = "index.qmd",
+    directory = "",
     description = "",
     author = "Michael Ellsworth", 
     date = Sys.Date(), 
@@ -28,10 +29,10 @@ new_post <- function(
   # generate the slug as draft, prefix with _ which prevents
   # quarto from rendering/recognizing the folder
   if(draft){
-    slug <- glue::glue("posts/_{date}-{title_kebab}")
+    slug <- glue::glue("{directory}/_{date}-{title_kebab}")
     cli::cli_alert_info("Appending a '_' to folder name to avoid render while a draft, remove '_' when finished.")
   } else {
-    slug <- glue::glue("posts/{date}-{title_kebab}")
+    slug <- glue::glue("{directory}/{date}-{title_kebab}")
   }
   
   # create and alert about directory

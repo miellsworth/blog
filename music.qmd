@@ -1,0 +1,15 @@
+---
+title: "Beat Salad Weekly"
+subtitle: A weekly update on the greatest Tuesday morning radio program in Calgary, AB.
+listing:
+  contents: music
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description, categories]
+  # feed: true  # Placeholder for future RSS feed, need site-url first
+page-layout: full
+title-block-banner: false
+---

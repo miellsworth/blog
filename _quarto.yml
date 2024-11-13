@@ -7,16 +7,18 @@ website:
   description: "A blog, by Michael"
   navbar:
     right:
-      - text: Blog
-        href: blog.qmd
-      - text: Archive
-        href: archive.qmd
+      - text: Data
+        href: data.qmd
+      - text: Music
+        href: music.qmd
       - icon: github
         href: https://github.com/miellsworth
+      - text: "{{< iconify simple-icons bluesky >}}"
+        href: https://bsky.app/profile/mellsworth.bsky.social
+      - icon: mic
+        href: https://cjsw.com/program/beat-salad
+      
 format:
   html:
     theme: cosmo
     css: styles.css
-
-editor: visual
-

@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Michael Ellsworth"
 image: profile.jpg
 about:
   template: jolla
@@ -7,6 +7,14 @@ about:
     - icon: github
       text: Github
       href: https://github.com/miellsworth
+    - icon: mic
+      text: Radio
+      href: https://cjsw.com/program/beat-salad
+    - icon: broadcast-pin
+      text: Podcast
+      href: https://podcasts.apple.com/ca/podcast/beat-salad/id1497202150
 ---
 
-This is a personal blog by Michael. A place to share various data related projects and general thoughts about data.
+This is a personal blog. A notepad of sorts. On [data](data.qmd) and [music](music.qmd).
+
+[Email Me](mailto:michael.ellsworth7@gmail.com)

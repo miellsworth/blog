@@ -1,0 +1,15 @@
+---
+title: "Data blog"
+subtitle: A spot to share data related projects and thoughts.
+listing:
+  contents: data
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description, categories]
+  # feed: true  # Placeholder for future RSS feed, need site-url first
+page-layout: full
+title-block-banner: false
+---
