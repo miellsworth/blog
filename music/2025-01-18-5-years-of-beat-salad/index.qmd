@@ -1,0 +1,60 @@
+---
+title: "5 years of Beat Salad"
+description: |
+  TBD
+author: Michael Ellsworth
+date: 2025-01-18
+---
+
+```{r}
+library(googledrive)
+library(googlesheets4)
+library(dplyr)
+library(janitor)
+library(lubridate)
+```
+
+
+```{r Authentication for Google Drive}
+drive_auth()
+gs4_auth(token = drive_token())
+```
+
+```{r Read tracklist data from Google Drive}
+tracklist <- read_sheet(
+  "https://docs.google.com/spreadsheets/d/1L_aDq6GCrTqJQqjgYCsWrv5l3QYM2z09rrs-11KnhvM/edit#gid=0",
+  "Tracklist",
+  skip = 1,
+  col_types = "c"
+) |> 
+  clean_names() |>
+  mutate(
+    date = mdy(date),
+    year = as.numeric(year),
+    duration = str_remove(duration, ":00$")
+  ) |>
+  mutate(duration = ms(duration))
+```
+
+```{r}
+most_played_tracks <- tracklist |> 
+  filter(!is.na(track)) |> 
+  filter(artist != "Bird Peterson") |>
+  count(track, sort = TRUE) |> 
+  head(103) |>
+  pull(track)
+
+tracklist |> 
+  filter(!is.na(track)) |> 
+  filter(artist != "Bird Peterson") |>
+  count(artist, sort = TRUE) |> 
+  head(103)
+```
+
+```{r}
+df_most_played_tracks <- tracklist |> 
+  filter(track %in% most_played_tracks) |>
+  mutate(order = factor(track, levels = most_played_tracks)) |>
+  arrange(order)
+```
+
