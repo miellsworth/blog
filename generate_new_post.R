@@ -1,7 +1,7 @@
 source("new_post.R")
 
 new_post(
-  title = "Thai Chicken Meatball Soup",  # Title of the blog post
+  title = "Grilled Shrimp With Chile and Garlic",  # Title of the blog post
   directory = "cooking",  # Directory to save the blog post
-  description = "One pot soup"  # Description of the blog post
+  description = "BBQ shrimp"  # Description of the blog post
   )
