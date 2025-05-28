@@ -12,11 +12,12 @@ library(googlesheets4)
 library(dplyr)
 library(janitor)
 library(lubridate)
+library(stringr)
 ```
 
 
 ```{r Authentication for Google Drive}
-drive_auth()
+drive_auth(email = "michael.ellsworth7@gmail.com")
 gs4_auth(token = drive_token())
 ```
 

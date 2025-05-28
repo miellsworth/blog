@@ -11,6 +11,8 @@ website:
         href: data.qmd
       - text: Music
         href: music.qmd
+      - text: Cooking
+        href: cooking.qmd
       - icon: github
         href: https://github.com/miellsworth
       - text: "{{< iconify simple-icons bluesky >}}"
