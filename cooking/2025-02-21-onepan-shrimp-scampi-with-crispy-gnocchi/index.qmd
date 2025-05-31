@@ -4,35 +4,50 @@ description: |
   Shrimp Scampi
 author: Michael Ellsworth
 date: 2025-02-21
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 # Ingredients
-3tablespoons extra-virgin olive oil, plus more for serving
-1pound gnocchi (fresh, frozen or shelf-stable)
-2tablespoons unsalted butter
-4garlic cloves, finely grated or minced
-½cup dry white wine (or clam juice, or broth)
-Kosher salt (such as Diamond Crystal) and freshly ground black pepper
-⅛teaspoon red-pepper flakes, plus more for serving
-1pound large or extra-large shrimp, shelled (deveined, if you like)
-1lemon
-½cup chopped parsley
+
+ - 3 tbsp EVOO, plus more for serving
+ - 500g gnocchi
+ - 2 tbsp unsalted butter
+ - 4 garlic cloves, minced
+ - 1/2 cup dry white wine (or broth)
+ - Salt
+ - Pepper
+ - Pinch red-pepper flakes
+ - 500g shrimp
+ - Lemon juice
+ - Parsley, chopped
 
 # Instructions
+
 ## 1
-In a large, preferably nonstick skillet, heat 2 tablespoons oil over medium-high. Add gnocchi to the pan, breaking up any that are stuck together. Cook for 10 to 12 minutes, tossing every 1 to 2 minutes, so they get golden and crispy all over. Transfer to a bowl or plate.
+ - Take shells off the shrimp
+ - Heat 2 tbsp oil, medium heat, nonstick pan
+ - Add gnocchi and break up
+ - Cook 10-12 minutes, mixing up every 2 minutes, until crispy
+ - Transfer gnocchi to a bowl
 
 ## 2
-In the same skillet over medium-high, add remaining 1 tablespoon oil and all of the butter, letting it melt for a few seconds. Add garlic and sauté until fragrant, 30 seconds to 1 minute. Add wine, ½ teaspoon salt, ¼ teaspoon black pepper and all of the red-pepper flakes. Bring to a simmer, and let the wine reduce by half, about 2 minutes.
+ - Add 1 tbsp oil, 2 tbsp butter to pan, medium heat
+ - Add garlic, cook 30-60 seconds
+ - Add broth/wine, salt, pepper, red pepper flakes
+ - Simmer, let broth/wine reduce by half (2 minutes)
 
 ## 3
-Add shrimp and sauté until they just start to turn pink, 2 to 3 minutes, depending on their size.
+ - Add shrimp until pink (2-3 minutes)
 
 ## 4
-Return gnocchi to the pan and add another ¼ teaspoon salt. Using a Microplane or other fine grater, grate the zest from the lemon into the pan. Add parsley, tossing well. If your pan looks dry, add a splash of water, 1 tablespoon at a time, tossing to combine, then remove pan from the heat.
+ - Return gnocchi to pan w/ salt
+ - Add lemon zest (if you have it)
+ - Add parsley
+ - Add water if pan is dry (1 tbsp)
+ - Take off heat
 
 ## 5
-Cut the naked lemon in two and squeeze in the juice from one half, gently tossing to combine. Taste and add more salt if you like. Cut the remaining lemon half into wedges for serving.
-
-## 6
-Top with more olive oil and more red-pepper flakes, if you’d like, and serve with lemon wedges on the side.
+ - Squeeze lemon juice on the gnocchi mix (as much as you'd like)
+ - Add more salt/pepper/red pepper flakes if needed
