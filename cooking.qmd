@@ -1,14 +1,16 @@
 ---
 title: "Recipes"
-subtitle: Recipes we like
 listing:
   contents: cooking
-  sort: "date desc"
-  type: default
+  sort: 
+    - "categories asc"
+    - "title asc"
+  type: table
   categories: true
   sort-ui: false
   filter-ui: false
-  fields: [date, title, description, categories]
+  fields: [title, categories]
+  page-size: 100
   # feed: true  # Placeholder for future RSS feed, need site-url first
 page-layout: full
 title-block-banner: false

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.32">
+<meta name="generator" content="quarto-1.4.538">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Recipes – Michael’s Blog</title>
+<title>Michael’s Website - Recipes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,10 +37,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c5108ee7687c63d24e8ded6cf2d10456.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -79,10 +81,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 25,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      valueNames: ['listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -100,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -140,11 +141,11 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Michael’s Blog</span>
+    <span class="navbar-title">Michael’s Website</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -177,7 +178,8 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -188,14 +190,13 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(29)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(32)</span></div><div class="category" data-category="Beef">Beef <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Chicken">Chicken <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Favourites">Favourites <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Fish">Fish <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Gnocchi">Gnocchi <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Noodles">Noodles <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pasta">Pasta <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Pork">Pork <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Rice">Rice <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Salad">Salad <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Sausage">Sausage <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Snacks">Snacks <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Snakcs">Snakcs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Soup">Soup <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Tofu">Tofu <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Veggie">Veggie <span class="quarto-category-count">(6)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Recipes</h1>
-<p class="subtitle lead">Recipes we like</p>
 </div>
 
 
@@ -216,592 +217,280 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1744839628225" data-listing-reading-time-sort="2" data-listing-word-count-sort="359">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-17-thai-chicken-meatball-soup/index.html" class="no-external">Thai Chicken Meatball Soup</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-17-thai-chicken-meatball-soup/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-17-thai-chicken-meatball-soup/index.html" class="no-external">One pot soup </a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./cooking/2025-02-17-thai-chicken-meatball-soup/index.html" class="no-external"></a></p><a href="./cooking/2025-02-17-thai-chicken-meatball-soup/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1740380400000" data-listing-file-modified-sort="1740426605993" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="521">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-24-braised-pork-chops-shanghaistyle/index.html" class="no-external">Braised Pork Chops, Shanghai-style</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-24-braised-pork-chops-shanghaistyle/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-24-braised-pork-chops-shanghaistyle/index.html" class="no-external">Braised Pork Chops, Shanghai-style </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-24-braised-pork-chops-shanghaistyle/index.html" class="no-external">
-<div class="listing-date">
-Feb 24, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1740380400000" data-listing-file-modified-sort="1740426385800" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="296">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-24-buffalo-chickpea-wraps/index.html" class="no-external">Buffalo Chickpea Wraps</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-24-buffalo-chickpea-wraps/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-24-buffalo-chickpea-wraps/index.html" class="no-external">Buffalo Chickpea Wraps </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-24-buffalo-chickpea-wraps/index.html" class="no-external">
-<div class="listing-date">
-Feb 24, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1740380400000" data-listing-file-modified-sort="1740426123208" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="236">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-24-oneskillet-orzo-with-tomatoes-and-eggs/index.html" class="no-external">One-Skillet Orzo With Tomatoes and Eggs</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-24-oneskillet-orzo-with-tomatoes-and-eggs/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-24-oneskillet-orzo-with-tomatoes-and-eggs/index.html" class="no-external">One-Skillet Orzo With Tomatoes and Eggs </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-24-oneskillet-orzo-with-tomatoes-and-eggs/index.html" class="no-external">
-<div class="listing-date">
-Feb 24, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1740380400000" data-listing-file-modified-sort="1740426756799" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-24-sheetpan-gnocchi-w-roasted-tomatoes/index.html" class="no-external">Sheet-pan gnocchi w/ roasted tomatoes</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-24-sheetpan-gnocchi-w-roasted-tomatoes/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-24-sheetpan-gnocchi-w-roasted-tomatoes/index.html" class="no-external">1 pound gnocchi 1 pound cherry tomatoes 3 cups chopped kale 1/4 cup extra-virgin olive oil 1 teaspoon kosher salt 1/2 teaspoon Greek or Italian seasoning 1/4 teaspoon black…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-24-sheetpan-gnocchi-w-roasted-tomatoes/index.html" class="no-external">
-<div class="listing-date">
-Feb 24, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1740380400000" data-listing-file-modified-sort="1740426284116" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="381">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-24-smoky-sweet-potato-and-chickpea-sheet-pan-dinner/index.html" class="no-external">Smoky Sweet Potato and Chickpea Sheet Pan Dinner</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-24-smoky-sweet-potato-and-chickpea-sheet-pan-dinner/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-24-smoky-sweet-potato-and-chickpea-sheet-pan-dinner/index.html" class="no-external">Smoky Sweet Potato and Chickpea Sheet Pan Dinner </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-24-smoky-sweet-potato-and-chickpea-sheet-pan-dinner/index.html" class="no-external">
-<div class="listing-date">
-Feb 24, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740149102719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="199">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-baked-chicken-thighs/index.html" class="no-external">Baked Chicken Thighs</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-baked-chicken-thighs/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-baked-chicken-thighs/index.html" class="no-external">Baked Chicken Thighs </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-baked-chicken-thighs/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740150197065" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="226">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-blackened-chicken-breasts/index.html" class="no-external">Blackened Chicken Breasts</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-blackened-chicken-breasts/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-blackened-chicken-breasts/index.html" class="no-external">Blackened Chicken Breasts </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-blackened-chicken-breasts/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740148979760" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="376">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-cauliflower-shawarma-with-spicy-tahini/index.html" class="no-external">Cauliflower Shawarma With Spicy Tahini</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-cauliflower-shawarma-with-spicy-tahini/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-cauliflower-shawarma-with-spicy-tahini/index.html" class="no-external">Veggie Shawarma </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-cauliflower-shawarma-with-spicy-tahini/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740149489436" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-chicken-noodle-soup/index.html" class="no-external">Chicken Noodle Soup</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-chicken-noodle-soup/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-chicken-noodle-soup/index.html" class="no-external">Chicken noodle </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-chicken-noodle-soup/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740150294947" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="326">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-chimichurri-chicken/index.html" class="no-external">Chimichurri Chicken</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-chimichurri-chicken/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-chimichurri-chicken/index.html" class="no-external">Chimichurri Chicken </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-chimichurri-chicken/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740167437208" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="230">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-chimichurri-meatballs/index.html" class="no-external">Chimichurri Meatballs</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-chimichurri-meatballs/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-chimichurri-meatballs/index.html" class="no-external">Chimichurri Meatballs </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-chimichurri-meatballs/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="12" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740167483610" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="301">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-creamy-tortellini-soup/index.html" class="no-external">Creamy Tortellini Soup</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-creamy-tortellini-soup/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-creamy-tortellini-soup/index.html" class="no-external">Creamy Tortellini </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-creamy-tortellini-soup/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="13" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740149215917" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="238">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-crisp-gnocchi-with-brussels-sprouts-and-brown-butter/index.html" class="no-external">Crisp Gnocchi With Brussels Sprouts and Brown Butter</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-crisp-gnocchi-with-brussels-sprouts-and-brown-butter/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-crisp-gnocchi-with-brussels-sprouts-and-brown-butter/index.html" class="no-external">Crisp Gnocchi </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-crisp-gnocchi-with-brussels-sprouts-and-brown-butter/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="14" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740149339183" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="311">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-crispy-fried-rice-with-bacon-and-cabbage/index.html" class="no-external">Crispy Fried Rice With Bacon and Cabbage</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-crispy-fried-rice-with-bacon-and-cabbage/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-crispy-fried-rice-with-bacon-and-cabbage/index.html" class="no-external">Fried rice </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-crispy-fried-rice-with-bacon-and-cabbage/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="15" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740149775755" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="155">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-crispy-gnocchi-with-sausage-and-broccoli/index.html" class="no-external">Crispy Gnocchi With Sausage and Broccoli</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-crispy-gnocchi-with-sausage-and-broccoli/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-crispy-gnocchi-with-sausage-and-broccoli/index.html" class="no-external">Crispy gnocchi with sausage </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-crispy-gnocchi-with-sausage-and-broccoli/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="16" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740149674556" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="386">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-crispy-tofu-and-broccoli-with-gingergarlic-teriyaki-sauce/index.html" class="no-external">Crispy Tofu and Broccoli With Ginger-Garlic Teriyaki Sauce</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-crispy-tofu-and-broccoli-with-gingergarlic-teriyaki-sauce/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-crispy-tofu-and-broccoli-with-gingergarlic-teriyaki-sauce/index.html" class="no-external">Crispy tofu </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-crispy-tofu-and-broccoli-with-gingergarlic-teriyaki-sauce/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="17" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740149555150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-dijonnaise-grilled-chicken-breasts/index.html" class="no-external">Dijonnaise Grilled Chicken Breasts</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-dijonnaise-grilled-chicken-breasts/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-dijonnaise-grilled-chicken-breasts/index.html" class="no-external">Grilled chicken </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-dijonnaise-grilled-chicken-breasts/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="18" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740149158592" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="298">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-onepan-shrimp-scampi-with-crispy-gnocchi/index.html" class="no-external">One-Pan Shrimp Scampi With Crispy Gnocchi</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-onepan-shrimp-scampi-with-crispy-gnocchi/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-onepan-shrimp-scampi-with-crispy-gnocchi/index.html" class="no-external">Shrimp Scampi </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-onepan-shrimp-scampi-with-crispy-gnocchi/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="19" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740149294560" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="186">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-pasta-salad/index.html" class="no-external">Pasta Salad</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-pasta-salad/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-pasta-salad/index.html" class="no-external">Pasta Salad </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-pasta-salad/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="20" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740167135057" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="239">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-roasted-brussels-sprouts-caesar-with-tahini/index.html" class="no-external">Roasted Brussels Sprouts Caesar With Tahini</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-roasted-brussels-sprouts-caesar-with-tahini/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-roasted-brussels-sprouts-caesar-with-tahini/index.html" class="no-external">Caesar Sprouts </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-roasted-brussels-sprouts-caesar-with-tahini/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="21" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740167233909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="380">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-shawarmaspiced-grilled-chicken-with-tahiniyogurt-sauce/index.html" class="no-external">Shawarma-Spiced Grilled Chicken With Tahini-Yogurt Sauce</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-shawarmaspiced-grilled-chicken-with-tahiniyogurt-sauce/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-shawarmaspiced-grilled-chicken-with-tahiniyogurt-sauce/index.html" class="no-external">Shawarma Chicken </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-shawarmaspiced-grilled-chicken-with-tahiniyogurt-sauce/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="22" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740167324057" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="226">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-shrimp-scampi-with-orzo/index.html" class="no-external">Shrimp Scampi With Orzo</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-shrimp-scampi-with-orzo/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-shrimp-scampi-with-orzo/index.html" class="no-external">Shrimp Scampi With Orzo </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-shrimp-scampi-with-orzo/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="23" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740149445356" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="176">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-silken-tofu-with-spicy-soy-dressing/index.html" class="no-external">Silken Tofu With Spicy Soy Dressing</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-silken-tofu-with-spicy-soy-dressing/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-silken-tofu-with-spicy-soy-dressing/index.html" class="no-external">Silken tofu </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-silken-tofu-with-spicy-soy-dressing/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="24" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740167384651" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="322">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-soy-sauce-noodles-with-cabbage-and-fried-eggs/index.html" class="no-external">Soy Sauce Noodles With Cabbage and Fried Eggs</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-soy-sauce-noodles-with-cabbage-and-fried-eggs/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-soy-sauce-noodles-with-cabbage-and-fried-eggs/index.html" class="no-external">Soy Sauce Noodles </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-soy-sauce-noodles-with-cabbage-and-fried-eggs/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="25" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740149043931" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="237">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-spaghetti-carbonara/index.html" class="no-external">Spaghetti Carbonara</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-spaghetti-carbonara/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-spaghetti-carbonara/index.html" class="no-external">Spaghetti Carbonara </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-spaghetti-carbonara/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="26" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740149395863" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-spiced-roasted-cauliflower-with-feta-and-garlic/index.html" class="no-external">Spiced Roasted Cauliflower With Feta and Garlic</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-spiced-roasted-cauliflower-with-feta-and-garlic/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-spiced-roasted-cauliflower-with-feta-and-garlic/index.html" class="no-external">Roasted cauliflower </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-spiced-roasted-cauliflower-with-feta-and-garlic/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="27" data-listing-date-sort="1740121200000" data-listing-file-modified-sort="1740150085495" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="360">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-21-sticky-miso-salmon-bowl/index.html" class="no-external">Sticky Miso Salmon Bowl</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-21-sticky-miso-salmon-bowl/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-21-sticky-miso-salmon-bowl/index.html" class="no-external">Sticky Miso Salmon Bowl </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-21-sticky-miso-salmon-bowl/index.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="28" data-listing-date-sort="1739775600000" data-listing-file-modified-sort="1744831285346" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="95">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./cooking/2025-02-17-grilled-shrimp-with-chile-and-garlic/index.html" class="no-external">Grilled Shrimp With Chile and Garlic</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./cooking/2025-02-17-grilled-shrimp-with-chile-and-garlic/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./cooking/2025-02-17-grilled-shrimp-with-chile-and-garlic/index.html" class="no-external">BBQ shrimp </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./cooking/2025-02-17-grilled-shrimp-with-chile-and-garlic/index.html" class="no-external">
-<div class="listing-date">
-Feb 17, 2025
-</div>
-</a>
-</div>
-</div>
-</div>
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Title
+</th>
+<th>
+Categories
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="Beef" data-listing-file-modified-sort="1748818892780" data-listing-reading-time-sort="2" data-listing-word-count-sort="246" data-listing-title-sort="Chimichurri Meatballs" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-chimichurri-meatballs/index.html" class="title listing-title">Chimichurri Meatballs</a>
+</td>
+<td>
+<span class="listing-categories">Beef</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="Chicken" data-listing-file-modified-sort="1748817838598" data-listing-reading-time-sort="2" data-listing-word-count-sort="209" data-listing-title-sort="Baked Chicken Thighs" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-baked-chicken-thighs/index.html" class="title listing-title">Baked Chicken Thighs</a>
+</td>
+<td>
+<span class="listing-categories">Chicken</span>
+</td>
+</tr>
+<tr data-index="2" data-categories="Chicken" data-listing-file-modified-sort="1748818053665" data-listing-reading-time-sort="2" data-listing-word-count-sort="216" data-listing-title-sort="Blackened Chicken Breasts" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-blackened-chicken-breasts/index.html" class="title listing-title">Blackened Chicken Breasts</a>
+</td>
+<td>
+<span class="listing-categories">Chicken</span>
+</td>
+</tr>
+<tr data-index="3" data-categories="Chicken" data-listing-file-modified-sort="1748818707412" data-listing-reading-time-sort="2" data-listing-word-count-sort="354" data-listing-title-sort="Chimichurri Chicken" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-chimichurri-chicken/index.html" class="title listing-title">Chimichurri Chicken</a>
+</td>
+<td>
+<span class="listing-categories">Chicken</span>
+</td>
+</tr>
+<tr data-index="4" data-categories="Chicken" data-listing-file-modified-sort="1748820138083" data-listing-reading-time-sort="2" data-listing-word-count-sort="208" data-listing-title-sort="Dijonnaise Grilled Chicken Breasts" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-dijonnaise-grilled-chicken-breasts/index.html" class="title listing-title">Dijonnaise Grilled Chicken Breasts</a>
+</td>
+<td>
+<span class="listing-categories">Chicken</span>
+</td>
+</tr>
+<tr data-index="5" data-categories="Chicken" data-listing-file-modified-sort="1748817475034" data-listing-reading-time-sort="2" data-listing-word-count-sort="359" data-listing-title-sort="Thai Chicken Meatball Soup" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-17-thai-chicken-meatball-soup/index.html" class="title listing-title">Thai Chicken Meatball Soup</a>
+</td>
+<td>
+<span class="listing-categories">Chicken</span>
+</td>
+</tr>
+<tr data-index="6" data-categories="Chicken,Favourites" data-listing-file-modified-sort="1748821359440" data-listing-reading-time-sort="3" data-listing-word-count-sort="438" data-listing-title-sort="Shawarma-Spiced Grilled Chicken With Tahini-Yogurt Sauce" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-shawarmaspiced-grilled-chicken-with-tahiniyogurt-sauce/index.html" class="title listing-title">Shawarma-Spiced Grilled Chicken With Tahini-Yogurt Sauce</a>
+</td>
+<td>
+<span class="listing-categories">Chicken, Favourites</span>
+</td>
+</tr>
+<tr data-index="7" data-categories="Chicken,Soup" data-listing-file-modified-sort="1748818684668" data-listing-reading-time-sort="1" data-listing-word-count-sort="185" data-listing-title-sort="Chicken Noodle Soup" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-chicken-noodle-soup/index.html" class="title listing-title">Chicken Noodle Soup</a>
+</td>
+<td>
+<span class="listing-categories">Chicken, Soup</span>
+</td>
+</tr>
+<tr data-index="8" data-categories="Fish" data-listing-file-modified-sort="1748817230174" data-listing-reading-time-sort="1" data-listing-word-count-sort="95" data-listing-title-sort="Grilled Shrimp With Chile and Garlic" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-17-grilled-shrimp-with-chile-and-garlic/index.html" class="title listing-title">Grilled Shrimp With Chile and Garlic</a>
+</td>
+<td>
+<span class="listing-categories">Fish</span>
+</td>
+</tr>
+<tr data-index="9" data-categories="Fish" data-listing-file-modified-sort="1748817454183" data-listing-reading-time-sort="2" data-listing-word-count-sort="231" data-listing-title-sort="Shrimp Scampi With Orzo" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-shrimp-scampi-with-orzo/index.html" class="title listing-title">Shrimp Scampi With Orzo</a>
+</td>
+<td>
+<span class="listing-categories">Fish</span>
+</td>
+</tr>
+<tr data-index="10" data-categories="Fish" data-listing-file-modified-sort="1748822736753" data-listing-reading-time-sort="2" data-listing-word-count-sort="386" data-listing-title-sort="Sticky Miso Salmon Bowl" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-sticky-miso-salmon-bowl/index.html" class="title listing-title">Sticky Miso Salmon Bowl</a>
+</td>
+<td>
+<span class="listing-categories">Fish</span>
+</td>
+</tr>
+<tr data-index="11" data-categories="Fish,Gnocchi" data-listing-file-modified-sort="1748820192293" data-listing-reading-time-sort="1" data-listing-word-count-sort="185" data-listing-title-sort="One-Pan Shrimp Scampi With Crispy Gnocchi" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-onepan-shrimp-scampi-with-crispy-gnocchi/index.html" class="title listing-title">One-Pan Shrimp Scampi With Crispy Gnocchi</a>
+</td>
+<td>
+<span class="listing-categories">Fish, Gnocchi</span>
+</td>
+</tr>
+<tr data-index="12" data-categories="Gnocchi" data-listing-file-modified-sort="1748823192150" data-listing-reading-time-sort="1" data-listing-word-count-sort="122" data-listing-title-sort="Sheet-pan gnocchi w/ roasted tomatoes" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-24-sheetpan-gnocchi-w-roasted-tomatoes/index.html" class="title listing-title">Sheet-pan gnocchi w/ roasted tomatoes</a>
+</td>
+<td>
+<span class="listing-categories">Gnocchi</span>
+</td>
+</tr>
+<tr data-index="13" data-categories="Gnocchi,Sausage" data-listing-file-modified-sort="1748819772458" data-listing-reading-time-sort="1" data-listing-word-count-sort="169" data-listing-title-sort="Crispy Gnocchi With Sausage and Broccoli" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-crispy-gnocchi-with-sausage-and-broccoli/index.html" class="title listing-title">Crispy Gnocchi With Sausage and Broccoli</a>
+</td>
+<td>
+<span class="listing-categories">Gnocchi, Sausage</span>
+</td>
+</tr>
+<tr data-index="14" data-categories="Gnocchi,Veggie" data-listing-file-modified-sort="1748819407486" data-listing-reading-time-sort="2" data-listing-word-count-sort="239" data-listing-title-sort="Crisp Gnocchi With Brussels Sprouts and Brown Butter" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-crisp-gnocchi-with-brussels-sprouts-and-brown-butter/index.html" class="title listing-title">Crisp Gnocchi With Brussels Sprouts and Brown Butter</a>
+</td>
+<td>
+<span class="listing-categories">Gnocchi, Veggie</span>
+</td>
+</tr>
+<tr data-index="15" data-categories="Noodles" data-listing-file-modified-sort="1748822283338" data-listing-reading-time-sort="2" data-listing-word-count-sort="340" data-listing-title-sort="Soy Sauce Noodles With Cabbage and Fried Eggs" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-soy-sauce-noodles-with-cabbage-and-fried-eggs/index.html" class="title listing-title">Soy Sauce Noodles With Cabbage and Fried Eggs</a>
+</td>
+<td>
+<span class="listing-categories">Noodles</span>
+</td>
+</tr>
+<tr data-index="16" data-categories="Pasta" data-listing-file-modified-sort="1748823124460" data-listing-reading-time-sort="2" data-listing-word-count-sort="250" data-listing-title-sort="One-Skillet Orzo With Tomatoes and Eggs" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-24-oneskillet-orzo-with-tomatoes-and-eggs/index.html" class="title listing-title">One-Skillet Orzo With Tomatoes and Eggs</a>
+</td>
+<td>
+<span class="listing-categories">Pasta</span>
+</td>
+</tr>
+<tr data-index="17" data-categories="Pasta,Favourites" data-listing-file-modified-sort="1748822482357" data-listing-reading-time-sort="2" data-listing-word-count-sort="208" data-listing-title-sort="Spaghetti Carbonara" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-spaghetti-carbonara/index.html" class="title listing-title">Spaghetti Carbonara</a>
+</td>
+<td>
+<span class="listing-categories">Pasta, Favourites</span>
+</td>
+</tr>
+<tr data-index="18" data-categories="Pork" data-listing-file-modified-sort="1748822932674" data-listing-reading-time-sort="3" data-listing-word-count-sort="546" data-listing-title-sort="Braised Pork Chops, Shanghai-style" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-24-braised-pork-chops-shanghaistyle/index.html" class="title listing-title">Braised Pork Chops, Shanghai-style</a>
+</td>
+<td>
+<span class="listing-categories">Pork</span>
+</td>
+</tr>
+<tr data-index="19" data-categories="Rice" data-listing-file-modified-sort="1748819621531" data-listing-reading-time-sort="2" data-listing-word-count-sort="322" data-listing-title-sort="Crispy Fried Rice With Bacon and Cabbage" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-crispy-fried-rice-with-bacon-and-cabbage/index.html" class="title listing-title">Crispy Fried Rice With Bacon and Cabbage</a>
+</td>
+<td>
+<span class="listing-categories">Rice</span>
+</td>
+</tr>
+<tr data-index="20" data-categories="Salad,Pasta,Favourites" data-listing-file-modified-sort="1748820426987" data-listing-reading-time-sort="1" data-listing-word-count-sort="195" data-listing-title-sort="Pasta Salad" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-pasta-salad/index.html" class="title listing-title">Pasta Salad</a>
+</td>
+<td>
+<span class="listing-categories">Salad, Pasta, Favourites</span>
+</td>
+</tr>
+<tr data-index="21" data-categories="Snacks" data-listing-file-modified-sort="1748823293455" data-listing-reading-time-sort="1" data-listing-word-count-sort="23" data-listing-title-sort="Simple greek yogurt" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-05-31-simple-greek-yogurt/index.html" class="title listing-title">Simple greek yogurt</a>
+</td>
+<td>
+<span class="listing-categories">Snacks</span>
+</td>
+</tr>
+<tr data-index="22" data-categories="Snacks" data-listing-file-modified-sort="1748823309029" data-listing-reading-time-sort="1" data-listing-word-count-sort="35" data-listing-title-sort="Simple smoothie" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-05-31-simple-smoothie/index.html" class="title listing-title">Simple smoothie</a>
+</td>
+<td>
+<span class="listing-categories">Snacks</span>
+</td>
+</tr>
+<tr data-index="23" data-categories="Snakcs" data-listing-file-modified-sort="1748823279456" data-listing-reading-time-sort="1" data-listing-word-count-sort="64" data-listing-title-sort="Energy bites" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-05-31-energy-bites/index.html" class="title listing-title">Energy bites</a>
+</td>
+<td>
+<span class="listing-categories">Snakcs</span>
+</td>
+</tr>
+<tr data-index="24" data-categories="Soup" data-listing-file-modified-sort="1748819185940" data-listing-reading-time-sort="2" data-listing-word-count-sort="327" data-listing-title-sort="Creamy Tortellini Soup" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-creamy-tortellini-soup/index.html" class="title listing-title">Creamy Tortellini Soup</a>
+</td>
+<td>
+<span class="listing-categories">Soup</span>
+</td>
+</tr>
+<tr data-index="25" data-categories="Tofu" data-listing-file-modified-sort="1748819950990" data-listing-reading-time-sort="3" data-listing-word-count-sort="407" data-listing-title-sort="Crispy Tofu and Broccoli With Ginger-Garlic Teriyaki Sauce" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-crispy-tofu-and-broccoli-with-gingergarlic-teriyaki-sauce/index.html" class="title listing-title">Crispy Tofu and Broccoli With Ginger-Garlic Teriyaki Sauce</a>
+</td>
+<td>
+<span class="listing-categories">Tofu</span>
+</td>
+</tr>
+<tr data-index="26" data-categories="Tofu,Favourites" data-listing-file-modified-sort="1748822015437" data-listing-reading-time-sort="2" data-listing-word-count-sort="213" data-listing-title-sort="Tofu With Spicy Soy Dressing" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-silken-tofu-with-spicy-soy-dressing/index.html" class="title listing-title">Tofu With Spicy Soy Dressing</a>
+</td>
+<td>
+<span class="listing-categories">Tofu, Favourites</span>
+</td>
+</tr>
+<tr data-index="27" data-categories="Veggie" data-listing-file-modified-sort="1748823039129" data-listing-reading-time-sort="2" data-listing-word-count-sort="319" data-listing-title-sort="Buffalo Chickpea Wraps" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-24-buffalo-chickpea-wraps/index.html" class="title listing-title">Buffalo Chickpea Wraps</a>
+</td>
+<td>
+<span class="listing-categories">Veggie</span>
+</td>
+</tr>
+<tr data-index="28" data-categories="Veggie" data-listing-file-modified-sort="1748818507339" data-listing-reading-time-sort="3" data-listing-word-count-sort="415" data-listing-title-sort="Cauliflower Shawarma With Spicy Tahini" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-cauliflower-shawarma-with-spicy-tahini/index.html" class="title listing-title">Cauliflower Shawarma With Spicy Tahini</a>
+</td>
+<td>
+<span class="listing-categories">Veggie</span>
+</td>
+</tr>
+<tr data-index="29" data-categories="Veggie" data-listing-file-modified-sort="1748823263614" data-listing-reading-time-sort="2" data-listing-word-count-sort="395" data-listing-title-sort="Smoky Sweet Potato and Chickpea Sheet Pan Dinner" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-24-smoky-sweet-potato-and-chickpea-sheet-pan-dinner/index.html" class="title listing-title">Smoky Sweet Potato and Chickpea Sheet Pan Dinner</a>
+</td>
+<td>
+<span class="listing-categories">Veggie</span>
+</td>
+</tr>
+<tr data-index="30" data-categories="Veggie" data-listing-file-modified-sort="1748822593045" data-listing-reading-time-sort="2" data-listing-word-count-sort="208" data-listing-title-sort="Spiced Roasted Cauliflower With Feta and Garlic" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-spiced-roasted-cauliflower-with-feta-and-garlic/index.html" class="title listing-title">Spiced Roasted Cauliflower With Feta and Garlic</a>
+</td>
+<td>
+<span class="listing-categories">Veggie</span>
+</td>
+</tr>
+<tr data-index="31" data-categories="Veggie,Salad" data-listing-file-modified-sort="1748820745982" data-listing-reading-time-sort="2" data-listing-word-count-sort="259" data-listing-title-sort="Roasted Brussels Sprouts Caesar With Tahini" data-listing-filename-sort="index.qmd">
+<td>
+<a href="./cooking/2025-02-21-roasted-brussels-sprouts-caesar-with-tahini/index.html" class="title listing-title">Roasted Brussels Sprouts Caesar With Tahini</a>
+</td>
+<td>
+<span class="listing-categories">Veggie, Salad</span>
+</td>
+</tr>
+</tbody>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -823,6 +512,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -838,7 +671,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -870,47 +714,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -945,11 +749,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -997,12 +797,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
+      return note.innerHTML;
     }
   }
   for (var i=0; i<xrefs.length; i++) {

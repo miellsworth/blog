@@ -15,6 +15,6 @@ about:
       href: https://podcasts.apple.com/ca/podcast/beat-salad/id1497202150
 ---
 
-This is a personal blog. A notepad of sorts. On [data](data.qmd), [cooking](cooking.qmd) and [music](music.qmd).
+This is a personal website/notepad. On [data](data.qmd), [cooking](cooking.qmd) and [music](music.qmd).
 
 [Email Me](mailto:michael.ellsworth7@gmail.com)
