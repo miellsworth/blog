@@ -1,0 +1,26 @@
+---
+title: "marquee"
+description: |
+  Parse markdown for R graphics
+author: Michael Ellsworth
+date: 2024-05-23
+---
+
+Today's post explores an R package `marquee`, developed to parse markdown for R graphics. My first crack at the demo in the [following blog post](https://www.tidyverse.org/blog/2024/05/marquee-0-1-0/) was futile due to the inherent limitations in the default graphics device in Windows (explained in the post under the [limitations section](https://www.tidyverse.org/blog/2024/05/marquee-0-1-0/#limitations)), so I turned to my MacBook to run through a few of the examples provided.
+
+```{r}
+library(marquee)
+library(ggplot2)
+md_text <- "
+# Heading 1
+## Heading 2
+### Heading 3
+"
+
+ggplot(mtcars) + 
+  geom_point(aes(x = mpg, y = disp)) + 
+  ggtitle(md_text) + 
+  theme(plot.title = element_marquee(size = 8, width = unit(16, "cm")))
+```
+
+The first thing I notice on my mac is that the rendered markdown text is super grainy compared with the plot text. Likely a result of the limitations explained in the blog post. Looks like a lot of potential here but perhaps best suited for folks with a better understanding of computer graphics than me.

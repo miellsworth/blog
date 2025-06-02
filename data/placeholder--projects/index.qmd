@@ -1,8 +1,0 @@
----
-title: "Placeholder - Projects"
-description: |
-  A placeholder post for larger project posts
-author: Michael Ellsworth
-date: 2023-07-02
-categories: [Projects]
----

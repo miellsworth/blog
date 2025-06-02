@@ -1,7 +1,0 @@
----
-title: "5 Weeks - Day 31"
-description: |
-  TBD
-author: Michael Ellsworth
-date: 2024-05-20
----

@@ -1,0 +1,14 @@
+---
+title: "Shinylive"
+description: |
+  Thoughts on Shiny deployment
+date: 2024-05-08
+---
+
+A number of days ago, I created a very simple Shiny app to visualize Calgary bike counts at specific locations throughout the city. One thing I didn't do with this app was deploy it, which is what today's post will focus on.
+
+Instead of hosting the app on some sort of web app hosting platform, I'm going to test out the `shinylive` package. This is the serverless version of Shiny that I've seen used a couple of times but I'm going to follow [Rami Krispin's tutorial](https://medium.com/@rami.krispin/deploy-shiny-app-on-github-pages-b4cbd433bdc) for this exercise.
+
+Going into this exercise, I thought there would be much more to it. Turns out, all I had to do was rename my Shiny app file to `app.R` and run `shinylive::export(appdir = "shiny", destdir = "docs")`. Once the app finished rendering, I ran `httpuv::runStaticServer("docs/", port=8008)` to get the app running on my browser.
+
+Include some details on putting this on GitHub pages.
