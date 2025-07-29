@@ -1,0 +1,61 @@
+---
+title: "YYC weather"
+description: |
+  Some weather viz
+date: 2024-04-30
+---
+
+It's April 30th, 2024 and it snowed today. A lot. It snowed a lot. This inspired me to look at the Government of Canada's weather records for Calgary to see what data I could explore. This led me to [Almanac Averages & Extremes](https://climate.weather.gc.ca/climate_data/almanac_e.html?month=4&day=30&StationID=2205&period=1&searchMethod=contains&txtStationName=calgary). Let's take a look at the downloadable data!
+
+```{r}
+#| echo: false
+#| warnings: false
+library(readr)
+library(dplyr)
+library(janitor)
+library(lubridate)
+
+almanac_url <- "https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=2205&Year=2008&Month=4&Day=30&time=&timeframe=4&submit=Download+"
+
+df <- read_csv(almanac_url) %>% janitor::clean_names()
+df
+```
+
+Looks like we have some weather records on our hands! Let's take a look at April 30th to see what type of extremes we have dealt with on this day in the past.
+
+```{r}
+df %>%
+  filter(month == 4, day == 30) %>%
+  select(
+    matches("average"), 
+    matches("highest"), 
+    matches("lowest"), 
+    matches("greatest"),
+    matches("most")
+  )
+```
+
+I'm curious to compare these with today's conditions but we don't have that data yet. Let's come back to April 30th, perhaps tomorrow. In the meantime, let's take a look at April 29th! We had a bit of rain and snow yesterday so let's compare that to some historical records.
+
+```{r}
+df_2024_04_29 <- df %>%
+  filter(month == 4, day == 29) %>%
+  select(
+    matches("average"), 
+    matches("highest"), 
+    matches("lowest"), 
+    matches("greatest"),
+    matches("most")
+  )
+
+daily_report_url <- "https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=50430&Year=2024&Month=4&Day=1&time=&timeframe=2&submit=Download+Data"
+
+df_2024 <- read_csv(daily_report_url) %>%
+  janitor::clean_names() %>%
+  mutate(date_time = lubridate::ymd(date_time))
+  
+```
+
+```{r}
+
+```

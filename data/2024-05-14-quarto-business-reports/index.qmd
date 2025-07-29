@@ -1,0 +1,8 @@
+---
+title: "Business reports"
+description: |
+  A Quarto workflow...
+date: 2024-05-14
+---
+
+Today will be dedicated to following the business report workflow outlined in the following [GitHub repository](https://github.com/quarto-examples/quarto-business-report).

@@ -1,8 +1,8 @@
 ---
-title: "Data blog"
+title: "Data"
 subtitle: A spot to share data related projects and thoughts.
 listing:
-  contents: data
+  contents: placeholder
   sort: "date desc"
   type: default
   categories: true

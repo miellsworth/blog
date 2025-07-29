@@ -1,0 +1,10 @@
+---
+title: "Bike count app"
+description: |
+  Leveraging Shiny to visualize some bike data
+date: 2024-05-02
+---
+
+Yesterday's YYC bike data exploration left me with the urge to visualize the data via a Shiny app. The data seems well suited for it and would be interesting to explore in the future once the data is updated. So that's what today's portfolio contribution will focus on.
+
+This Shiny urge was partially prompted by Albert Rapp's recent [3 Minute Wednesday (3MW) post](https://3mw.albert-rapp.de/p/shiny-intro) and Garrick Aden-Buie's [talk on bslib](https://www.garrickadenbuie.com/talk/bslib-modern-dashboards/). Both release really good resources on Shiny and make it inviting to give things a try. Using a few code snippets from each post, I was able to spin up a basic Shiny app in a few minutes using the bike from yesterday. I added a simple reactive element to display daily bike counts based on a user defined monitoring location. Pretty simple but a fun little intro to Shiny.

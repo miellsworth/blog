@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data blog – Michael’s Blog</title>
+<title>Data – Michael’s Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,21 +20,57 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-html-5acaefe6876f2fc5583d865d9e6bf35c.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-6561bbde787c299e21493071c8edc6ff.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-63aeb8fb2d7d2f7bf5c688e75044be03.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
@@ -46,9 +82,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 25,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -66,15 +101,115 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body>
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Michael’s Website</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./data.html" aria-current="page"> 
+<span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./music.html"> 
+<span class="menu-text">Music</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cooking.html"> 
+<span class="menu-text">Cooking</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/miellsworth"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://bsky.app/profile/mellsworth.bsky.social"> 
+<span class="menu-text"><iconify-icon role="img" inline="" icon="simple-icons:bluesky" aria-label="Icon bluesky from simple-icons Iconify.design set." title="Icon bluesky from simple-icons Iconify.design set."></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://cjsw.com/program/beat-salad"> <i class="bi bi-mic" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data</h1>
+<p class="subtitle lead">A spot to share data related projects and thoughts.</p>
+</div>
 
 
-<header id="title-block-header">
-<h1 class="title">Data blog</h1>
-<p class="subtitle">A spot to share data related projects and thoughts.</p>
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
 
 </header>
 
@@ -82,6 +217,31 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1748871672819" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./placeholder/index.html" class="no-external">Placeholder</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./placeholder/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./placeholder/index.html" class="no-external">Under construction :)</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./placeholder/index.html" class="no-external"></a></p><a href="./placeholder/index.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -102,10 +262,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-  tabsets.forEach(function(tabset) {
-    const tabby = new Tabby('#' + tabset.id);
-  });
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -205,7 +505,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       },
       interactive: true,
       interactiveBorder: 10,
-      theme: 'light-border',
+      theme: 'quarto',
       placement: 'bottom-start',
     };
     if (contentFn) {
@@ -506,834 +806,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+</div> <!-- /content -->
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1740148646136" data-listing-reading-time-sort="1" data-listing-word-count-sort="26">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/ideas.html" class="no-external"></a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/ideas.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/ideas.html" class="no-external">Blog post ideas - Topic title (what am I posting about) - What I learned - Snippets of code - The final code - The end result</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./data/ideas.html" class="no-external"></a></p><a href="./data/ideas.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1716530400000" data-listing-file-modified-sort="1740148646135" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-24-5-weeks--day-35/index.html" class="no-external">5 Weeks - Day 35</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-24-5-weeks--day-35/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-24-5-weeks--day-35/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-24-5-weeks--day-35/index.html" class="no-external">
-<div class="listing-date">
-May 24, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1716444000000" data-listing-file-modified-sort="1740148646134" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="147">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-23-5-weeks--day-34/index.html" class="no-external">5 Weeks - Day 34</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-23-5-weeks--day-34/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-23-5-weeks--day-34/index.html" class="no-external">marquee </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-23-5-weeks--day-34/index.html" class="no-external">
-<div class="listing-date">
-May 23, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1716357600000" data-listing-file-modified-sort="1740148646133" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-22-5-weeks--day-33/index.html" class="no-external">5 Weeks - Day 33</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-22-5-weeks--day-33/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-22-5-weeks--day-33/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-22-5-weeks--day-33/index.html" class="no-external">
-<div class="listing-date">
-May 22, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1716271200000" data-listing-file-modified-sort="1740148646132" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-21-5-weeks--day-32/index.html" class="no-external">5 Weeks - Day 32</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-21-5-weeks--day-32/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-21-5-weeks--day-32/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-21-5-weeks--day-32/index.html" class="no-external">
-<div class="listing-date">
-May 21, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1716184800000" data-listing-file-modified-sort="1740148646131" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-20-5-weeks--day-31/index.html" class="no-external">5 Weeks - Day 31</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-20-5-weeks--day-31/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-20-5-weeks--day-31/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-20-5-weeks--day-31/index.html" class="no-external">
-<div class="listing-date">
-May 20, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1716098400000" data-listing-file-modified-sort="1740148646130" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-19-5-weeks--day-30/index.html" class="no-external">5 Weeks - Day 30</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-19-5-weeks--day-30/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-19-5-weeks--day-30/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-19-5-weeks--day-30/index.html" class="no-external">
-<div class="listing-date">
-May 19, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1716012000000" data-listing-file-modified-sort="1740148646128" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-18-5-weeks--day-29/index.html" class="no-external">5 Weeks - Day 29</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-18-5-weeks--day-29/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-18-5-weeks--day-29/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-18-5-weeks--day-29/index.html" class="no-external">
-<div class="listing-date">
-May 18, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1715925600000" data-listing-file-modified-sort="1740148646126" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-17-5-weeks--day-28/index.html" class="no-external">5 Weeks - Day 28</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-17-5-weeks--day-28/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-17-5-weeks--day-28/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-17-5-weeks--day-28/index.html" class="no-external">
-<div class="listing-date">
-May 17, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1715839200000" data-listing-file-modified-sort="1740148646125" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-16-5-weeks--day-27/index.html" class="no-external">5 Weeks - Day 27</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-16-5-weeks--day-27/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-16-5-weeks--day-27/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-16-5-weeks--day-27/index.html" class="no-external">
-<div class="listing-date">
-May 16, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1715752800000" data-listing-file-modified-sort="1740148646124" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="489">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-15-5-weeks--day-26/index.html" class="no-external">5 Weeks - Day 26</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-15-5-weeks--day-26/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-15-5-weeks--day-26/index.html" class="no-external">3 minute Wednesdays </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-15-5-weeks--day-26/index.html" class="no-external">
-<div class="listing-date">
-May 15, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1715666400000" data-listing-file-modified-sort="1740148646123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-14-5-weeks--day-25/index.html" class="no-external">5 Weeks - Day 25</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-14-5-weeks--day-25/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-14-5-weeks--day-25/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-14-5-weeks--day-25/index.html" class="no-external">
-<div class="listing-date">
-May 14, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="12" data-listing-date-sort="1715580000000" data-listing-file-modified-sort="1740148646121" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-13-5-weeks--day-24/index.html" class="no-external">5 Weeks - Day 24</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-13-5-weeks--day-24/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-13-5-weeks--day-24/index.html" class="no-external">Coffee </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-13-5-weeks--day-24/index.html" class="no-external">
-<div class="listing-date">
-May 13, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="13" data-listing-date-sort="1715493600000" data-listing-file-modified-sort="1740148646120" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-12-5-weeks--day-23/index.html" class="no-external">5 Weeks - Day 23</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-12-5-weeks--day-23/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-12-5-weeks--day-23/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-12-5-weeks--day-23/index.html" class="no-external">
-<div class="listing-date">
-May 12, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="14" data-listing-date-sort="1715407200000" data-listing-file-modified-sort="1740148646119" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-11-5-weeks--day-22/index.html" class="no-external">5 Weeks - Day 22</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-11-5-weeks--day-22/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-11-5-weeks--day-22/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-11-5-weeks--day-22/index.html" class="no-external">
-<div class="listing-date">
-May 11, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="15" data-listing-date-sort="1715320800000" data-listing-file-modified-sort="1740148646118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-10-5-weeks--day-21/index.html" class="no-external">5 Weeks - Day 21</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-10-5-weeks--day-21/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-10-5-weeks--day-21/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-10-5-weeks--day-21/index.html" class="no-external">
-<div class="listing-date">
-May 10, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="16" data-listing-date-sort="1715234400000" data-listing-file-modified-sort="1740148646117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-09-5-weeks--day-20/index.html" class="no-external">5 Weeks - Day 20</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-09-5-weeks--day-20/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-09-5-weeks--day-20/index.html" class="no-external">TBD </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-09-5-weeks--day-20/index.html" class="no-external">
-<div class="listing-date">
-May 9, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="17" data-listing-date-sort="1715148000000" data-listing-file-modified-sort="1740148646116" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-08-5-weeks--day-19/index.html" class="no-external">5 Weeks - Day 19</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-08-5-weeks--day-19/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-08-5-weeks--day-19/index.html" class="no-external">Shinylive </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-08-5-weeks--day-19/index.html" class="no-external">
-<div class="listing-date">
-May 8, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="18" data-listing-date-sort="1715061600000" data-listing-file-modified-sort="1740148646115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-07-5-weeks--day-18/index.html" class="no-external">5 Weeks - Day 18</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-07-5-weeks--day-18/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-07-5-weeks--day-18/index.html" class="no-external">More Tidy Tuesday! </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-07-5-weeks--day-18/index.html" class="no-external">
-<div class="listing-date">
-May 7, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="19" data-listing-date-sort="1714975200000" data-listing-file-modified-sort="1740148646114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="67">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-06-5-weeks--day-17/index.html" class="no-external">5 Weeks - Day 17</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-06-5-weeks--day-17/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-06-5-weeks--day-17/index.html" class="no-external">What happened to 15 and 16? </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-06-5-weeks--day-17/index.html" class="no-external">
-<div class="listing-date">
-May 6, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="20" data-listing-date-sort="1714716000000" data-listing-file-modified-sort="1740148646112" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="67">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-03-5-weeks--day-14/index.html" class="no-external">5 Weeks - Day 14</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-03-5-weeks--day-14/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-03-5-weeks--day-14/index.html" class="no-external">I’m driving to Kelowna today to play some ULTIMATE Frisbee. The whole weekend will be filled with ultimate fun and perhaps not a ton of portfolio time. What I’m thinking for…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-03-5-weeks--day-14/index.html" class="no-external">
-<div class="listing-date">
-May 3, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="21" data-listing-date-sort="1714629600000" data-listing-file-modified-sort="1740148646111" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="138">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-02-5-weeks--day-13/index.html" class="no-external">5 Weeks - Day 13</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-02-5-weeks--day-13/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-02-5-weeks--day-13/index.html" class="no-external">Shiny Thursday </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-02-5-weeks--day-13/index.html" class="no-external">
-<div class="listing-date">
-May 2, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="22" data-listing-date-sort="1714543200000" data-listing-file-modified-sort="1740148646110" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="532">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-05-01-5-weeks--day-12/index.html" class="no-external">5 Weeks - Day 12</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-05-01-5-weeks--day-12/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-05-01-5-weeks--day-12/index.html" class="no-external">Tune up day </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-05-01-5-weeks--day-12/index.html" class="no-external">
-<div class="listing-date">
-May 1, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="23" data-listing-date-sort="1714456800000" data-listing-file-modified-sort="1740148646110" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="230">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-04-30-5-weeks--day-11/index.html" class="no-external">5 Weeks - Day 11</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-04-30-5-weeks--day-11/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-04-30-5-weeks--day-11/index.html" class="no-external">YYC Weather </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-04-30-5-weeks--day-11/index.html" class="no-external">
-<div class="listing-date">
-Apr 30, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="24" data-listing-date-sort="1714370400000" data-listing-file-modified-sort="1740148646106" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="209">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-04-29-5-weeks--day-10/index.html" class="no-external">5 Weeks - Day 10</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-04-29-5-weeks--day-10/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-04-29-5-weeks--day-10/index.html" class="no-external">Double Digits! </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-04-29-5-weeks--day-10/index.html" class="no-external">
-<div class="listing-date">
-Apr 29, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="25" data-listing-date-sort="1714284000000" data-listing-file-modified-sort="1740148646106" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-04-28-5-weeks--day-9/index.html" class="no-external">5 Weeks - Day 9</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-04-28-5-weeks--day-9/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-04-28-5-weeks--day-9/index.html" class="no-external">Sunday Choresday </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-04-28-5-weeks--day-9/index.html" class="no-external">
-<div class="listing-date">
-Apr 28, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="26" data-listing-date-sort="1714197600000" data-listing-file-modified-sort="1740148646105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="133">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-04-27-5-weeks--day-8/index.html" class="no-external">5 Weeks - Day 8</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-04-27-5-weeks--day-8/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-04-27-5-weeks--day-8/index.html" class="no-external">Saturdays are for the blogs </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-04-27-5-weeks--day-8/index.html" class="no-external">
-<div class="listing-date">
-Apr 27, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="27" data-listing-date-sort="1714111200000" data-listing-file-modified-sort="1740148646104" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="336">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-04-26-5-weeks--day-7/index.html" class="no-external">5 Weeks - Day 7</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-04-26-5-weeks--day-7/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-04-26-5-weeks--day-7/index.html" class="no-external">It’s been… one week </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-04-26-5-weeks--day-7/index.html" class="no-external">
-<div class="listing-date">
-Apr 26, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="28" data-listing-date-sort="1714024800000" data-listing-file-modified-sort="1740148646103" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="233">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-04-25-5-weeks--day-6/index.html" class="no-external">5 Weeks - Day 6</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-04-25-5-weeks--day-6/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-04-25-5-weeks--day-6/index.html" class="no-external">Tidy Thursday </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-04-25-5-weeks--day-6/index.html" class="no-external">
-<div class="listing-date">
-Apr 25, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="29" data-listing-date-sort="1713938400000" data-listing-file-modified-sort="1740148646102" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="308">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-04-24-5-weeks--day-5/index.html" class="no-external">5 Weeks - Day 5</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-04-24-5-weeks--day-5/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-04-24-5-weeks--day-5/index.html" class="no-external">AI in RStudio </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-04-24-5-weeks--day-5/index.html" class="no-external">
-<div class="listing-date">
-Apr 24, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="30" data-listing-date-sort="1713852000000" data-listing-file-modified-sort="1740148646100" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-04-23-5-weeks--day-4/index.html" class="no-external">5 Weeks - Day 4</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-04-23-5-weeks--day-4/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-04-23-5-weeks--day-4/index.html" class="no-external">Radio and Quarto </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-04-23-5-weeks--day-4/index.html" class="no-external">
-<div class="listing-date">
-Apr 23, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="31" data-listing-date-sort="1713765600000" data-listing-file-modified-sort="1740148646099" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="375">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-04-22-5-weeks--day-3/index.html" class="no-external">5 Weeks - Day 3</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-04-22-5-weeks--day-3/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-04-22-5-weeks--day-3/index.html" class="no-external">Mondays! </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-04-22-5-weeks--day-3/index.html" class="no-external">
-<div class="listing-date">
-Apr 22, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="32" data-listing-date-sort="1713679200000" data-listing-file-modified-sort="1740148646098" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="494">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-04-21-5-weeks--day-2/index.html" class="no-external">5 Weeks - Day 2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-04-21-5-weeks--day-2/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-04-21-5-weeks--day-2/index.html" class="no-external">We doing this </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-04-21-5-weeks--day-2/index.html" class="no-external">
-<div class="listing-date">
-Apr 21, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="33" data-listing-date-sort="1713592800000" data-listing-file-modified-sort="1740148646098" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="90">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-04-20-5-weeks--day-1/index.html" class="no-external">5 Weeks - Day 1</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-04-20-5-weeks--day-1/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-04-20-5-weeks--day-1/index.html" class="no-external">A personal challenge to build a portfolio </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-04-20-5-weeks--day-1/index.html" class="no-external">
-<div class="listing-date">
-Apr 20, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="34" data-listing-date-sort="1712210400000" data-listing-file-modified-sort="1740148646097" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="827">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2024-04-04-recreating-a-shiny-app-for-tidytuesday-plots/index.html" class="no-external">Re-creating a Shiny App for TidyTuesday plots</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2024-04-04-recreating-a-shiny-app-for-tidytuesday-plots/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2024-04-04-recreating-a-shiny-app-for-tidytuesday-plots/index.html" class="no-external">Can I re-create Nicola Rennie’s Shiny App? </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2024-04-04-recreating-a-shiny-app-for-tidytuesday-plots/index.html" class="no-external">
-<div class="listing-date">
-Apr 4, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="35" data-listing-date-sort="1698386400000" data-listing-file-modified-sort="1740148646095" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2023-10-27-weekend-project--quarto-14/index.html" class="no-external">Weekend Project - Quarto 1.4</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2023-10-27-weekend-project--quarto-14/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./data/2023-10-27-weekend-project--quarto-14/index.html" class="no-external">A test of Quarto 1.4 and its new dashboarding capabilities </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2023-10-27-weekend-project--quarto-14/index.html" class="no-external">
-<div class="listing-date">
-Oct 27, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="36" data-categories="TWlzYw==" data-listing-date-sort="1688364000000" data-listing-file-modified-sort="1740148646094" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/2023-07-03-long-overdue/index.html" class="no-external">Long overdue</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/2023-07-03-long-overdue/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TWlzYw=='); return false;">
-Misc
-</div>
-</div>
-<div class="listing-description">
-<a href="./data/2023-07-03-long-overdue/index.html" class="no-external">The first of hopefully many… </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/2023-07-03-long-overdue/index.html" class="no-external">
-<div class="listing-date">
-Jul 3, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="37" data-categories="TGVhcm5pbmc=" data-listing-date-sort="1688277600000" data-listing-file-modified-sort="1740148646137" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/placeholder--learnings/index.html" class="no-external">Placeholder - Learnings</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/placeholder--learnings/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TGVhcm5pbmc='); return false;">
-Learning
-</div>
-</div>
-<div class="listing-description">
-<a href="./data/placeholder--learnings/index.html" class="no-external">A placeholder post for my learning and development </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/placeholder--learnings/index.html" class="no-external">
-<div class="listing-date">
-Jul 2, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="38" data-categories="UHJvamVjdHM=" data-listing-date-sort="1688277600000" data-listing-file-modified-sort="1740148646138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/placeholder--projects/index.html" class="no-external">Placeholder - Projects</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/placeholder--projects/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvamVjdHM='); return false;">
-Projects
-</div>
-</div>
-<div class="listing-description">
-<a href="./data/placeholder--projects/index.html" class="no-external">A placeholder post for larger project posts </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/placeholder--projects/index.html" class="no-external">
-<div class="listing-date">
-Jul 2, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="39" data-categories="VGlkeSBUdWVzZGF5" data-listing-date-sort="1688277600000" data-listing-file-modified-sort="1740148646140" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./data/placeholder--tidy-tuesday/index.html" class="no-external">Placeholder - Tidy Tuesday</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./data/placeholder--tidy-tuesday/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('VGlkeSBUdWVzZGF5'); return false;">
-Tidy Tuesday
-</div>
-</div>
-<div class="listing-description">
-<a href="./data/placeholder--tidy-tuesday/index.html" class="no-external">A placeholder post for Tidy Tuesday posts </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./data/placeholder--tidy-tuesday/index.html" class="no-external">
-<div class="listing-date">
-Jul 2, 2023
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
-</div></body></html>
+</body></html>

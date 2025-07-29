@@ -1,30 +1,27 @@
 ---
-title: "Long overdue"
+title: "Michael's data blog"
 description: |
-  The first of hopefully many...
-author: Michael Ellsworth
+  An introduction...
 date: 2023-07-03
 categories: [Misc]
 ---
 
-# A blog?
+# A data blog?
 
-I've decided to start a blog. I'm not particularly great at writing nor am I keen on making my writing public for the World to see. So what am I doing here?
-
-Well, a blog seems like a great way for Data People to gather and share their work in a centralized place. I'm a Data Person. I don't currently have a place to share my work but I've been meaning to create one for a *long* time. I guess I'll go with a blog.
+I've decided to create a data blog. Why? A blog seems like a great way for Data People share their work in a centralized place. I'm a Data Person. I don't currently have a place to share my work. I guess I'll go with a blog.
 
 I also became familiar with Quarto and Quarto blogs after virtually attending rstudio::conf(2022). Quarto seemed like an interesting tool to present personal data work and Quarto blogs seemed like a dead simple way to compile that work. Why not start a blog to get the hang of this tool?
 
 # Plans
 
-For the most part, this blog will consist of things for my own personal consumption and reference. Like I said, I'm not eager to share my work or my thoughts broadly but I'd still like to have a place where I can direct people if I need to \~ *show off \~* for any reason. This will be that place.
+For the most part, this blog will consist of things for my own personal consumption and reference. I'm not keen to share my work or my thoughts broadly but I'd like to have a place where I can direct people if I need to \~ *show off \~* for any reason. This will be that place.
 
-I plan to write about personal projects I'm working on, an analysis that I completed, maybe some thoughts and learnings from a book or a blog I'm reading, or perhaps just write for the sake of writing. A blog seems like a good place to compile these things, kind of like a journal, especially if I'll be the primary consumer. I'd like to have this as a place where I can log things that I'm excited about.
+I plan to share details on personal projects, some random data viz, and/or perhaps some thoughts from something I'm reading. A blog seems like a good place to compile these things, kind of like a journal, especially if I'll be the primary consumer. I'd like to have this as a place where I can log things that I'm excited about.
 
 # Acknowledgments
 
 This is my first attempt at a blog and it wasn't overly complicated to set-up thanks to a couple of really helpful references.
 
-Albert Rapp created [The ultimate guide to starting a Quarto blog](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html) which has been a phenomenal resource for me. Perhaps the best advice in this behemoth of a blog plost is to *write regularly*. I'll give it a try, Albert!
+Albert Rapp created [The ultimate guide to starting a Quarto blog](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html) which has been a phenomenal resource for me.
 
-Isabella Velásquez also walked through [building a blog with Quarto](https://www.youtube.com/watch?v=CVcvXfRyfE0) in this Youtube video. Thanks for this!
+Isabella Velásquez also walked through [building a blog with Quarto](https://www.youtube.com/watch?v=CVcvXfRyfE0) in this Youtube video. Really good stuff.

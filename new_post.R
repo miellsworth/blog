@@ -9,7 +9,6 @@ new_post <- function(
     file = "index.qmd",
     directory = "",
     description = "",
-    author = "Michael Ellsworth", 
     date = Sys.Date(), 
     draft = FALSE, 
     title_limit = 40,
@@ -54,7 +53,6 @@ new_post <- function(
     glue::glue('title: "{title}"'),
     "description: |",
     glue::glue('  {description}'),
-    glue::glue("author: {author}"),
     glue::glue("date: {date}")
   )
   
