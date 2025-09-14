@@ -7,8 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Michael Ellsworth">
+<meta name="dcterms.date" content="2024-05-15">
+<meta name="description" content="A Wednesday topic from 3MW">
 
-<title>Michael’s Website - Baked Chicken Thighs</title>
+<title>Michael’s Website - Event listeners</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -130,32 +132,21 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#ingredients" id="toc-ingredients" class="nav-link active" data-scroll-target="#ingredients">Ingredients</a></li>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a>
-  <ul class="collapse">
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">1</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">3</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">4</a></li>
-  </ul></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Baked Chicken Thighs</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Chicken</div>
-  </div>
-  </div>
+<h1 class="title">Event listeners</h1>
+</div>
 
+<div>
+  <div class="description">
+    <p>A Wednesday topic from 3MW</p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -167,6 +158,12 @@ ul.task-list li input[type="checkbox"] {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 15, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -176,55 +173,74 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="ingredients" class="level1">
-<h1>Ingredients</h1>
+<p>Albert Rapp publishes a weekly post called 3 Minute Wednesdays (3MW) that I’ve been following for quite some time but haven’t really dived into the material in too much detail. The posts are quick learning opportunities that I think I should take more advantage of so today, I’ll be walking through the example from his post on <a href="https://3mw.albert-rapp.de/">event listeners for Shiny</a>.</p>
+<p>For this exercise, I’ll use the Shiny app I developed to visualize daily bike counts in Calgary. At the moment, the application renders a new plot every time a new location is selected from a dropdown menu. The lesson from this post is that we can control when the plot renders or in other words, we can control “reactivity”.</p>
+<p>The post presents a number of ways to control reactivity but what I landed on was using <code>bindEvent()</code> in the server along with an <code>actionButton()</code> in the UI.</p>
+<p>The gist of the original app looked like this:</p>
+<pre><code>ui &lt;- bslib::page_sidebar(
+  sidebar = sidebar(
+    # Dropdown menu
+    selectInput(
+      'location_dropdown',
+      'Select location',
+      choices = locations
+    )
+  ),
+  card(
+    plotOutput('bike_count_plot')
+  )
+)
+
+server &lt;- function(input, output, session) {
+  output$bike_count_plot &lt;- renderPlot({
+    df %&gt;%
+      filter(monitoring_location == input$location_dropdown) %&gt;%
+      ggplot(aes(x = date, y = daily_total)) +
+      geom_point()
+}
+
+shinyApp(ui, server)</code></pre>
+<p>In order to control reactivity with an <code>actionButton()</code> and <code>bindEvent()</code>, I added what boils down to three lines of code:</p>
 <ul>
-<li>1/3 cup olive oil</li>
-<li>1tbsp minced garlic (about 2 large cloves)</li>
-<li>1 tbsp Dijon mustard</li>
-<li>2 tsp dried thyme, rosemary or oregano (or 1 tbsp fresh), or 2 tsp Italian seasoning</li>
-<li>1.5 tsp kosher salt</li>
-<li>1 tsp black pepper</li>
-<li>1 lemon</li>
-<li>6 to 8 chicken thighs (about 3 pounds), patted dry</li>
-<li>Chopped fresh parsley, for serving (optional)</li>
+<li>Add <code>actionButton()</code> in the sidebar in the ui object</li>
 </ul>
-</section>
-<section id="instructions" class="level1">
-<h1>Instructions</h1>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">1</h2>
+<pre><code>actionButton('button', 'Reload Plot')  # New action button</code></pre>
 <ul>
-<li>In a large bowl, combine the olive oil, garlic, mustard, thyme, salt and pepper</li>
-<li>Zest the lemon over the bowl, reserving the rest of the lemon for serving, and whisk until combined</li>
+<li>Add <code>req()</code> in <code>renderPlot()</code> to require a click on the button to initiate reactivity</li>
 </ul>
-</section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2</h2>
+<pre><code>req(input$button &gt;= 1)</code></pre>
 <ul>
-<li>Add the chicken thighs to the bowl, tossing until fully coated in the marinade</li>
-<li>Cover and let marinate for 30 minutes at room temperature, or up to 12 hours in the refrigerator</li>
+<li>Pass <code>renderPlot()</code> into <code>bindEvent()</code> with <code>input$button</code></li>
 </ul>
-</section>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2">3</h2>
-<ul>
-<li>Heat the oven to 425 degrees and lift the chicken thighs from the marinade, letting any excess drip into the bowl</li>
-<li>Place the thighs on a sheet pan and let them sit at room temperature while the oven heats</li>
-<li>Bake until fully cooked and lightly browned, 25 to 30 minutes</li>
-<li>An internal thermometer inserted into the thickest part of the meat should read 165 to 175 degrees</li>
-</ul>
-</section>
-<section id="section-3" class="level2">
-<h2 class="anchored" data-anchor-id="section-3">4</h2>
-<ul>
-<li>Cut the lemon in half and squeeze over the chicken</li>
-<li>Sprinkle with salt and serve</li>
-</ul>
+<pre><code>renderPlot({}) |&gt; bindEvent(input$button)</code></pre>
+<p>Here’s what the app looks like now:</p>
+<pre><code>ui &lt;- bslib::page_sidebar(
+  sidebar = sidebar(
+    # Dropdown menu
+    selectInput(
+      'location_dropdown',
+      'Select location',
+      choices = locations
+    ),
+    actionButton('button', 'Reload Plot')  # New action button
+  ),
+  card(
+    plotOutput('bike_count_plot')
+  )
+)
+
+server &lt;- function(input, output, session) {
+  output$bike_count_plot &lt;- renderPlot({
+  req(input$button &gt;= 1)  # New function to specify reactivity conditions
+    df %&gt;%
+      filter(monitoring_location == input$location_dropdown) %&gt;%
+      ggplot(aes(x = date, y = daily_total)) +
+      geom_point()
+  }) |&gt; bindEvent(input$button)  # Isolate inputs with bindEvent()
+}
+shinyApp(ui, server)</code></pre>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
