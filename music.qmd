@@ -1,6 +1,6 @@
 ---
-title: "Beat Salad Weekly"
-subtitle: A weekly update on the greatest Tuesday morning radio program in Calgary, AB.
+title: "Music Weekly"
+subtitle: A periodic update on music I like and play on the radio.
 listing:
   contents: placeholder
   sort: "date desc"
