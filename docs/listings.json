@@ -1,5 +1,17 @@
 [
   {
+    "listing": "/data.html",
+    "items": [
+      "/placeholder/index.html"
+    ]
+  },
+  {
+    "listing": "/music.html",
+    "items": [
+      "/placeholder/index.html"
+    ]
+  },
+  {
     "listing": "/cooking.html",
     "items": [
       "/cooking/chimichurri-meatballs/index.html",
@@ -33,18 +45,6 @@
       "/cooking/smoky-sweet-potato-and-chickpea-sheet-pan-dinner/index.html",
       "/cooking/spiced-roasted-cauliflower-with-feta-and-garlic/index.html",
       "/cooking/roasted-brussels-sprouts-caesar-with-tahini/index.html"
-    ]
-  },
-  {
-    "listing": "/data.html",
-    "items": [
-      "/placeholder/index.html"
-    ]
-  },
-  {
-    "listing": "/music.html",
-    "items": [
-      "/placeholder/index.html"
     ]
   }
 ]
