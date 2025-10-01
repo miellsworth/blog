@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Michael's Website"
@@ -19,6 +20,7 @@ website:
         href: https://bsky.app/profile/mellsworth.bsky.social
       - icon: mic
         href: https://cjsw.com/program/beat-salad
+
       
 format:
   html:

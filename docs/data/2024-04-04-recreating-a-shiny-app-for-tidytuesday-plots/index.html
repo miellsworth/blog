@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Michael Ellsworth">
+<meta name="dcterms.date" content="2024-04-04">
+<meta name="description" content="Can I re-create Nicola Rennie’s Shiny App?">
 
-<title>Michael’s Website - Michael Ellsworth</title>
+<title>Michael’s Website - Re-creating a Shiny App for TidyTuesday plots</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,14 +76,14 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Michael’s Website</span>
     </a>
   </div>
@@ -90,15 +94,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./data.html"> 
+    <a class="nav-link" href="../../data.html"> 
 <span class="menu-text">Data</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./music.html"> 
+    <a class="nav-link" href="../../music.html"> 
 <span class="menu-text">Music</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cooking.html"> 
+    <a class="nav-link" href="../../cooking.html"> 
 <span class="menu-text">Cooking</span></a>
   </li>  
   <li class="nav-item compact">
@@ -127,40 +131,98 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduciton" id="toc-introduciton" class="nav-link active" data-scroll-target="#introduciton">Introduciton</a></li>
+  <li><a href="#tidy-directory" id="toc-tidy-directory" class="nav-link" data-scroll-target="#tidy-directory">Tidy directory</a></li>
+  <li><a href="#extract-directory-info" id="toc-extract-directory-info" class="nav-link" data-scroll-target="#extract-directory-info">Extract directory info</a></li>
+  <li><a href="#github-actions" id="toc-github-actions" class="nav-link" data-scroll-target="#github-actions">Github actions</a></li>
+  <li><a href="#shiny" id="toc-shiny" class="nav-link" data-scroll-target="#shiny">Shiny</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-jolla content">
-  <img src="profile.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Michael Ellsworth</h1>
+<h1 class="title">Re-creating a Shiny App for TidyTuesday plots</h1>
 </div>
-<div class="quarto-title-meta">
+
+<div>
+  <div class="description">
+    <p>Can I re-create Nicola Rennie’s Shiny App?</p>
   </div>
-</header><main class="content" id="quarto-document-content">
-<p>This is a personal website/notepad. On <a href="./data.html">data</a>, <a href="./cooking.html">cooking</a> and <a href="./music.html">music</a>.</p>
-<p><a href="mailto:michael.ellsworth7@gmail.com">Email Me</a></p>
+</div>
 
 
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://github.com/miellsworth" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://cjsw.com/program/beat-salad" class="about-link" rel="" target="">
-    <i class="bi bi-mic"></i>
-     <span class="about-link-text">Radio</span>
-  </a>
-  <a href="https://podcasts.apple.com/ca/podcast/beat-salad/id1497202150" class="about-link" rel="" target="">
-    <i class="bi bi-broadcast-pin"></i>
-     <span class="about-link-text">Podcast</span>
-  </a>
-</div>
-</div>
- <!-- /main -->
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Michael Ellsworth </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 4, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduciton" class="level1">
+<h1>Introduciton</h1>
+<p>I started getting into TidyTuesday again recently. This, timed with Nicola Rennie’s <a href="https://nrennie.rbind.io/blog/webr-shiny-tidytuesday/">post</a> about her webR powered Shiny App, inspired me to try and build a Shiny App to display my TidyTuesday plots! And by build, I mean re-create (rip-off?) her Shiny App, but with my plots.</p>
+</section>
+<section id="tidy-directory" class="level1">
+<h1>Tidy directory</h1>
+<p>Right off the hop, she talks about a pretty consistent structure to her TidyTuesday repository. Looking at mine, it’s not completely disorganized but could use some tidying. I guess a TidyTuesday repository should be <em>tidy</em> so let’s go ahead and do that.</p>
+<p>First, a separate directory to organize each week’s TidyTuesday plots and code: <code>/yyyy/yyyy-mm-dd/</code>. My code files and plot image files were already named fairly well. <code>yyyy-mm-dd.R</code> was the format for the code files, and <code>yyyy-mm-dd_plot_title.png</code> was the format for the plot image files. This seems to line up well enough with Nicola’s standard, so I’ll leave them as is.</p>
+<p>She also leverages the READMEs she has for each Tidy Tuesday to extract information about the plot title for that specific week. There are occasions where I save multiple plots for a single Tidy Tuesday so I might have to approach this a bit differently. For now, I’ll copy this approach as my initial idea to extract the plot titles from file names seemed messy. Maybe I can just reference my favourite plot from the week. Or perhaps the READMEs can have both plots. Regardless, I’m going to add some READMEs!</p>
+</section>
+<section id="extract-directory-info" class="level1">
+<h1>Extract directory info</h1>
+<p>Next up - create a tibble with information on all the Tidy Tuesday files in my Tidy Tuesday repository. Feel free to check out the post that outlines the code in more detail but a couple of neat lessons that I took away from this part:</p>
+<ul>
+<li><code>list.dirs()</code>: a fun little function to produce a character vector with file names and directory names in a specified directory! Kind of surprised I haven’t needed anything like this in the past</li>
+<li><code>tidyr::separate_wider_delim()</code>: a handy tool to split up a string column into multiple string columns based on a delimeter. This function is handy because it handles when there are too few or too many splits. In this case, if there are too many cases, we just drop the remainder.</li>
+<li><code>tidyr::separate_longer_delim()</code>:</li>
+<li><code>mutate(new_col = NA_character_)</code>: instead of blindly assigning <code>NA</code> values to a new column, this ensures it is a character column! Looks like you can do this with integers and real numbers as well. I’m sure there are others but a quick google search didn’t bring up a full list.</li>
+<li><code>stop()</code>: this wasn’t referenced in the blog post but I wasn’t sure how to handle errors in R. I think this seems to be a suitable replacement for the try/except statements that I’m used to in python</li>
+<li><code>attachment</code>: this library was leveraged to find the packages used for each Tidy Tuesday script. Had not seen this before. Pretty cool.</li>
+<li><code>tidyr::complete()</code>:</li>
+</ul>
+<p>I assume this little tibble is going to be the key source data for this app.</p>
+</section>
+<section id="github-actions" class="level1">
+<h1>Github actions</h1>
+<p>Nicola updates this tibble after every Tidy Tuesday contribution via a GitHub action. I’m a little hesitant to take this approach because this requires me to be a little more thoughtful about what I push to my main branch. Perhaps I should get in the habit of making feature branches for each Tidy Tuesday week and only pushing to main once a final product is ready. Regardless, I might as well set this up as a learning exercise.</p>
+<p>The action itself is pretty straightforward but one thing I hadn’t seen was the “Commit files” step at the end. This allows the action to commit all of the created files from the action script. Since we’re updating the app data with this action, we’ll want that file committed during this action run. Pretty handy!</p>
+<p>Another thing I haven’t leveraged in the past is GitHub Secrets. I’ll need to set-up a token to run the action and then save that token to this repository’s Secrets. For now, I’ll save the example .yml from Nicola’s post, with a few minor changes, and move on.</p>
+</section>
+<section id="shiny" class="level1">
+<h1>Shiny</h1>
+<p>It’s been a hot minute since I’ve played around with Shiny so this step was pretty foreign to me. I recall all the basic elements of setting up an app (the ui and the server), but it took some time to get used to the different layouts, panels, outputs and the reactive elements.</p>
+<p>I decided to differ slightly from Nicola’s app by ignoring the radio buttons and just sticking to a drop down list of all the plot titles. This makes the app code more simple and the actual interface a bit cleaner in my opinion. I like the idea of filtering plots based on packages used but I think it’s more of a nice to have at this point.</p>
+<p>Other than this one difference, the app code is basically the same and I was up and running with a local version pretty quickly.</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -325,6 +387,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

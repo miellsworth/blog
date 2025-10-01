@@ -1,0 +1,15 @@
+{
+  "hash": "0bff5261688e81610bcff76050234c78",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Radio and Quarto\"\ndescription: |\n  Music viz\ndate: 2024-04-23\n---\n\n\nApril 23rd, 2024. Can we start the countdown to Gemini szn?\n\nIt's 6 AM here at the CJSW radio studio. We're broadcasting some Tom Skinner this morning. A brand new 20 minute live track from his forthcoming record, Voices of Bishara Live at \"Mu\".\n\nI've wanted to do a little data/radio crossover for a bit so that's what I've focused on today. I have my full 4 year historical tracklist saved in a Google Sheet so why not see if I can read that into Quarto and play around with the data.\n\n`googlesheets4` appears to be the Posit built R interface to Google Sheets so I'm going to give that a try. Fun fact - the 4 in `googlesheets4` references the version of the Sheets API. It's not because Jennifer Bryan (the developer of `googlesheets4`) liked the number 4. In my opinion, that would have been a good enough reason :)\n\nSince my radio tracklist is saved in a private Google Sheet, authentication will be required. Looks like `googledrive` is needed to sort that out.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# library(googledrive)\n# library(googlesheets4)\n# \n# drive_auth()\n# gs4_auth(token = drive_token())\n```\n:::\n\n\nOkay authentication was a lot easier than I thought it would be. Two functions: `drive_auth()` and `gs4_auth()` is all it took, along with some browser clicks that lets the API access my Google Drive. We should be in business now.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# tracklist <- read_sheet(\n#   \"https://docs.google.com/spreadsheets/d/1L_aDq6GCrTqJQqjgYCsWrv5l3QYM2z09rrs-11KnhvM/edit#gid=0\",\n#   \"Tracklist\",\n#   skip = 1\n# )\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
