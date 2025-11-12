@@ -3,17 +3,12 @@ project:
   output-dir: docs
 
 website:
-  title: "Michael's Website"
+  title: "ME"
   # site-url: https://placeholder.com
   description: "A website, by Michael"
   navbar:
+    background: "#5375a9"
     right:
-      - text: Data
-        href: data.qmd
-      - text: Music
-        href: music.qmd
-      - text: Cooking
-        href: cooking.qmd
       - icon: github
         href: https://github.com/miellsworth
       - text: "{{< iconify simple-icons bluesky >}}"
@@ -21,10 +16,9 @@ website:
       - icon: mic
         href: https://cjsw.com/program/beat-salad
 
-      
 format:
   html:
-    theme:
-      light: flatly
-      dark: darkly
-    respect-user-color-scheme: true
+    theme: flatly
+    backgroundcolor: "#fbfae4"
+    linkcolor: "#277272"
+    # respect-user-color-scheme: true

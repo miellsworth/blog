@@ -1,14 +1,16 @@
 ---
-title: "Data"
-subtitle: A spot to share data related work and thoughts.
+title: "Books"
+subtitle: A periodic update on books I like and learn from.
 listing:
   contents: placeholder
   sort: "date desc"
   type: table
+  categories: true
   sort-ui: false
   filter-ui: false
-  fields: [date, title, description]
+  fields: [date, title]
   # feed: true  # Placeholder for future RSS feed, need site-url first
 page-layout: full
 title-block-banner: false
 ---
+

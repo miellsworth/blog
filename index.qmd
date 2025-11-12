@@ -1,20 +1,26 @@
 ---
-title: "Michael Ellsworth"
+title: "Michael's website."
 image: profile.jpg
 about:
   template: jolla
+  image-shape: round
+  image-width: 375px
   links:
     - icon: github
       text: Github
       href: https://github.com/miellsworth
+    - text:  "{{< iconify ri:bluesky-line >}}  Bsky"
+      href: https://bsky.app/profile/mellsworth.bsky.social
     - icon: mic
       text: Radio
       href: https://cjsw.com/program/beat-salad
     - icon: broadcast-pin
-      text: Podcast
+      text: Pod
       href: https://podcasts.apple.com/ca/podcast/beat-salad/id1497202150
+    - icon: envelope
+      text: Email
+      href: mailto:michael.ellsworth7@gmail.com
+
 ---
 
-This is a personal website/notepad. On [data](data.qmd), [cooking](cooking.qmd) and [music](music.qmd).
-
-[Email Me](mailto:michael.ellsworth7@gmail.com)
+Notes on [data](data.qmd), [cooking](cooking.qmd), [music](music.qmd) and [books](books.qmd).
