@@ -4,20 +4,23 @@ categories: Chicken
 ---
 
 # Ingredients
+## Blackening seasoning
 - 1 tbsp kosher salt
 - 1 tbsp smoked paprika
-- 0.5 tbsp dried thyme
-- 0.5 tbsp dried oregano
-- 0.5 tbsp garlic powder
-- 0.5 tbsp onion powder
+- 1/2 tbsp dried thyme
+- 1/2 tbsp dried oregano
+- 1/2 tbsp garlic powder
+- 1/2 tbsp onion powder
 - 1 teaspoon mustard powder
 - 1 teaspoon ground cayenne
-- 2 chicken breasts, 1.5 to 2 pounds, room temp
+
+## Other
+- 2 chicken breasts, 0.7 to 1 kg, room temp
 - 2 tbsp vegetable oil
 
 # Instructions
 ## 1
-- Make the blackening seasoning: In a small bowl, combine the salt, smoked paprika, thyme, oregano, garlic powder, onion powder, mustard powder and cayenne
+- In a small bowl, combine the salt, smoked paprika, thyme, oregano, garlic powder, onion powder, mustard powder and cayenne
 
 ## 2
 - Carefully slice the chicken breasts horizontally in half, then pat dry with a paper towel
@@ -35,4 +38,5 @@ categories: Chicken
 - Remove the foil, then let the chicken rest for at least 2 minutes
 
 ## 5
-- When ready to serve, slice the chicken into 0.5-inch pieces. Serve immediately
+- When ready to serve, slice the chicken into half inch pieces
+- Serve immediately

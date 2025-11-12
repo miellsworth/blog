@@ -158,14 +158,14 @@
     "href": "cooking/blackened-chicken-breasts/index.html",
     "title": "Blackened Chicken Breasts",
     "section": "",
-    "text": "1 tbsp kosher salt\n1 tbsp smoked paprika\n0.5 tbsp dried thyme\n0.5 tbsp dried oregano\n0.5 tbsp garlic powder\n0.5 tbsp onion powder\n1 teaspoon mustard powder\n1 teaspoon ground cayenne\n2 chicken breasts, 1.5 to 2 pounds, room temp\n2 tbsp vegetable oil"
+    "text": "1 tbsp kosher salt\n1 tbsp smoked paprika\n1/2 tbsp dried thyme\n1/2 tbsp dried oregano\n1/2 tbsp garlic powder\n1/2 tbsp onion powder\n1 teaspoon mustard powder\n1 teaspoon ground cayenne\n\n\n\n\n\n2 chicken breasts, 0.7 to 1 kg, room temp\n2 tbsp vegetable oil"
   },
   {
     "objectID": "cooking/blackened-chicken-breasts/index.html#section",
     "href": "cooking/blackened-chicken-breasts/index.html#section",
     "title": "Blackened Chicken Breasts",
     "section": "1",
-    "text": "1\n\nMake the blackening seasoning: In a small bowl, combine the salt, smoked paprika, thyme, oregano, garlic powder, onion powder, mustard powder and cayenne"
+    "text": "1\n\nIn a small bowl, combine the salt, smoked paprika, thyme, oregano, garlic powder, onion powder, mustard powder and cayenne"
   },
   {
     "objectID": "cooking/blackened-chicken-breasts/index.html#section-1",
@@ -193,7 +193,7 @@
     "href": "cooking/blackened-chicken-breasts/index.html#section-4",
     "title": "Blackened Chicken Breasts",
     "section": "5",
-    "text": "5\n\nWhen ready to serve, slice the chicken into 0.5-inch pieces. Serve immediately"
+    "text": "5\n\nWhen ready to serve, slice the chicken into half inch pieces\nServe immediately"
   },
   {
     "objectID": "cooking/sticky-miso-salmon-bowl/index.html",
@@ -375,35 +375,35 @@
     "href": "cooking/baked-chicken-thighs/index.html",
     "title": "Baked Chicken Thighs",
     "section": "",
-    "text": "1/3 cup olive oil\n1tbsp minced garlic (about 2 large cloves)\n1 tbsp Dijon mustard\n2 tsp dried thyme, rosemary or oregano (or 1 tbsp fresh), or 2 tsp Italian seasoning\n1.5 tsp kosher salt\n1 tsp black pepper\n1 lemon\n6 to 8 chicken thighs (about 3 pounds), patted dry\nChopped fresh parsley, for serving (optional)"
+    "text": "Marinate time is 30 minutes to 12 hours\nChicken should be 165F to 175F when cooked"
   },
   {
     "objectID": "cooking/baked-chicken-thighs/index.html#section",
     "href": "cooking/baked-chicken-thighs/index.html#section",
     "title": "Baked Chicken Thighs",
-    "section": "1",
-    "text": "1\n\nIn a large bowl, combine the olive oil, garlic, mustard, thyme, salt and pepper\nZest the lemon over the bowl, reserving the rest of the lemon for serving, and whisk until combined"
+    "section": "0.5",
+    "text": "0.5\n\nMince garlic cloves\nPat chicken dry\nZest lemon\nChop parsley (if serving)"
   },
   {
     "objectID": "cooking/baked-chicken-thighs/index.html#section-1",
     "href": "cooking/baked-chicken-thighs/index.html#section-1",
     "title": "Baked Chicken Thighs",
-    "section": "2",
-    "text": "2\n\nAdd the chicken thighs to the bowl, tossing until fully coated in the marinade\nCover and let marinate for 30 minutes at room temperature, or up to 12 hours in the refrigerator"
+    "section": "1",
+    "text": "1\n\nIn a large bowl, combine olive oil, garlic, mustard, thyme, salt and pepper, lemon zest and whisk until combined"
   },
   {
     "objectID": "cooking/baked-chicken-thighs/index.html#section-2",
     "href": "cooking/baked-chicken-thighs/index.html#section-2",
     "title": "Baked Chicken Thighs",
-    "section": "3",
-    "text": "3\n\nHeat the oven to 425 degrees and lift the chicken thighs from the marinade, letting any excess drip into the bowl\nPlace the thighs on a sheet pan and let them sit at room temperature while the oven heats\nBake until fully cooked and lightly browned, 25 to 30 minutes\nAn internal thermometer inserted into the thickest part of the meat should read 165 to 175 degrees"
+    "section": "2",
+    "text": "2\n\nAdd chicken thighs to the bowl, fully coating in the marinade\nCover and marinate for 30 minutes at room temperature, or up to 12 hours in the fridge"
   },
   {
     "objectID": "cooking/baked-chicken-thighs/index.html#section-3",
     "href": "cooking/baked-chicken-thighs/index.html#section-3",
     "title": "Baked Chicken Thighs",
-    "section": "4",
-    "text": "4\n\nCut the lemon in half and squeeze over the chicken\nSprinkle with salt and serve"
+    "section": "3",
+    "text": "3\n\nPreheat oven to 425 degrees\nLift the chicken thighs from the marinade, letting any excess drip into the bowl\nPlace the thighs on a sheet pan and let them sit at room temperature while the oven heats\nBake until fully cooked and lightly browned, 25 to 30 minutes"
   },
   {
     "objectID": "cooking/crisp-gnocchi-with-brussels-sprouts-and-brown-butter/index.html",
@@ -1454,5 +1454,26 @@
     "title": "Shinylive",
     "section": "",
     "text": "A number of days ago, I created a very simple Shiny app to visualize Calgary bike counts at specific locations throughout the city. One thing I didn’t do with this app was deploy it, which is what today’s post will focus on.\nInstead of hosting the app on some sort of web app hosting platform, I’m going to test out the shinylive package. This is the serverless version of Shiny that I’ve seen used a couple of times but I’m going to follow Rami Krispin’s tutorial for this exercise.\nGoing into this exercise, I thought there would be much more to it. Turns out, all I had to do was rename my Shiny app file to app.R and run shinylive::export(appdir = \"shiny\", destdir = \"docs\"). Once the app finished rendering, I ran httpuv::runStaticServer(\"docs/\", port=8008) to get the app running on my browser.\nInclude some details on putting this on GitHub pages."
+  },
+  {
+    "objectID": "cooking/baked-chicken-thighs/index.html#section-4",
+    "href": "cooking/baked-chicken-thighs/index.html#section-4",
+    "title": "Baked Chicken Thighs",
+    "section": "4",
+    "text": "4\n\nCut the lemon in half and squeeze over the chicken\nSprinkle with salt, parsley and serve"
+  },
+  {
+    "objectID": "cooking/blackened-chicken-breasts/index.html#blackening-seasoning",
+    "href": "cooking/blackened-chicken-breasts/index.html#blackening-seasoning",
+    "title": "Blackened Chicken Breasts",
+    "section": "",
+    "text": "1 tbsp kosher salt\n1 tbsp smoked paprika\n1/2 tbsp dried thyme\n1/2 tbsp dried oregano\n1/2 tbsp garlic powder\n1/2 tbsp onion powder\n1 teaspoon mustard powder\n1 teaspoon ground cayenne"
+  },
+  {
+    "objectID": "cooking/blackened-chicken-breasts/index.html#other",
+    "href": "cooking/blackened-chicken-breasts/index.html#other",
+    "title": "Blackened Chicken Breasts",
+    "section": "",
+    "text": "2 chicken breasts, 0.7 to 1 kg, room temp\n2 tbsp vegetable oil"
   }
 ]
