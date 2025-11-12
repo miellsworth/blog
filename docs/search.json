@@ -4,7 +4,7 @@
     "href": "data.html",
     "title": "Data",
     "section": "",
-    "text": "Placeholder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\n \n\n\nPlaceholder\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "data/2024-05-01-yyc-bike-counts/index.html",
@@ -721,25 +721,32 @@
     "text": "4\n\nSprinkle with parsley and lemon juice, season with salt and pepper, and serve immediately"
   },
   {
-    "objectID": "music.html",
-    "href": "music.html",
-    "title": "Music Weekly",
-    "section": "",
-    "text": "Placeholder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "cooking.html",
-    "href": "cooking.html",
-    "title": "Recipes",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n\n\n\n\n\nTitle\n\n\nCategories\n\n\n\n\n\n\nChimichurri Meatballs\n\n\nBeef\n\n\n\n\nBaked Chicken Thighs\n\n\nChicken\n\n\n\n\nBlackened Chicken Breasts\n\n\nChicken\n\n\n\n\nChimichurri Chicken\n\n\nChicken\n\n\n\n\nDijonnaise Grilled Chicken Breasts\n\n\nChicken\n\n\n\n\nThai Chicken Meatball Soup\n\n\nChicken\n\n\n\n\nShawarma-Spiced Grilled Chicken With Tahini-Yogurt Sauce\n\n\nChicken, Favourites\n\n\n\n\nChicken Noodle Soup\n\n\nChicken, Soup\n\n\n\n\nGrilled Shrimp With Chile and Garlic\n\n\nFish\n\n\n\n\nShrimp Scampi With Orzo\n\n\nFish\n\n\n\n\nSticky Miso Salmon Bowl\n\n\nFish\n\n\n\n\nOne-Pan Shrimp Scampi With Crispy Gnocchi\n\n\nFish, Gnocchi\n\n\n\n\nSheet-pan gnocchi w/ roasted tomatoes\n\n\nGnocchi\n\n\n\n\nCrispy Gnocchi With Sausage and Broccoli\n\n\nGnocchi, Sausage\n\n\n\n\nCrisp Gnocchi With Brussels Sprouts and Brown Butter\n\n\nGnocchi, Veggie\n\n\n\n\nSoy Sauce Noodles With Cabbage and Fried Eggs\n\n\nNoodles\n\n\n\n\nOne-Skillet Orzo With Tomatoes and Eggs\n\n\nPasta\n\n\n\n\nSpaghetti Carbonara\n\n\nPasta, Favourites\n\n\n\n\nBraised Pork Chops, Shanghai-style\n\n\nPork\n\n\n\n\nCrispy Fried Rice With Bacon and Cabbage\n\n\nRice\n\n\n\n\nPasta Salad\n\n\nSalad, Pasta, Favourites\n\n\n\n\nSimple greek yogurt\n\n\nSnacks\n\n\n\n\nSimple smoothie\n\n\nSnacks\n\n\n\n\nCreamy Tortellini Soup\n\n\nSoup\n\n\n\n\nCrispy Tofu and Broccoli With Ginger-Garlic Teriyaki Sauce\n\n\nTofu\n\n\n\n\nTofu With Spicy Soy Dressing\n\n\nTofu, Favourites\n\n\n\n\nBuffalo Chickpea Wraps\n\n\nVeggie\n\n\n\n\nCauliflower Shawarma With Spicy Tahini\n\n\nVeggie\n\n\n\n\nSmoky Sweet Potato and Chickpea Sheet Pan Dinner\n\n\nVeggie\n\n\n\n\nSpiced Roasted Cauliflower With Feta and Garlic\n\n\nVeggie\n\n\n\n\nRoasted Brussels Sprouts Caesar With Tahini\n\n\nVeggie, Salad\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "music/2025-01-18-5-years-of-beat-salad/index.html",
     "href": "music/2025-01-18-5-years-of-beat-salad/index.html",
     "title": "5 years of Beat Salad",
     "section": "",
-    "text": "library(googledrive)\nlibrary(googlesheets4)\n\n\nAttaching package: 'googlesheets4'\n\n\nThe following objects are masked from 'package:googledrive':\n\n    request_generate, request_make\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(janitor)\n\n\nAttaching package: 'janitor'\n\n\nThe following objects are masked from 'package:stats':\n\n    chisq.test, fisher.test\n\nlibrary(lubridate)\n\n\nAttaching package: 'lubridate'\n\n\nThe following objects are masked from 'package:base':\n\n    date, intersect, setdiff, union\n\nlibrary(stringr)\n\n\ndrive_auth(email = \"michael.ellsworth7@gmail.com\")\ngs4_auth(token = drive_token())\n\n\ntracklist &lt;- read_sheet(\n  \"https://docs.google.com/spreadsheets/d/1L_aDq6GCrTqJQqjgYCsWrv5l3QYM2z09rrs-11KnhvM/edit#gid=0\",\n  \"Tracklist\",\n  skip = 1,\n  col_types = \"c\"\n) |&gt; \n  clean_names() |&gt;\n  mutate(\n    date = mdy(date),\n    year = as.numeric(year),\n    duration = str_remove(duration, \":00$\")\n  ) |&gt;\n  mutate(duration = ms(duration))\n\n✔ Reading from \"Beat Salad Tracklist\".\n\n\n✔ Range ''Tracklist'!2:10000000'.\n\n\n\nmost_played_tracks &lt;- tracklist |&gt; \n  filter(!is.na(track)) |&gt; \n  filter(artist != \"Bird Peterson\") |&gt;\n  count(track, sort = TRUE) |&gt; \n  head(103) |&gt;\n  pull(track)\n\ntracklist |&gt; \n  filter(!is.na(track)) |&gt; \n  filter(artist != \"Bird Peterson\") |&gt;\n  count(artist, sort = TRUE) |&gt; \n  head(103)\n\n# A tibble: 103 × 2\n   artist                 n\n   &lt;chr&gt;              &lt;int&gt;\n 1 BADBADNOTGOOD         65\n 2 DATSUNN               61\n 3 Sargeant X Comrade    48\n 4 kawfee                44\n 5 Kiefer                42\n 6 Makaya McCraven       40\n 7 Ljones                38\n 8 Moka Only             34\n 9 Alfa Mist             32\n10 Butcher Brown         32\n# ℹ 93 more rows\n\n\n\ndf_most_played_tracks &lt;- tracklist |&gt; \n  filter(track %in% most_played_tracks) |&gt;\n  mutate(order = factor(track, levels = most_played_tracks)) |&gt;\n  arrange(order)"
+    "text": "library(googledrive)\nlibrary(googlesheets4)\n\n\nAttaching package: 'googlesheets4'\n\n\nThe following objects are masked from 'package:googledrive':\n\n    request_generate, request_make\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(janitor)\n\n\nAttaching package: 'janitor'\n\n\nThe following objects are masked from 'package:stats':\n\n    chisq.test, fisher.test\n\nlibrary(lubridate)\n\n\nAttaching package: 'lubridate'\n\n\nThe following objects are masked from 'package:base':\n\n    date, intersect, setdiff, union\n\nlibrary(stringr)\n\n\ndrive_auth(email = \"michael.ellsworth7@gmail.com\")\ngs4_auth(token = drive_token())\n\n\ntracklist &lt;- read_sheet(\n  \"https://docs.google.com/spreadsheets/d/1L_aDq6GCrTqJQqjgYCsWrv5l3QYM2z09rrs-11KnhvM/edit#gid=0\",\n  \"Tracklist\",\n  skip = 1,\n  col_types = \"c\"\n) |&gt; \n  clean_names() |&gt;\n  mutate(\n    date = mdy(date),\n    year = as.numeric(year),\n    duration = str_remove(duration, \":00$\")\n  ) |&gt;\n  mutate(duration = ms(duration))\n\n✔ Reading from \"Beat Salad Tracklist\".\n\n\n✔ Range ''Tracklist'!2:10000000'.\n\n\n\nmost_played_tracks &lt;- tracklist |&gt; \n  filter(!is.na(track)) |&gt; \n  filter(artist != \"Bird Peterson\") |&gt;\n  count(track, sort = TRUE) |&gt; \n  head(103) |&gt;\n  pull(track)\n\ntracklist |&gt; \n  filter(!is.na(track)) |&gt; \n  filter(artist != \"Bird Peterson\") |&gt;\n  count(artist, sort = TRUE) |&gt; \n  head(103)\n\n# A tibble: 103 × 2\n   artist                 n\n   &lt;chr&gt;              &lt;int&gt;\n 1 BADBADNOTGOOD         66\n 2 DATSUNN               61\n 3 Sargeant X Comrade    49\n 4 kawfee                44\n 5 Kiefer                42\n 6 Makaya McCraven       40\n 7 Ljones                38\n 8 Alfa Mist             34\n 9 Moka Only             34\n10 Butcher Brown         33\n# ℹ 93 more rows\n\n\n\ndf_most_played_tracks &lt;- tracklist |&gt; \n  filter(track %in% most_played_tracks) |&gt;\n  mutate(order = factor(track, levels = most_played_tracks)) |&gt;\n  arrange(order)"
+  },
+  {
+    "objectID": "cooking.html",
+    "href": "cooking.html",
+    "title": "Cooking",
+    "section": "",
+    "text": "Title\n\n\nCategories\n\n\n\n\n\n\nChimichurri Meatballs\n\n\nBeef\n\n\n\n\nBaked Chicken Thighs\n\n\nChicken\n\n\n\n\nBlackened Chicken Breasts\n\n\nChicken\n\n\n\n\nChimichurri Chicken\n\n\nChicken\n\n\n\n\nDijonnaise Grilled Chicken Breasts\n\n\nChicken\n\n\n\n\nThai Chicken Meatball Soup\n\n\nChicken\n\n\n\n\nShawarma-Spiced Grilled Chicken With Tahini-Yogurt Sauce\n\n\nChicken, Favourites\n\n\n\n\nChicken Noodle Soup\n\n\nChicken, Soup\n\n\n\n\nGrilled Shrimp With Chile and Garlic\n\n\nFish\n\n\n\n\nShrimp Scampi With Orzo\n\n\nFish\n\n\n\n\nSticky Miso Salmon Bowl\n\n\nFish\n\n\n\n\nOne-Pan Shrimp Scampi With Crispy Gnocchi\n\n\nFish, Gnocchi\n\n\n\n\nSheet-pan gnocchi w/ roasted tomatoes\n\n\nGnocchi\n\n\n\n\nCrispy Gnocchi With Sausage and Broccoli\n\n\nGnocchi, Sausage\n\n\n\n\nCrisp Gnocchi With Brussels Sprouts and Brown Butter\n\n\nGnocchi, Veggie\n\n\n\n\nSoy Sauce Noodles With Cabbage and Fried Eggs\n\n\nNoodles\n\n\n\n\nOne-Skillet Orzo With Tomatoes and Eggs\n\n\nPasta\n\n\n\n\nSpaghetti Carbonara\n\n\nPasta, Favourites\n\n\n\n\nBraised Pork Chops, Shanghai-style\n\n\nPork\n\n\n\n\nCrispy Fried Rice With Bacon and Cabbage\n\n\nRice\n\n\n\n\nPasta Salad\n\n\nSalad, Pasta, Favourites\n\n\n\n\nSimple greek yogurt\n\n\nSnacks\n\n\n\n\nSimple smoothie\n\n\nSnacks\n\n\n\n\nCreamy Tortellini Soup\n\n\nSoup\n\n\n\n\nCrispy Tofu and Broccoli With Ginger-Garlic Teriyaki Sauce\n\n\nTofu\n\n\n\n\nTofu With Spicy Soy Dressing\n\n\nTofu, Favourites\n\n\n\n\nBuffalo Chickpea Wraps\n\n\nVeggie\n\n\n\n\nCauliflower Shawarma With Spicy Tahini\n\n\nVeggie\n\n\n\n\nSmoky Sweet Potato and Chickpea Sheet Pan Dinner\n\n\nVeggie\n\n\n\n\nSpiced Roasted Cauliflower With Feta and Garlic\n\n\nVeggie\n\n\n\n\nRoasted Brussels Sprouts Caesar With Tahini\n\n\nVeggie, Salad\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "music.html",
+    "href": "music.html",
+    "title": "Music",
+    "section": "",
+    "text": "Date\n\n\nTitle\n\n\n\n\n\n\n \n\n\nPlaceholder\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "books.html",
+    "href": "books.html",
+    "title": "Books",
+    "section": "",
+    "text": "Date\n\n\nTitle\n\n\n\n\n\n\n \n\n\nPlaceholder\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "cooking/shawarmaspiced-grilled-chicken-with-tahiniyogurt-sauce/index.html",
@@ -1381,9 +1388,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Michael Ellsworth",
+    "title": "Michael’s website.",
     "section": "",
-    "text": "This is a personal website/notepad. On data, cooking and music.\nEmail Me"
+    "text": "Notes on data, cooking, music and books."
   },
   {
     "objectID": "data/2024-05-15-event-listeners/index.html",
@@ -1395,7 +1402,7 @@
   {
     "objectID": "data/ideas.html",
     "href": "data/ideas.html",
-    "title": "Michael's Website",
+    "title": "ME",
     "section": "",
     "text": "Blog post ideas - Clean up and finish half baked Tidy Tuesday submissions - Create a shareable webR app to display Tidy Tuesday submissions - Develop a Shiny application for viewing basic Ultimate statistics - Figure out how I can intersect my interest in data and my interest in radio/music - Explore Survival Analysis in Tidy Models - City of Calgary dashboard projects using open data - Football analytics projects for a hypothetical small market team - Learnings from Tidy Modelling with R - Ultimate stats shiny dashboard (with bslib?) - Plaza 14 or personal finance dashboard - https://newsletter.pragmaticengineer.com/p/an-educational-side-project\nStructure - Topic title (what am I posting about) - What I learned - Snippets of code - The final code - The end result"
   },
