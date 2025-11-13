@@ -1,5 +1,8 @@
 ---
 title: "Blackened Chicken Breasts"
+author:
+  - name: "New York Times"
+    url: https://cooking.nytimes.com/recipes/1025408-blackened-chicken-breasts
 categories: Chicken
 ---
 

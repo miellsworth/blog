@@ -1,11 +1,15 @@
 ---
 title: "Braised Pork Chops, Shanghai-style"
+author:
+  - name: "The Woks of Life"
+    url: https://thewoksoflife.com/braised-pork-chops-shanghai/#recipe
 categories: Pork
 ---
+# Notes
+- Marinate time is 15 minutes
 
 # Ingredients
-- 2 lb boneless center cut pork chops
-(6 pieces)
+- 2 lb boneless center cut pork chops (6 pieces)
 - 2 tbsp Shaoxing wine
 - 1/2 tsp salt
 - 1 tbsp light soy sauce
@@ -23,22 +27,22 @@ For the rest of the dish:
 
 # Instructions
 ## 1
-- For each pork chop, cut 2 small slits along the pork fat on the outer perimeter of the chop to prevent it from curling up during the cooking process
-- Then pound it front and back using the back of your knife (or a meat tenderizer), until the chops are between ¼ and ½ inch thick (about 0.75cm)
-- This is an important step
-- Take your time to do it thoroughly
+- Cut 2 small slits along the pork fat on the outer perimeter of each pork chop to prevent it from curling up during the cooking process
+- Pound the pork chop front and back using the back of your knife (or a meat tenderizer), until the chops are between 1/4 and 1/2 inch thick
+  - Important step! Take your time to do it thoroughly
 
 ## 2
-- Mix the pork chops with the Shaoxing wine, salt, light soy sauce, and water, using your hands to toss the chops until they absorb all the liquid
+- Mix the pork chops with the Shaoxing wine, salt, light soy sauce, and water
+- Toss the chops until they absorb all the liquid
 
 ## 3
 - Add 2 medium eggs, and mix until everything is well absorbed and the chops are uniformly coated in egg
-- Finally, add the cornstarch and mix everything well one more time
+- Add the cornstarch and mix everything well one more time
 - Marinate for 15 minutes
 
 ## 4
-- Wash the scallions and pat them thoroughly dry with a kitchen towel to prevent splattering in the wok later
-- Cut them in half crosswise
+- Wash the green onions, pat dry to prevent splattering in the wok
+- Cut green onions in half crosswise
 - If the stems are particularly thick, you can also cut them in half lengthwise.
 
 ## 5 
