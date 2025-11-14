@@ -1,21 +1,32 @@
 ---
 title: "Chicken Noodle Soup"
-categories: [Chicken, Soup]
+Author:
+  - name: "New York Times"
+    href: https://cooking.nytimes.com/recipes/1024338-chicken-noodle-soup
+categories: [Chicken, Soup, Favourites]
 ---
 
 # Ingredients
 - 2 tbsp unsalted butter
-- 1 medium yellow onion, finely chopped
+- 1 medium yellow onion
 - Salt and black pepper
 - 8 cups chicken stock
 - 2 bay leaves or thyme sprigs (or 1 teaspoon dried thyme)
-- 0.25 cup finely chopped parsley or dill, stems reserved, plus more for garnish
-- 2 medium carrots, cut into 0.5-inch pieces
-- 2 celery stalks, cut into 0.5-inch pieces
-- 6 ounces dried noodles, such as egg noodles or short pasta
-- 3 cups shredded, cooked chicken (from 1 rotisserie chicken)
+- 1/4 cup finely chopped parsley or dill
+- 2 medium carrots
+- 2 celery stalks
+- 6 ounces dried noodles (egg or short pasta)
+- 1 rotisserie chicken
 
 # Instructions
+## 0.5 Prepare ingredients
+- Finely chop onion
+- Finely chop herbs (parsley or dill), reserve stems
+  - Dill is my preference here!
+- Chop carrots into half-inch pieces
+- Chop celery into half-inch pieces
+- Shred rotisserie chicken (should be 3 cups of chicken)
+
 ## 1
 - In a large pot or Dutch oven, melt the butter over medium
 - Add the onion, season with salt and pepper, and cook until softened but not browned, 5 to 7 minutes
@@ -24,4 +35,4 @@ categories: [Chicken, Soup]
 - Add the chicken stock, bay leaves and herb stems and bring to a boil over high
 - Add the carrots, celery and noodles and cook, uncovered, over medium-high until the pasta is al dente according to package directions, 7 to 10 minutes
 - Add the chicken and simmer just until warmed, 1 to 2 minutes
-- Pluck out the bay leaves and herb stems, stir in the chopped parsley, and season to taste with salt and pepper
+- Pluck out the bay leaves and herb stems, stir in the chopped herbs, and season to taste with salt and pepper
