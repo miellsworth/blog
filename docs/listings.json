@@ -6,9 +6,37 @@
     ]
   },
   {
-    "listing": "/books.html",
+    "listing": "/cooking.html",
     "items": [
-      "/placeholder/index.html"
+      "/cooking/chimichurri-meatballs.html",
+      "/cooking/baked-chicken-thighs.html",
+      "/cooking/blackened-chicken-breasts.html",
+      "/cooking/chimichurri-chicken.html",
+      "/cooking/dijonnaise-grilled-chicken.html",
+      "/cooking/thai-chicken-meatball-soup.html",
+      "/cooking/shawarma-spiced-chicken.html",
+      "/cooking/chicken-noodle-soup.html",
+      "/cooking/grilled-shrimp.html",
+      "/cooking/shrimp-scampi-orzo.html",
+      "/cooking/sticky-miso-salmon-bowl.html",
+      "/cooking/onepan-shrimp-scampi.html",
+      "/cooking/sheetpan-gnocchi.html",
+      "/cooking/crispy-gnocchi-sausage.html",
+      "/cooking/crisp-gnocchi-sprouts.html",
+      "/cooking/soy-sauce-noodles.html",
+      "/cooking/oneskillet-orzo.html",
+      "/cooking/spaghetti-carbonara.html",
+      "/cooking/braised-pork-chops.html",
+      "/cooking/crispy-fried-rice.html",
+      "/cooking/pasta-salad.html",
+      "/cooking/creamy-tortellini-soup.html",
+      "/cooking/crispy-tofu.html",
+      "/cooking/silken-tofu.html",
+      "/cooking/buffalo-chickpea-wraps.html",
+      "/cooking/smoky-sweet-potato-chickpea.html",
+      "/cooking/spiced-roasted-cauliflower.html",
+      "/cooking/cauliflower-shawarma.html",
+      "/cooking/roasted-brussels-sprouts-caeser.html"
     ]
   },
   {
@@ -18,38 +46,9 @@
     ]
   },
   {
-    "listing": "/cooking.html",
+    "listing": "/books.html",
     "items": [
-      "/cooking/chimichurri-meatballs/index.html",
-      "/cooking/baked-chicken-thighs/index.html",
-      "/cooking/blackened-chicken-breasts/index.html",
-      "/cooking/chimichurri-chicken/index.html",
-      "/cooking/dijonnaise-grilled-chicken-breasts/index.html",
-      "/cooking/thai-chicken-meatball-soup/index.html",
-      "/cooking/shawarmaspiced-grilled-chicken-with-tahiniyogurt-sauce/index.html",
-      "/cooking/chicken-noodle-soup/index.html",
-      "/cooking/grilled-shrimp-with-chile-and-garlic/index.html",
-      "/cooking/shrimp-scampi-with-orzo/index.html",
-      "/cooking/sticky-miso-salmon-bowl/index.html",
-      "/cooking/onepan-shrimp-scampi-with-crispy-gnocchi/index.html",
-      "/cooking/sheetpan-gnocchi-w-roasted-tomatoes/index.html",
-      "/cooking/crispy-gnocchi-with-sausage-and-broccoli/index.html",
-      "/cooking/crisp-gnocchi-with-brussels-sprouts-and-brown-butter/index.html",
-      "/cooking/soy-sauce-noodles-with-cabbage-and-fried-eggs/index.html",
-      "/cooking/oneskillet-orzo-with-tomatoes-and-eggs/index.html",
-      "/cooking/spaghetti-carbonara/index.html",
-      "/cooking/braised-pork-chops-shanghaistyle/index.html",
-      "/cooking/crispy-fried-rice-with-bacon-and-cabbage/index.html",
-      "/cooking/pasta-salad/index.html",
-      "/cooking/simple-greek-yogurt/index.html",
-      "/cooking/creamy-tortellini-soup/index.html",
-      "/cooking/crispy-tofu-and-broccoli-with-gingergarlic-teriyaki-sauce/index.html",
-      "/cooking/silken-tofu-with-spicy-soy-dressing/index.html",
-      "/cooking/buffalo-chickpea-wraps/index.html",
-      "/cooking/smoky-sweet-potato-and-chickpea-sheet-pan-dinner/index.html",
-      "/cooking/spiced-roasted-cauliflower-with-feta-and-garlic/index.html",
-      "/cooking/cauliflower-shawarma-with-spicy-tahini/index.html",
-      "/cooking/roasted-brussels-sprouts-caesar-with-tahini/index.html"
+      "/placeholder/index.html"
     ]
   }
 ]
