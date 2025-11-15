@@ -1,6 +1,18 @@
 [
   {
+    "listing": "/data.html",
+    "items": [
+      "/placeholder/index.html"
+    ]
+  },
+  {
     "listing": "/books.html",
+    "items": [
+      "/placeholder/index.html"
+    ]
+  },
+  {
+    "listing": "/music.html",
     "items": [
       "/placeholder/index.html"
     ]
@@ -30,7 +42,6 @@
       "/cooking/crispy-fried-rice-with-bacon-and-cabbage/index.html",
       "/cooking/pasta-salad/index.html",
       "/cooking/simple-greek-yogurt/index.html",
-      "/cooking/simple-smoothie/index.html",
       "/cooking/creamy-tortellini-soup/index.html",
       "/cooking/crispy-tofu-and-broccoli-with-gingergarlic-teriyaki-sauce/index.html",
       "/cooking/silken-tofu-with-spicy-soy-dressing/index.html",
@@ -39,18 +50,6 @@
       "/cooking/spiced-roasted-cauliflower-with-feta-and-garlic/index.html",
       "/cooking/cauliflower-shawarma-with-spicy-tahini/index.html",
       "/cooking/roasted-brussels-sprouts-caesar-with-tahini/index.html"
-    ]
-  },
-  {
-    "listing": "/data.html",
-    "items": [
-      "/placeholder/index.html"
-    ]
-  },
-  {
-    "listing": "/music.html",
-    "items": [
-      "/placeholder/index.html"
     ]
   }
 ]
