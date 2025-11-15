@@ -1,6 +1,6 @@
 ---
 title: "Chicken Noodle Soup"
-Author:
+author:
   - name: "New York Times"
     href: https://cooking.nytimes.com/recipes/1024338-chicken-noodle-soup
 categories: [Chicken, Soup, Favourites]

@@ -1,26 +1,29 @@
 ---
 title: "Chimichurri Chicken"
+author:
+  - name: "New York Times"
+    href: https://cooking.nytimes.com/recipes/1020245-chimichurri-chicken
 categories: Chicken
 ---
 
 # Ingredients
 ## For the Chimichurri Sauce
-- 3 garlic cloves, peeled
+- 3 garlic cloves
 - 1.5 tsp kosher salt
 - 1 cup parsley leaves and stems
-- 0.5 cup fresh oregano leaves
-- 0.5 tsp red-pepper flakes
-- 0.5 tsp black pepper
+- 1/2 cup fresh oregano leaves
+- 1/2 tsp red-pepper flakes
+- 1/2 tsp black pepper
 - 3 tbsp red-wine vinegar
-- 0.5 cup extra-virgin olive oil
+- 1/2 cup extra-virgin olive oil
 
 ## For the Chicken
-- 1.5 to 2 lb boneless, skinless chicken thighs or breasts
+- 750 g to 1 kg chicken thighs or breasts
 - 1 tbsp olive oil
 
 # Instructions
-## 1
-- Make the sauce: On a cutting board, smash and coarsely chop the garlic with 0.5 tsp salt
+## 1 Make the chimichurri sauce
+- On a cutting board, smash and coarsely chop the garlic with 0.5 tsp salt
 - Mash the mixture using the side of your knife until a coarse paste forms
 - Move the paste to the side of the cutting board, then chop the parsley and oregano together with the remaining 1 tsp salt
 - Combine the garlic paste and the chopped herbs and chop and mash until the herbs are bruised and fragrant
@@ -28,7 +31,7 @@ categories: Chicken
 ## 2
 - Transfer to a medium bowl
 - Add the red-pepper flakes, black pepper, vinegar and extra-virgin olive oil; stir to combine
-- You should have about 0.75 cup chimichurri. It can be prepared in advance and refrigerated in an airtight container up to 2 days
+- You should have about 3/4 cup chimichurri. It can be prepared in advance and refrigerated in an airtight container up to 2 days
 
 ## 3
 - Make the chicken: Pat the chicken dry. If thickness varies greatly, pound to an even thickness, about 0.5 inch

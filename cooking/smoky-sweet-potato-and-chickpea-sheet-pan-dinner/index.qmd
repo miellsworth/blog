@@ -1,12 +1,15 @@
 ---
 title: "Smoky Sweet Potato and Chickpea Sheet Pan Dinner"
+author:
+  - name: "Plant Based RD"
+    href: https://plantbasedrdblog.com/2021/04/smoky-sweet-potato-and-chickpea-sheet-pan-dinner/
 categories: Veggie
 ---
 
 # Ingredients
-- 1, 15oz can chickpeas, rinsed and drained
+- 15oz can chickpeas
 - 1 medium sweet potato, chopped into small cubes (½ inch thick)
-- 1 head of broccoli, chopped into small ping pong sized florets
+- 1 head of broccoli
 - 1/2 medium red onion, sliced thin
 - 1 tsp smoked paprika
 - 1/2 tsp fennel seed
@@ -19,6 +22,10 @@ categories: Veggie
 - Handful of fresh minced parsley and cilantro
 
 # Instructions
+## 0.5 Prepare ingredients
+- Rinse and drain chickpeas
+- Chop broccoli into small 2 inch florets
+
 ## 1
 - Set oven to 400F
 - Dry off your chickpeas in a clean kitchen towel and lightly rub it over the chickpeas

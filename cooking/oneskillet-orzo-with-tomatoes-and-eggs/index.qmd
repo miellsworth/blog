@@ -1,27 +1,37 @@
 ---
 title: "One-Skillet Orzo With Tomatoes and Eggs"
+author:
+  - name: "Epicurious"
+    href: https://www.epicurious.com/recipes/food/views/easy-one-skillet-orzo-with-tomatoes-and-eggs
 categories: Pasta
 ---
 
 # Ingredients
-- 2 Tbsp. unsalted butter
-- 1 small or medium onion, finely chopped
-- 2 garlic cloves, thinly sliced
-- ½ tsp. crushed red pepper flakes
+- 2 tbsp unsalted butter
+- 1 small  onion
+- 2 garlic cloves
+- 1/2 tsp crushed red pepper flakes
 - 1 cup orzo
-- 2 cups canned whole peeled tomatoes with juices (from one 28-oz. can), cut up with kitchen shears
-- 1¼ tsp. kosher salt
+- 828 ml canned whole peeled tomatoes
+- 1 1/4 tsp kosher salt
 - 4 large eggs
-- 4 oz. mozzarella, coarsely grated (about 1 cup)
+- 100 g (1 cup) mozzarella
 - Freshly ground black pepper
-- Torn basil leaves (for serving)
+- Basil (for serving)
 
 # Instructions
+## 0.5 Prepare ingredients
+- Finely chop onion
+- Thinly slice garlic cloves
+- Cut up canned tomatoes in the juice
+- Grate mozzarella
+- Tear up basil
+
 ## 1
 - Melt butter in a large skillet over medium heat
 - Cook onion, garlic, and red pepper flakes, stirring often, until onion is softened and translucent, about 4 minutes
 - Add orzo and stir until coated in butter, about 30 seconds
-- Add tomatoes and juices and cook, stirring, until liquid is reduced and tomatoes are starting to stick to skillet, about 4 minutes.
+- Add 2 cups of the cut up tomatoes and juices and cook, stirring, until liquid is reduced and tomatoes are starting to stick to skillet, about 4 minutes.
 
 ## 2
 - Add salt and 2 cups water, increase heat to medium-high, and bring to a simmer

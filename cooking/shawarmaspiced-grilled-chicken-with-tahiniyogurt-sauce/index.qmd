@@ -1,5 +1,8 @@
 ---
 title: "Shawarma-Spiced Grilled Chicken With Tahini-Yogurt Sauce"
+author:
+  - name: "New York Times"
+    href: https://cooking.nytimes.com/recipes/1025200-shawarma-spiced-grilled-chicken-with-tahini-yogurt-sauce
 categories: [Chicken, Favourites]
 ---
 
