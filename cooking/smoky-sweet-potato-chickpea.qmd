@@ -2,7 +2,7 @@
 title: "Smoky Sweet Potato and Chickpea Sheet Pan Dinner"
 author:
   - name: "Plant Based RD"
-    href: https://plantbasedrdblog.com/2021/04/smoky-sweet-potato-and-chickpea-sheet-pan-dinner/
+    url: https://plantbasedrdblog.com/2021/04/smoky-sweet-potato-and-chickpea-sheet-pan-dinner/
 categories: Veggie
 ---
 

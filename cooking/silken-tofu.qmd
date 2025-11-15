@@ -2,7 +2,7 @@
 title: "Tofu With Spicy Soy Dressing"
 author:
   - name: "New York Times"
-    href: https://cooking.nytimes.com/recipes/1022562-silken-tofu-with-spicy-soy-dressing
+    url: https://cooking.nytimes.com/recipes/1022562-silken-tofu-with-spicy-soy-dressing
 categories: [Tofu, Favourites]
 ---
 

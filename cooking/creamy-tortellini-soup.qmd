@@ -2,7 +2,7 @@
 title: "Creamy Tortellini Soup"
 author:
   - name: "New York Times"
-    href: https://cooking.nytimes.com/recipes/1026148-creamy-tortellini-soup
+    url: https://cooking.nytimes.com/recipes/1026148-creamy-tortellini-soup
 categories: Soup
 ---
 

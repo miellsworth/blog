@@ -1,5 +1,8 @@
 ---
 title: "Crispy Gnocchi With Sausage and Broccoli"
+author:
+  - name: "New York Times"
+    url: https://cooking.nytimes.com/recipes/1025733-crispy-gnocchi-with-sausage-and-broccoli
 categories: [Gnocchi, Sausage]
 ---
 

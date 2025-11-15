@@ -2,7 +2,7 @@
 title: "Spaghetti Carbonara"
 author:
   - name: "New York Times"
-    href: https://cooking.nytimes.com/recipes/12965-spaghetti-carbonara
+    url: https://cooking.nytimes.com/recipes/12965-spaghetti-carbonara
 categories: [Pasta, Favourites]
 ---
 

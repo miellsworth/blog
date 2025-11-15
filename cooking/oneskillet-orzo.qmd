@@ -2,7 +2,7 @@
 title: "One-Skillet Orzo With Tomatoes and Eggs"
 author:
   - name: "Epicurious"
-    href: https://www.epicurious.com/recipes/food/views/easy-one-skillet-orzo-with-tomatoes-and-eggs
+    url: https://www.epicurious.com/recipes/food/views/easy-one-skillet-orzo-with-tomatoes-and-eggs
 categories: Pasta
 ---
 

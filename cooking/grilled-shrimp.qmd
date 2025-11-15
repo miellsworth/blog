@@ -2,7 +2,7 @@
 title: "Grilled Shrimp With Chile and Garlic"
 author:
   - name: "New York Times"
-    href: https://cooking.nytimes.com/recipes/1023381-grilled-shrimp-with-chile-and-garlic
+    url: https://cooking.nytimes.com/recipes/1023381-grilled-shrimp-with-chile-and-garlic
 categories: Fish
 ---
 

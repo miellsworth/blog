@@ -2,7 +2,7 @@
 title: "Cauliflower Shawarma With Spicy Tahini"
 author:
   - name: "New York Times"
-    href: https://cooking.nytimes.com/recipes/1023019-cauliflower-shawarma-with-spicy-tahini
+    url: https://cooking.nytimes.com/recipes/1023019-cauliflower-shawarma-with-spicy-tahini
 categories: [Veggie, Favourites]
 ---
 

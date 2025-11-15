@@ -2,7 +2,7 @@
 title: "Dijonnaise Grilled Chicken Breasts"
 author:
   - name: "New York Times"
-    href: https://cooking.nytimes.com/recipes/1025355-dijonnaise-grilled-chicken-breasts
+    url: https://cooking.nytimes.com/recipes/1025355-dijonnaise-grilled-chicken-breasts
 categories: Chicken
 ---
 

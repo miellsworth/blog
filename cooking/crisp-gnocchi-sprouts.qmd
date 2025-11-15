@@ -2,7 +2,7 @@
 title: "Crisp Gnocchi With Brussels Sprouts and Brown Butter"
 author:
   - name: "New York Times"
-    href: https://cooking.nytimes.com/recipes/1020453-crisp-gnocchi-with-brussels-sprouts-and-brown-butter
+    url: https://cooking.nytimes.com/recipes/1020453-crisp-gnocchi-with-brussels-sprouts-and-brown-butter
 categories: [Gnocchi, Veggie]
 ---
 

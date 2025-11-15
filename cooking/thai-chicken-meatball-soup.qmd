@@ -1,5 +1,8 @@
 ---
 title: "Thai Chicken Meatball Soup"
+author:
+  - name: "New York Times"
+    url: https://cooking.nytimes.com/recipes/1020631-thai-inspired-chicken-meatball-soup
 categories: Chicken
 ---
 
