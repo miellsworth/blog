@@ -1,5 +1,5 @@
 ---
-title: "Michael's data blog"
+title: "Notes on data"
 description: |
   An introduction...
 date: 2023-07-03
@@ -8,13 +8,13 @@ categories: [Misc]
 
 # A data blog?
 
-I've decided to create a data blog. Why? A blog seems like a great way for Data People share their work in a centralized place. I'm a Data Person. I don't currently have a place to share my work. I guess I'll go with a blog.
+I think that is what this will be. A blog seems like a great way for Data People to compile their work in a centralized place. I'm a Data Person. I don't currently have a place to store my work. I guess I'll go with a blog.
 
-I also became familiar with Quarto and Quarto blogs after virtually attending rstudio::conf(2022). Quarto seemed like an interesting tool to present personal data work and Quarto blogs seemed like a dead simple way to compile that work. Why not start a blog to get the hang of this tool?
+I also became familiar with Quarto after virtually attending rstudio::conf(2022). Quarto seemed like an interesting tool to present personal data work. Why not start a blog to get the hang of this tool?
 
 # Plans
 
-For the most part, this blog will consist of things for my own personal consumption and reference. I'm not keen to share my work or my thoughts broadly but I'd like to have a place where I can direct people if I need to \~ *show off \~* for any reason. This will be that place.
+For the most part, this will consist of things for my own personal consumption and reference. Perhaps more of a notepad than a blog. I'm not keen to broadly share my work or my thoughts but I'd like to have a personal reference for things I do related to data.
 
 I plan to share details on personal projects, some random data viz, and/or perhaps some thoughts from something I'm reading. A blog seems like a good place to compile these things, kind of like a journal, especially if I'll be the primary consumer. I'd like to have this as a place where I can log things that I'm excited about.
 
