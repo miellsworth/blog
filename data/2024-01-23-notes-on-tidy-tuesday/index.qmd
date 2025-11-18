@@ -1,0 +1,8 @@
+---
+title: "Notes on Tidy Tuesday - 2024-01-23"
+description: |
+  
+date: 2024-01-23
+---
+
+![Educational attainment](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-01-23/2024-01-23_edu_attainment_violin.png)
