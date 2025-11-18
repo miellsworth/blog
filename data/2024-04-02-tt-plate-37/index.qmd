@@ -1,0 +1,8 @@
+---
+title: "Notes on Tidy Tuesday - 2024-04-02"
+description: |
+  
+date: 2024-04-02
+---
+
+![Plate 37](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-04-02/2024-04-02_plate_37.png)
