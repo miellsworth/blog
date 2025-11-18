@@ -1,0 +1,8 @@
+---
+title: "Notes on Tidy Tuesday - 2024-03-12"
+description: |
+  
+date: 2024-03-12
+---
+
+![Directory sponsors](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-03-12/2024-03-12_num_sponsors.png)
