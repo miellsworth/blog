@@ -1,10 +1,12 @@
 ---
-title: "Coffee"
+title: "Notes on Tidy Tuesday - 2024-05-14"
 description: |
-  Tidy Tuesday 2024 Week 20
-date: 2024-05-13
+  Tidy Tuesday 2024 Week 20 - Coffee
+date: 2024-05-14
 ---
 
 This week's Tidy Tuesday dataset is related to coffee tasting. Since this boy is trying to wake up with a nice warm cup of coffee, it seems fitting to play around with this data today.
 
 Looks like most folks in this survey drink about 2 cups per day!
+
+![](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-05-14/2024-05-14_cups_per_day.png)
