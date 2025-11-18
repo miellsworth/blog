@@ -6,5 +6,3 @@ date: 2023-07-25
 ---
 
 ![Scurvy symptoms](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2023/2023-07-25/2023-07-25_scurvy_symptoms.png)
-
-Test
