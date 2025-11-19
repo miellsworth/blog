@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-05-08">
-<meta name="description" content="Thoughts on Shiny deployment">
+<meta name="dcterms.date" content="2024-04-29">
+<meta name="description" content="Tidy Tuesday 2024 week 10">
 
-<title>ME - Shinylive</title>
+<title>ME - Trash wheel</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -123,12 +123,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Shinylive</h1>
+<h1 class="title">Trash wheel</h1>
 </div>
 
 <div>
   <div class="description">
-    <p>Thoughts on Shiny deployment</p>
+    <p>Tidy Tuesday 2024 week 10</p>
   </div>
 </div>
 
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 8, 2024</p>
+      <p class="date">April 29, 2024</p>
     </div>
   </div>
   
@@ -151,10 +151,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A number of days ago, I created a very simple Shiny app to visualize Calgary bike counts at specific locations throughout the city. One thing I didn’t do with this app was deploy it, which is what today’s post will focus on.</p>
-<p>Instead of hosting the app on some sort of web app hosting platform, I’m going to test out the <code>shinylive</code> package. This is the serverless version of Shiny that I’ve seen used a couple of times but I’m going to follow <a href="https://medium.com/@rami.krispin/deploy-shiny-app-on-github-pages-b4cbd433bdc">Rami Krispin’s tutorial</a> for this exercise.</p>
-<p>Going into this exercise, I thought there would be much more to it. Turns out, all I had to do was rename my Shiny app file to <code>app.R</code> and run <code>shinylive::export(appdir = "shiny", destdir = "docs")</code>. Once the app finished rendering, I ran <code>httpuv::runStaticServer("docs/", port=8008)</code> to get the app running on my browser.</p>
-<p>Include some details on putting this on GitHub pages.</p>
+<p>Mr.&nbsp;Trash Wheel collects a lot of trash! Imagine hand counting cigarette butts.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 

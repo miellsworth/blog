@@ -2,9 +2,9 @@
 title: "Data"
 subtitle: A spot to share data related work and thoughts.
 listing:
-  contents: placeholder
+  contents: data
   sort: "date desc"
-  type: table
+  type: default
   sort-ui: false
   filter-ui: false
   fields: [date, title, description]

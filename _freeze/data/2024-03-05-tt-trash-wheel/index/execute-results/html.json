@@ -1,0 +1,17 @@
+{
+  "hash": "c76637c1316ab3608fccb5e8d4e44314",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Trash wheel\"\ndescription: |\n  Tidy Tuesday 2024 week 10\ndate: 2024-04-29\n---\n\n\nMr. Trash Wheel collects a lot of trash! Imagine hand counting cigarette butts.\n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
