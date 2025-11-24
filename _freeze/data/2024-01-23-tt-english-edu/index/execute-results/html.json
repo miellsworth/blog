@@ -1,0 +1,15 @@
+{
+  "hash": "3f89534b2f6211f371c9bb97aebc3707",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Notes on Tidy Tuesday - 2024-01-23\"\ndescription: |\n  \ndate: 2024-01-23\n---\n\n\n# Plot\n![Educational attainment](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-01-23/2024-01-23_edu_attainment_violin.png)\n\n# Notes\n- Some experimentation here with the R package `ggbeeswarm`\n\n# Source code\n\n\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```{.sourceCode .r}\n# Load libraries\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(tidyr)\nlibrary(tidytuesdayR)\nlibrary(here)\nlibrary(forcats)\nlibrary(ggbeeswarm)\nlibrary(stringr)\n\n# Find the most recent Tuesday\ntidytuesdayR::last_tuesday()\nlast_tues <- \"2024-01-23\"\n\n# Creating directory for draft plots\nplt_dir <- paste0(\"plt_\", last_tues)\n# dir.create(here(\"plots\", \"drafts\", plt_dir))\n\n# Get the Data\ntuesdata <- tidytuesdayR::tt_load(last_tues)\n\n# Tidy data\ndf <- tuesdata$english_education\n\n# Transform data\nglimpse(df)\n\n# Plot data\nplot <- df %>%\n  filter(size_flag %in% c(\"Small Towns\", \"Medium Towns\", \"Large Towns\")) %>%\n  ggplot(aes(x = size_flag, y = education_score)) +\n  geom_violin(\n    alpha = 0.1, \n    color = NA,\n    fill = \"black\",\n  ) +\n  ggbeeswarm::geom_quasirandom(\n    shape = 21, \n    # size = 2, \n    dodge.width = 0.75, \n    alpha = 0.25,\n    fill = \"black\"\n  ) +\n  stat_summary(fun = mean, geom = \"crossbar\", width = 0.8, linewidth = 0.4) +\n  theme_classic() + \n  labs(\n    title = str_wrap(\"Educational attainment of young people is slightly higher in small English towns\", width = 70),\n    x = \"\",\n    y = \"Educational attainment index score\",\n    caption = \"Data: The UK Office for National Statistics\"\n  ) +\n  theme(\n    legend.position = \"none\",\n    axis.ticks.x = element_blank(),\n    axis.ticks.y = element_blank(),\n    axis.line.y = element_blank(),\n    panel.background = element_rect(fill = \"#fbfae4\"),\n    plot.background = element_rect(fill = \"#fbfae4\"),\n  ) +\n  coord_flip()\nplot\n\n# Save draft\n# ggsave(\n#   here(\"drafts\", paste0(\"plt_\", last_tues), paste0(format(Sys.time(), \"%Y-%m-%d_%H%M%S\"), \".png\")),\n#   plot\n# )\n\n# Save final\nplot_title <- \"edu_attainment_violin\"\nggsave(\n  here(\"2024\", last_tues, paste0(last_tues, \"_\", plot_title, \".png\")), \n  plot\n)\n```\n\n\n:::\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -5,4 +5,23 @@ description: |
 date: 2024-01-23
 ---
 
+# Plot
 ![Educational attainment](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-01-23/2024-01-23_edu_attainment_violin.png)
+
+# Notes
+- Some experimentation here with the R package `ggbeeswarm`
+
+# Source code
+
+```{r Read source code}
+#| include: false
+url <- "https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-01-23/2024-01-23.R"
+code <- readLines(url, warn = FALSE)
+```
+
+```{r Display source code}
+#| echo: false
+#| warning: false
+#| class-output: "sourceCode r"
+cat(code, sep = "\n")
+```
