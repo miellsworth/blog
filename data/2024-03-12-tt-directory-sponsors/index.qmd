@@ -1,8 +1,26 @@
 ---
 title: "Notes on Tidy Tuesday - 2024-03-12"
 description: |
-  
+  Directory sponsors
 date: 2024-03-12
 ---
 
+# Plot
 ![Directory sponsors](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-03-12/2024-03-12_num_sponsors.png)
+
+# Notes
+- Experimented with alternative fonts
+
+# Source code
+```{r Read source code}
+#| include: false
+url <- "https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-03-12/2024-03-12.R"
+code <- readLines(url, warn = FALSE)
+```
+
+```{r Display source code}
+#| echo: false
+#| warning: false
+#| class-output: "sourceCode r"
+cat(code, sep = "\n")
+```
