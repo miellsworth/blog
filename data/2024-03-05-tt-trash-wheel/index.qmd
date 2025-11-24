@@ -1,69 +1,26 @@
 ---
-title: "Trash wheel"
+title: "Notes on Tidy Tuesday - 2024-03-05"
 description: |
-  Tidy Tuesday 2024 week 10
-date: 2024-04-29
+  Mr. Trash Wheel
+date: 2024-03-05
 ---
 
-Mr. Trash Wheel collects a lot of trash! Imagine hand counting cigarette butts.
+# Plot
+![Mr. Trash Wheel](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-03-05/2024-03-05_cumulative_trash.png)
 
-```{r}
+# Notes
+- Placeholder
+
+# Source code
+```{r Read source code}
 #| include: false
-# Load libraries
-library(tidytuesdayR)
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-library(janitor)
-library(lubridate)
-
-last_tues <- "2024-03-05"
-
-# Get the Data
-tuesdata <- tidytuesdayR::tt_load(last_tues)
-
-# Tidy data
-df <- tuesdata$trashwheel
-
-# Transform data
-df_long <- df %>%
-  janitor::clean_names() %>%
-  select(-c(weight, volume, homes_powered)) %>%
-  pivot_longer(
-    cols = c(
-      plastic_bottles, 
-      polystyrene, 
-      cigarette_butts, 
-      glass_bottles,
-      plastic_bags,
-      wrappers,
-      sports_balls
-      ),
-    names_to = "trash_type",
-    values_to = "trash_count"
-  ) %>%
-  mutate(trash_count = replace_na(trash_count, 0)) %>%
-  mutate(date = lubridate::mdy(date)) %>%
-  arrange(date, trash_type) %>%
-  group_by(trash_type) %>%
-  mutate(cumulative_trash = cumsum(trash_count))
+url <- "https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-03-05/2024-03-05.R"
+code <- readLines(url, warn = FALSE)
 ```
 
-```{r}
+```{r Display source code}
 #| echo: false
 #| warning: false
-#| error: false
-# Plot data
-plot <- df_long %>%
-  filter(trash_type %in% c("cigarette_butts")) %>%
-  ggplot(aes(x = date, y = cumulative_trash)) +
-  geom_line(size = 2) +
-  theme_classic() +
-  labs(
-    title = "That's a lot of cigarette butts!",
-    x = "",
-    y = "Cumulative Cigarette Butts Collected"
-  ) +
-  scale_y_continuous(labels = scales::comma)
-plot
+#| class-output: "sourceCode r"
+cat(code, sep = "\n")
 ```
