@@ -1,0 +1,15 @@
+{
+  "hash": "9724988809877e54506e629ed899d1d1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Notes on Tidy Tuesday - 2024-03-12\"\ndescription: |\n  Directory sponsors\ndate: 2024-03-12\n---\n\n\n\n# Plot\n![Directory sponsors](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-03-12/2024-03-12_num_sponsors.png)\n\n# Notes\n- Experimented with alternative fonts\n\n# Source code\n\n\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```{.sourceCode .r}\n# Load libraries\nlibrary(tidytuesdayR)\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(ggplot2)\nlibrary(here)\n\n# Find the most recent Tuesday\ntidytuesdayR::last_tuesday()\nlast_tues <- \"2024-03-12\"\n\n# View README\ntt_output <- tt_load_gh(last_tues)\nreadme(tt_output)\n\n# Creating directory for draft plots\nplt_dir <- paste0(\"plt_\", last_tues)\n# dir.create(here(\"plots\", \"drafts\", plt_dir))\n\n# Get the Data\ntuesdata <- tidytuesdayR::tt_load(last_tues)\n\n# Tidy data\nglimpse(tuesdata$fiscal_sponsor_directory)\ndf <- tuesdata$fiscal_sponsor_directory\n\n# Transform data\ndf_buckets <- df %>%\n  replace_na(list(n_sponsored = 0)) %>%\n  mutate(\n    bucket = cut(\n      n_sponsored, \n      breaks = c(0, 6, 20, 50, 100, 200, Inf),\n      labels = c(\"Up to 5 projects\", \"6-19 projects\", \"20-49 projects\", \"50-99 projects\", \"100-199 projects\", \"200+ projects\"),\n      right = FALSE\n    )\n  )\n\ndf_buckets_summary <- df_buckets %>% \n  group_by(bucket) %>%\n  summarise(\n    count = n(),\n    bucket_proportion = n() / nrow(df)\n  )\ndf_buckets_summary\n\n# Plot data\nplot <- df_buckets_summary %>%\n  ggplot(aes(y = reorder(bucket, count), x = count)) +\n  geom_col() +\n  geom_text(\n    aes(y = reorder(bucket, count), x = count, label = count), \n    hjust = 1.1, \n    colour = \"white\", \n    fontface = \"bold\"\n  ) +\n  scale_x_continuous(expand = c(0, 0)) +\n  labs(\n    title = \"Breakdown of directory sponsors by number of projects served\",\n    subtitle = \"Updated March 2024\",\n    caption = \"Chart: Michael Ellsworth | Data: fiscalsponsordirectory.org\",\n    x = \"\",\n    y = \"\"\n  ) +\n  theme_classic() +\n  theme(\n    axis.line.y = element_blank(),\n    axis.ticks.y = element_blank(),\n    plot.title.position = \"plot\",\n    plot.title = element_text(hjust = 0.5),\n    plot.subtitle = element_text(hjust = 0.5),\n    text = element_text(family = \"Tahoma\"),\n    panel.background = element_rect(fill = \"#fbfae4\"),\n    plot.background = element_rect(fill = \"#fbfae4\"),\n    legend.background = element_rect(fill = \"#fbfae4\"),\n  )\nplot\n\n# Save draft\n# ggsave(here(\"plots\", \"drafts\", paste0(\"plt_\", last_tues), paste0(format(Sys.time(), \"%Y-%m-%d_%H%M%S\"), \".png\")))\n\n# Save final\nplot_title <- \"num_sponsors\"\nggsave(\n  here(\"2024\", last_tues, paste0(last_tues, \"_\", plot_title, \".png\")), \n  plot\n)\n```\n\n\n:::\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
