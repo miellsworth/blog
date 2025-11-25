@@ -1,0 +1,15 @@
+{
+  "hash": "694ca7ef45d1b20e43788c83773907b9",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Notes on Tidy Tuesday - 2024-03-26\"\ndescription: |\n  \ndate: 2024-03-26\n---\n\n\n\n\n# Plot\n![NCAA Men's Basketball Finals Picks](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-03-26/2024-03-26_top_10_finals_picks.png)\n\n# Notes\n- Placeholder\n\n# Source code\n\n\n\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```{.sourceCode .r}\n# Load libraries\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(tidyr)\nlibrary(tidytuesdayR)\nlibrary(here)\nlibrary(janitor)\nlibrary(stringr)\n\n# Find the most recent Tuesday\ntidytuesdayR::last_tuesday()\nlast_tues <- \"2024-03-26\"\n\n# View README\ntt_output <- tt_load_gh(last_tues)\nreadme(tt_output)\n\n# Creating directory for draft plots\nplt_dir <- paste0(\"plt_\", last_tues)\n# dir.create(here(\"plots\", \"drafts\", plt_dir))\n\n# Get the Data\ntuesdata <- tidytuesdayR::tt_load(last_tues)\n\n# Tidy data\nresults <- tuesdata$`team-results` %>% \n  janitor::clean_names()\n  \npicks <- tuesdata$`public-picks` %>% \n  janitor::clean_names()\n\n# Transform data\nglimpse(results)\nglimpse(picks)\n\n# Plot data\nplot <- picks %>%\n  mutate(finals = as.numeric(sub(\"%\", \"\", finals))/100) %>%\n  arrange(desc(finals)) %>%\n  head(n = 10) %>%\n  ggplot(aes(x = reorder(team, finals), y = finals)) +\n  geom_col() +\n  geom_text(\n    aes(label = paste0(as.character(round(finals * 100, 0)), '%')), \n    hjust = 1.1,\n    color = \"white\"\n  ) +\n  scale_y_continuous(\n    labels = scales::percent_format(),\n    expand = c(0, 0)\n  ) +\n  labs(\n    title = str_wrap(\"Connecticut is by far the most picked team to make the NCAA Men's March Madness tournament finals\", width = 75),\n    y = \"Proportion of finals picks (%)\",\n    x = \"\",\n    caption = \"Chart: Michael Ellsworth | Data: Nishaan Amin's NCAA Men's March Madness Kaggle dataset\",\n  ) +\n  theme_classic() +\n  theme(\n    axis.line.y = element_blank(),\n    axis.ticks.y = element_blank(),\n    panel.background = element_rect(fill = \"#fbfae4\"),\n    plot.background = element_rect(fill = \"#fbfae4\"),\n    legend.background = element_rect(fill = \"#fbfae4\"),\n  ) +\n  coord_flip()\nplot\n\n# Save draft\n# ggsave(\n#   here(\"plots\", \"drafts\", paste0(\"plt_\", last_tues), paste0(format(Sys.time(), \"%Y-%m-%d_%H%M%S\"), \".png\")),\n#   plot\n# )\n\n# Save final\nplot_title <- \"top_10_finals_picks\"\nggsave(\n  here(\"2024\", last_tues, paste0(last_tues, \"_\", plot_title, \".png\")), \n  plot\n)\n```\n\n\n:::\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
