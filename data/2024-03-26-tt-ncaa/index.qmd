@@ -5,4 +5,22 @@ description: |
 date: 2024-03-26
 ---
 
+# Plot
 ![NCAA Men's Basketball Finals Picks](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-03-26/2024-03-26_top_10_finals_picks.png)
+
+# Notes
+- Placeholder
+
+# Source code
+```{r Read source code}
+#| include: false
+url <- "https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-03-26/2024-03-26.R"
+code <- readLines(url, warn = FALSE)
+```
+
+```{r Display source code}
+#| echo: false
+#| warning: false
+#| class-output: "sourceCode r"
+cat(code, sep = "\n")
+```
