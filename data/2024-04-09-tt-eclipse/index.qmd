@@ -1,0 +1,8 @@
+---
+title: "Notes on Tidy Tuesday - 2024-04-09"
+description: |
+  Solar Eclipse
+date: 2024-04-09
+---
+
+![Totality duration](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2024/2024-04-09/2024-04-09_totality_duration.png)
