@@ -1,7 +1,7 @@
 ---
 title: "Notes on Tidy Tuesday - 2024-05-14"
 description: |
-  Tidy Tuesday 2024 Week 20 - Coffee
+  Coffee
 date: 2024-05-14
 ---
 
