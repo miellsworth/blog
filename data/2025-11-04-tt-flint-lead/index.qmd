@@ -1,0 +1,8 @@
+---
+title: "Notes on Tidy Tuesday - 2025-11-04"
+description: |
+  Flint Water Samples and Lead Concentration
+date: 2025-11-04
+---
+
+![Flint Lead](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2025/2025-11-04/2025-11-04_flint_lead.png)
