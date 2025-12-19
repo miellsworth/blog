@@ -1,0 +1,8 @@
+---
+title: "Notes on Tidy Tuesday - 2025-10-14"
+description: |
+  Food insecurity
+date: 2025-10-14
+---
+
+![Food insecurity](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2025/2025-10-14/2025-10-14_food_insecurity.png)

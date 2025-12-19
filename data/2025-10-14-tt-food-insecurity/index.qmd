@@ -1,0 +1,8 @@
+---
+title: "Notes on Tidy Tuesday - 2025-10-07"
+description: |
+  Euroleague Men's Basketball
+date: 2025-10-07
+---
+
+![Euroleague](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2025/2025-10-07/2025-10-07_euroleague.png)
