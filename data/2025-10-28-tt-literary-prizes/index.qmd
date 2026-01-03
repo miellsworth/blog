@@ -1,0 +1,8 @@
+---
+title: "Notes on Tidy Tuesday - 2025-10-28"
+description: |
+  UK Literary Prizes
+date: 2025-10-28
+---
+
+![UK Literary Prizes](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2025/2025-10-28/2025-10-28_literary_prizes.png)
