@@ -1,0 +1,42 @@
+---
+title: "Hoison Garlic Noodles"
+author:
+  - name: "New York Times"
+    url: https://cooking.nytimes.com/recipes/1026260-hoisin-garlic-noodles
+categories: [Noodles, Favourites]
+---
+
+# Ingredients
+- 400 g dried wheat or egg noodles
+- 1/4 cup hoisin sauce
+- 2 tbsp soy sauce 
+- 1 tbsp sesame oil
+- 2 tsp honey 
+- Vegetable oil
+- 6 garlic cloves
+- 6 green onions
+- 4 tbsp toasted sesame seeds
+
+# Instructions
+## 1 - Prep
+- Finely chop garlic
+- Slice green onions, separate white and green parts
+
+## 2 - Make the sauce
+- Mix hoisin, soy sauce, sesame oil, and honey in a small bowl
+- Set aside
+
+## 3 - Cook noodles
+- Cook the noodles in salted boiling water until al dente
+- Drain and rinse to cool
+- Set aside
+
+## 4 - Cook sauce / noodles
+- Heat oil in a large skillet
+- Add garlic and white parts of green onion, cook until fragrant
+- Quickly pour in the sauce and add the noodles, tossing to coat
+- Let the noodles cook undisturbed until the bottom turns crispy, 2 to 3 minutes
+- Season to taste
+
+## 5 - Serve
+- Top with sesame seeds and green onion
