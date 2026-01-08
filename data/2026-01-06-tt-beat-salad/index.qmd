@@ -1,0 +1,8 @@
+---
+title: "Notes on Tidy Tuesday - 2026-01-06"
+description: |
+  Beat Salad
+date: 2026-01-06
+---
+
+![Roundabouts](https://raw.githubusercontent.com/miellsworth/tidytuesday/refs/heads/main/2026/2026-01-06/2026-01-06_beat_salad_most_played.png)
