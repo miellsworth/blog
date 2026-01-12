@@ -3,7 +3,7 @@ title: "Shrimp Scampi With Orzo"
 author:
   - name: "New York Times"
     url: https://cooking.nytimes.com/recipes/1020330-shrimp-scampi-with-orzo
-categories: Fish
+categories: Seafood
 ---
 
 # Ingredients
