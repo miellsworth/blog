@@ -3,7 +3,7 @@ title: "Lamb Kofta Meatballs"
 author:
   - name: "RecipeTin Eats"
     url: https://www.recipetineats.com/tray-bake-dinner-lamb-kofta-meatballs/#recipe
-categories: [Lamb]
+categories: Lamb
 ---
 
 # Ingredients
