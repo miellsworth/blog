@@ -3,7 +3,7 @@ title: "One-Pan Shrimp Scampi With Crispy Gnocchi"
 author:
   - name: "New York Times"
     url: https://cooking.nytimes.com/recipes/1023571-one-pan-shrimp-scampi-with-crispy-gnocchi
-categories: [Fish, Gnocchi]
+categories: [Seafood, Gnocchi]
 ---
 
 # Ingredients
