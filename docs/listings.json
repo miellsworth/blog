@@ -1,51 +1,5 @@
 [
   {
-    "listing": "/cooking.html",
-    "items": [
-      "/cooking/chimichurri-meatballs.html",
-      "/cooking/unstuffed-cabbage-rolls.html",
-      "/cooking/baked-chicken-thighs.html",
-      "/cooking/blackened-chicken-breasts.html",
-      "/cooking/chimichurri-chicken.html",
-      "/cooking/dijonnaise-grilled-chicken.html",
-      "/cooking/thai-chicken-meatball-soup.html",
-      "/cooking/shawarma-spiced-chicken.html",
-      "/cooking/chicken-noodle-soup.html",
-      "/cooking/sheetpan-gnocchi.html",
-      "/cooking/crispy-gnocchi-sausage.html",
-      "/cooking/crisp-gnocchi-sprouts.html",
-      "/cooking/lamb-kofta-meatballs.html",
-      "/cooking/soy-sauce-noodles.html",
-      "/cooking/hoison-noodles.html",
-      "/cooking/oneskillet-orzo.html",
-      "/cooking/spaghetti-carbonara.html",
-      "/cooking/braised-pork-chops.html",
-      "/cooking/gyoza.html",
-      "/cooking/crispy-fried-rice.html",
-      "/cooking/pasta-salad.html",
-      "/cooking/tzatziki-chickpea-salad.html",
-      "/cooking/grilled-shrimp.html",
-      "/cooking/shrimp-scampi-orzo.html",
-      "/cooking/sticky-miso-salmon-bowl.html",
-      "/cooking/onepan-shrimp-scampi.html",
-      "/cooking/creamy-tortellini-soup.html",
-      "/cooking/crispy-tofu.html",
-      "/cooking/silken-tofu.html",
-      "/cooking/white-bean-turkey-soup.html",
-      "/cooking/buffalo-chickpea-wraps.html",
-      "/cooking/smoky-sweet-potato-chickpea.html",
-      "/cooking/spiced-roasted-cauliflower.html",
-      "/cooking/cauliflower-shawarma.html",
-      "/cooking/roasted-brussels-sprouts-caeser.html"
-    ]
-  },
-  {
-    "listing": "/books.html",
-    "items": [
-      "/placeholder/index.html"
-    ]
-  },
-  {
     "listing": "/data.html",
     "items": [
       "/data/2026-01-06-tt-beat-salad/index.html",
@@ -85,13 +39,6 @@
     ]
   },
   {
-    "listing": "/music.html",
-    "items": [
-      "/placeholder/index.html"
-    ]
-<<<<<<< HEAD
-  },
-  {
     "listing": "/cooking.html",
     "items": [
       "/cooking/chimichurri-meatballs.html",
@@ -104,10 +51,6 @@
       "/cooking/thai-chicken-meatball-soup.html",
       "/cooking/shawarma-spiced-chicken.html",
       "/cooking/chicken-noodle-soup.html",
-      "/cooking/grilled-shrimp.html",
-      "/cooking/shrimp-scampi-orzo.html",
-      "/cooking/sticky-miso-salmon-bowl.html",
-      "/cooking/onepan-shrimp-scampi.html",
       "/cooking/sheetpan-gnocchi.html",
       "/cooking/crispy-gnocchi-sausage.html",
       "/cooking/crisp-gnocchi-sprouts.html",
@@ -121,6 +64,10 @@
       "/cooking/crispy-fried-rice.html",
       "/cooking/pasta-salad.html",
       "/cooking/tzatziki-chickpea-salad.html",
+      "/cooking/grilled-shrimp.html",
+      "/cooking/shrimp-scampi-orzo.html",
+      "/cooking/sticky-miso-salmon-bowl.html",
+      "/cooking/onepan-shrimp-scampi.html",
       "/cooking/creamy-tortellini-soup.html",
       "/cooking/crispy-tofu.html",
       "/cooking/silken-tofu.html",
@@ -131,7 +78,17 @@
       "/cooking/cauliflower-shawarma.html",
       "/cooking/roasted-brussels-sprouts-caeser.html"
     ]
-=======
->>>>>>> 5b507a03bfd601efb757c0549577d3732ca04d06
+  },
+  {
+    "listing": "/music.html",
+    "items": [
+      "/placeholder/index.html"
+    ]
+  },
+  {
+    "listing": "/books.html",
+    "items": [
+      "/placeholder/index.html"
+    ]
   }
 ]
