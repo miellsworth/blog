@@ -1,0 +1,34 @@
+---
+title: "Fluffy Pancakes"
+author:
+  - name: "All Recipes"
+    url: https://www.allrecipes.com/recipe/162760/fluffy-pancakes/
+categories: Breakfast
+---
+# Ingredients
+- 1 1/2 cups milk
+- 4 tablespoons apple cider vinegar
+- 2 cups all-purpose flour
+- 4 tablespoons white sugar
+- 2 teaspoons baking powder
+- 1 teaspoon baking soda
+- 1 teaspoon salt
+- 2 egg
+- 4 tablespoons butter, melted
+- cooking spray
+
+# Instructions
+## 1 Sour Milk
+- Combine milk and vinegar in a medium bowl and set aside for 5 minutes to make sour milk
+
+## 2 Combine flour mixture
+- Combine flour, sugar, baking powder, baking soda, and salt in a large mixing bowl
+
+## 3 Combine rest of milk mixture
+- Whisk egg and butter into soured milk
+
+## 4 Mix
+- Pour flour mixture into milk mixture and whisk until lumps are gone
+
+## 5
+- Cook
