@@ -1,5 +1,5 @@
 ---
-title: "chicken-fajitas-sheet-pan"
+title: "Sheet Pan Chicken Fajitas"
 author:
   - name: "Sheet Pan Everything"
     url: https://boutique.ricardocuisine.com/en/sheet-pan-everything-book.html
