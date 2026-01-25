@@ -39,18 +39,6 @@
     ]
   },
   {
-    "listing": "/books.html",
-    "items": [
-      "/placeholder/index.html"
-    ]
-  },
-  {
-    "listing": "/music.html",
-    "items": [
-      "/placeholder/index.html"
-    ]
-  },
-  {
     "listing": "/cooking.html",
     "items": [
       "/cooking/chimichurri-meatballs.html",
@@ -60,8 +48,8 @@
       "/cooking/blackened-chicken-breasts.html",
       "/cooking/chimichurri-chicken.html",
       "/cooking/dijonnaise-grilled-chicken.html",
-      "/cooking/thai-chicken-meatball-soup.html",
       "/cooking/chicken-fajitas-sheet-pan.html",
+      "/cooking/thai-chicken-meatball-soup.html",
       "/cooking/shawarma-spiced-chicken.html",
       "/cooking/chicken-noodle-soup.html",
       "/cooking/sheetpan-gnocchi.html",
@@ -73,6 +61,7 @@
       "/cooking/oneskillet-orzo.html",
       "/cooking/spaghetti-carbonara.html",
       "/cooking/braised-pork-chops.html",
+      "/cooking/hoison-pork-tenderloin.html",
       "/cooking/gyoza.html",
       "/cooking/crispy-fried-rice.html",
       "/cooking/pasta-salad.html",
@@ -90,6 +79,18 @@
       "/cooking/spiced-roasted-cauliflower.html",
       "/cooking/cauliflower-shawarma.html",
       "/cooking/roasted-brussels-sprouts-caeser.html"
+    ]
+  },
+  {
+    "listing": "/music.html",
+    "items": [
+      "/placeholder/index.html"
+    ]
+  },
+  {
+    "listing": "/books.html",
+    "items": [
+      "/placeholder/index.html"
     ]
   }
 ]
